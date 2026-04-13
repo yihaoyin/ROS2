@@ -1,0 +1,101 @@
+[0.008s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg
+[0.021s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.096s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.393s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.394s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.397s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.410s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.433s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.434s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[17.784s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[17.819s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[17.911s] -- Configuring done
+[17.950s] -- Generating done
+[17.965s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[17.994s] [  3%] [32mBuilding CXX object CMakeFiles/nav2_amcl_amcl.dir/src/nav2_amcl_amcl.cpp.o[0m
+[24.781s] [  7%] [32m[1mLinking CXX executable nav2_amcl_amcl[0m
+[25.433s] [  7%] Built target nav2_amcl_amcl
+[25.444s] [ 11%] [32mBuilding CXX object CMakeFiles/nav2_behavior_server_behavior_server.dir/src/nav2_behavior_server_behavior_server.cpp.o[0m
+[31.380s] [ 15%] [32m[1mLinking CXX executable nav2_behavior_server_behavior_server[0m
+[31.902s] [ 15%] Built target nav2_behavior_server_behavior_server
+[31.914s] [ 19%] [32mBuilding CXX object CMakeFiles/nav2_bringup_nav2_bringup.dir/src/nav2_bringup_nav2_bringup.cpp.o[0m
+[33.918s] [ 23%] [32m[1mLinking CXX executable nav2_bringup_nav2_bringup[0m
+[34.373s] [ 23%] Built target nav2_bringup_nav2_bringup
+[34.384s] [ 26%] [32mBuilding CXX object CMakeFiles/nav2_bt_navigator_bt_navigator.dir/src/nav2_bt_navigator_bt_navigator.cpp.o[0m
+[40.732s] [ 30%] [32m[1mLinking CXX executable nav2_bt_navigator_bt_navigator[0m
+[41.430s] [ 30%] Built target nav2_bt_navigator_bt_navigator
+[41.443s] [ 34%] [32mBuilding CXX object CMakeFiles/nav2_controller_controller_server.dir/src/nav2_controller_controller_server.cpp.o[0m
+[47.600s] [ 38%] [32m[1mLinking CXX executable nav2_controller_controller_server[0m
+[48.299s] [ 38%] Built target nav2_controller_controller_server
+[48.311s] [ 42%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_costmap.dir/src/nav2_costmap_2d_costmap.cpp.o[0m
+[50.350s] [ 46%] [32m[1mLinking CXX executable nav2_costmap_2d_costmap[0m
+[50.926s] [ 46%] Built target nav2_costmap_2d_costmap
+[50.938s] [ 50%] [32mBuilding CXX object CMakeFiles/nav2_lifecycle_manager_lifecycle_manager_localization.dir/src/nav2_lifecycle_manager_lifecycle_manager_localization.cpp.o[0m
+[53.001s] [ 53%] [32m[1mLinking CXX executable nav2_lifecycle_manager_lifecycle_manager_localization[0m
+[53.437s] [ 53%] Built target nav2_lifecycle_manager_lifecycle_manager_localization
+[53.450s] [ 57%] [32mBuilding CXX object CMakeFiles/nav2_lifecycle_manager_lifecycle_manager_navigation.dir/src/nav2_lifecycle_manager_lifecycle_manager_navigation.cpp.o[0m
+[55.415s] [ 61%] [32m[1mLinking CXX executable nav2_lifecycle_manager_lifecycle_manager_navigation[0m
+[56.028s] [ 61%] Built target nav2_lifecycle_manager_lifecycle_manager_navigation
+[56.045s] [ 65%] [32mBuilding CXX object CMakeFiles/nav2_map_server_map_server.dir/src/nav2_map_server_map_server.cpp.o[0m
+[59.049s] [ 69%] [32m[1mLinking CXX executable nav2_map_server_map_server[0m
+[59.566s] [ 69%] Built target nav2_map_server_map_server
+[59.576s] [ 73%] [32mBuilding CXX object CMakeFiles/nav2_planner_planner_server.dir/src/nav2_planner_planner_server.cpp.o[0m
+[65.649s] [ 76%] [32m[1mLinking CXX executable nav2_planner_planner_server[0m
+[66.274s] [ 76%] Built target nav2_planner_planner_server
+[66.287s] [ 80%] [32mBuilding CXX object CMakeFiles/nav2_smoother_smoother_server.dir/src/nav2_smoother_smoother_server.cpp.o[0m
+[72.293s] [ 84%] [32m[1mLinking CXX executable nav2_smoother_smoother_server[0m
+[72.979s] [ 84%] Built target nav2_smoother_smoother_server
+[72.989s] [ 88%] [32mBuilding CXX object CMakeFiles/nav2_velocity_smoother_velocity_smoother.dir/src/nav2_velocity_smoother_velocity_smoother.cpp.o[0m
+[79.004s] [ 92%] [32m[1mLinking CXX executable nav2_velocity_smoother_velocity_smoother[0m
+[79.632s] [ 92%] Built target nav2_velocity_smoother_velocity_smoother
+[79.644s] [ 96%] [32mBuilding CXX object CMakeFiles/nav2_waypoint_follower_waypoint_follower.dir/src/nav2_waypoint_follower_waypoint_follower.cpp.o[0m
+[85.556s] [100%] [32m[1mLinking CXX executable nav2_waypoint_follower_waypoint_follower[0m
+[86.250s] [100%] Built target nav2_waypoint_follower_waypoint_follower
+[86.268s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg
+[86.276s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg
+[86.282s] -- Install configuration: ""
+[86.282s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_amcl_amcl
+[86.286s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_amcl_amcl" to ""
+[86.287s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_behavior_server_behavior_server
+[86.290s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_behavior_server_behavior_server" to ""
+[86.290s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_bringup_nav2_bringup
+[86.292s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_bringup_nav2_bringup" to ""
+[86.292s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_bt_navigator_bt_navigator
+[86.296s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_bt_navigator_bt_navigator" to ""
+[86.296s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_controller_controller_server
+[86.300s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_controller_controller_server" to ""
+[86.300s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_costmap_2d_costmap
+[86.300s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_costmap_2d_costmap" to ""
+[86.300s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_lifecycle_manager_lifecycle_manager_localization
+[86.300s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_lifecycle_manager_lifecycle_manager_localization" to ""
+[86.300s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_lifecycle_manager_lifecycle_manager_navigation
+[86.301s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_lifecycle_manager_lifecycle_manager_navigation" to ""
+[86.301s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_map_server_map_server
+[86.302s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_map_server_map_server" to ""
+[86.302s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_planner_planner_server
+[86.308s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_planner_planner_server" to ""
+[86.308s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_smoother_smoother_server
+[86.310s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_smoother_smoother_server" to ""
+[86.310s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_velocity_smoother_velocity_smoother
+[86.313s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_velocity_smoother_velocity_smoother" to ""
+[86.313s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_waypoint_follower_waypoint_follower
+[86.318s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/nav2_waypoint_follower_waypoint_follower" to ""
+[86.318s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch
+[86.319s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch/generated_system.launch.py
+[86.319s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/generated_ros2_pkg
+[86.319s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/generated_ros2_pkg
+[86.319s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.sh
+[86.319s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.dsv
+[86.319s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.sh
+[86.320s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.dsv
+[86.320s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.bash
+[86.320s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.sh
+[86.321s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.zsh
+[86.321s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.dsv
+[86.321s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.dsv
+[86.321s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/packages/generated_ros2_pkg
+[86.321s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig.cmake
+[86.321s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig-version.cmake
+[86.321s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.xml
+[86.323s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg

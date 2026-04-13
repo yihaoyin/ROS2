@@ -1,0 +1,62 @@
+[0.013s] Invoking command in '/home/yinyihao/ros2/build/nav2_race_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake /home/yinyihao/ros2/src/nav2_race_cpp -DCMAKE_INSTALL_PREFIX=/home/yinyihao/ros2/install/nav2_race_cpp
+[0.411s] -- The C compiler identification is GNU 11.4.0
+[2.242s] -- The CXX compiler identification is GNU 11.4.0
+[3.484s] -- Detecting C compiler ABI info
+[3.884s] -- Detecting C compiler ABI info - done
+[3.889s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.889s] -- Detecting C compile features
+[3.890s] -- Detecting C compile features - done
+[3.893s] -- Detecting CXX compiler ABI info
+[4.329s] -- Detecting CXX compiler ABI info - done
+[4.343s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.343s] -- Detecting CXX compile features
+[4.344s] -- Detecting CXX compile features - done
+[4.363s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.631s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.809s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[5.510s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.534s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.573s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.640s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.688s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.784s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.793s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.947s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[18.724s] -- Found FastRTPS: /opt/ros/humble/include  
+[30.359s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[30.408s] -- Looking for pthread.h
+[30.802s] -- Looking for pthread.h - found
+[30.802s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[31.093s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[31.094s] -- Found Threads: TRUE  
+[31.161s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[31.182s] -- Found rclcpp_action: 16.0.16 (/opt/ros/humble/share/rclcpp_action/cmake)
+[31.228s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[31.337s] -- Configuring done
+[31.357s] -- Generating done
+[31.364s] -- Build files have been written to: /home/yinyihao/ros2/build/nav2_race_cpp
+[31.372s] Invoked command in '/home/yinyihao/ros2/build/nav2_race_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake /home/yinyihao/ros2/src/nav2_race_cpp -DCMAKE_INSTALL_PREFIX=/home/yinyihao/ros2/install/nav2_race_cpp
+[31.374s] Invoking command in '/home/yinyihao/ros2/build/nav2_race_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/nav2_race_cpp -- -j20 -l20
+[31.415s] [ 12%] [32mBuilding CXX object CMakeFiles/bt_navigator_mini.dir/src/bt_navigator_mini.cpp.o[0m
+[31.418s] [ 25%] [32mBuilding CXX object CMakeFiles/controller_server_mini.dir/src/controller_server_mini.cpp.o[0m
+[31.420s] [ 37%] [32mBuilding CXX object CMakeFiles/lifecycle_manager_navigation_mini.dir/src/lifecycle_manager_navigation_mini.cpp.o[0m
+[31.421s] [ 50%] [32mBuilding CXX object CMakeFiles/planner_server_mini.dir/src/planner_server_mini.cpp.o[0m
+[33.554s] [01m[K/home/yinyihao/ros2/src/nav2_race_cpp/src/planner_server_mini.cpp:[m[K In lambda function:
+[33.554s] [01m[K/home/yinyihao/ros2/src/nav2_race_cpp/src/planner_server_mini.cpp:73:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Duration[m[K’ has no member named ‘[01m[Kto_builtin_time[m[K’
+[33.554s]    73 |       result->planning_time = rclcpp::Duration::from_seconds(0.02).[01;31m[Kto_builtin_time[m[K();
+[33.554s]       |                                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[33.717s] [01m[K/home/yinyihao/ros2/src/nav2_race_cpp/src/bt_navigator_mini.cpp:[m[K In member function ‘[01m[Kvoid BtNavigatorMini::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<nav2_msgs::action::NavigateToPose> >)[m[K’:
+[33.717s] [01m[K/home/yinyihao/ros2/src/nav2_race_cpp/src/bt_navigator_mini.cpp:183:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Duration[m[K’ has no member named ‘[01m[Kto_builtin_time[m[K’
+[33.717s]   183 |       feedback->navigation_time = rclcpp::Duration::from_seconds(exec_s).[01;31m[Kto_builtin_time[m[K();
+[33.717s]       |                                                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[34.613s] gmake[2]: *** [CMakeFiles/planner_server_mini.dir/build.make:76: CMakeFiles/planner_server_mini.dir/src/planner_server_mini.cpp.o] Error 1
+[34.613s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/planner_server_mini.dir/all] Error 2
+[34.613s] gmake[1]: *** Waiting for unfinished jobs....
+[36.133s] [ 62%] [32m[1mLinking CXX executable lifecycle_manager_navigation_mini[0m
+[36.523s] gmake[2]: *** [CMakeFiles/bt_navigator_mini.dir/build.make:76: CMakeFiles/bt_navigator_mini.dir/src/bt_navigator_mini.cpp.o] Error 1
+[36.523s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/bt_navigator_mini.dir/all] Error 2
+[36.626s] [ 62%] Built target lifecycle_manager_navigation_mini
+[38.482s] [ 75%] [32m[1mLinking CXX executable controller_server_mini[0m
+[39.152s] [ 75%] Built target controller_server_mini
+[39.153s] gmake: *** [Makefile:146: all] Error 2
+[39.154s] Invoked command in '/home/yinyihao/ros2/build/nav2_race_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/nav2_race_cpp -- -j20 -l20

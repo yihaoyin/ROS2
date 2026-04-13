@@ -1,0 +1,4 @@
+source;share/nav2_race_cpp/local_setup.bash
+source;share/nav2_race_cpp/local_setup.dsv
+source;share/nav2_race_cpp/local_setup.sh
+source;share/nav2_race_cpp/local_setup.zsh

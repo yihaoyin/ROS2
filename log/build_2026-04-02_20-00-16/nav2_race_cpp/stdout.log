@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target planner_server_mini[0m
+[35m[1mConsolidate compiler generated dependencies of target bt_navigator_mini[0m
+[ 25%] Built target controller_server_mini
+[ 50%] Built target lifecycle_manager_navigation_mini
+[ 75%] [32mBuilding CXX object CMakeFiles/planner_server_mini.dir/src/planner_server_mini.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/bt_navigator_mini.dir/src/bt_navigator_mini.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable planner_server_mini[0m
+[ 87%] Built target planner_server_mini
+[100%] [32m[1mLinking CXX executable bt_navigator_mini[0m
+[100%] Built target bt_navigator_mini
+-- Install configuration: ""
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/bt_navigator_mini
+-- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/bt_navigator_mini" to ""
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/planner_server_mini
+-- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/planner_server_mini" to ""
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/controller_server_mini
+-- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/controller_server_mini" to ""
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/lifecycle_manager_navigation_mini
+-- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/lifecycle_manager_navigation_mini" to ""
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/launch
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/launch/nav2_race_cpp.launch.py
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/package_run_dependencies/nav2_race_cpp
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/parent_prefix_path/nav2_race_cpp
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/ament_prefix_path.sh
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/ament_prefix_path.dsv
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/path.sh
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/path.dsv
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.bash
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.sh
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.zsh
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.dsv
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/package.dsv
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/packages/nav2_race_cpp
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/cmake/nav2_race_cppConfig.cmake
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/cmake/nav2_race_cppConfig-version.cmake
+-- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/package.xml

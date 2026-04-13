@@ -1,0 +1,69 @@
+[0.009s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg
+[0.022s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.096s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.420s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.421s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.425s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.431s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.438s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.458s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.458s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[15.485s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.527s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[15.580s] -- Configuring done
+[15.668s] -- Generating done
+[15.677s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[15.696s] [  8%] [32mBuilding CXX object CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o[0m
+[19.458s] [ 16%] [32m[1mLinking CXX executable add_two_ints_client[0m
+[19.917s] [ 16%] Built target add_two_ints_client
+[19.934s] [ 25%] [32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o[0m
+[26.385s] [ 33%] [32m[1mLinking CXX executable add_two_ints_server[0m
+[26.918s] [ 33%] Built target add_two_ints_server
+[26.925s] [35m[1mConsolidate compiler generated dependencies of target fibonacci_action_server[0m
+[26.935s] [ 41%] [32mBuilding CXX object CMakeFiles/fibonacci_action_server.dir/src/fibonacci_action_server.cpp.o[0m
+[32.992s] [ 50%] [32m[1mLinking CXX executable fibonacci_action_server[0m
+[33.580s] [ 50%] Built target fibonacci_action_server
+[33.601s] [ 58%] [32mBuilding CXX object CMakeFiles/fibonacci_client.dir/src/fibonacci_client.cpp.o[0m
+[36.580s] [ 66%] [32m[1mLinking CXX executable fibonacci_client[0m
+[37.052s] [ 66%] Built target fibonacci_client
+[37.061s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[37.082s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[43.513s] [ 83%] [32m[1mLinking CXX executable listener[0m
+[43.949s] [ 83%] Built target listener
+[43.959s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[43.974s] [ 91%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[47.144s] [100%] [32m[1mLinking CXX executable talker[0m
+[47.682s] [100%] Built target talker
+[47.689s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg
+[47.695s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg
+[47.699s] -- Install configuration: ""
+[47.699s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/add_two_ints_client
+[47.700s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/add_two_ints_client" to ""
+[47.700s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/add_two_ints_server
+[47.702s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/add_two_ints_server" to ""
+[47.703s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/fibonacci_action_server
+[47.705s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/fibonacci_action_server" to ""
+[47.705s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/fibonacci_client
+[47.706s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/fibonacci_client" to ""
+[47.706s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/listener
+[47.708s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/listener" to ""
+[47.708s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/talker
+[47.709s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/talker" to ""
+[47.709s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch
+[47.709s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch/generated_system.launch.py
+[47.709s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/generated_ros2_pkg
+[47.709s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/generated_ros2_pkg
+[47.709s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.sh
+[47.710s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.dsv
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.sh
+[47.710s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.dsv
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.bash
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.sh
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.zsh
+[47.710s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.dsv
+[47.710s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.dsv
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/packages/generated_ros2_pkg
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig.cmake
+[47.710s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig-version.cmake
+[47.710s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.xml
+[47.712s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg

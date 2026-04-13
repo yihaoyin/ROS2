@@ -1,0 +1,21 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/src/my_cpp_pkg",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.buildType": "Debug",
+    "cmake.buildDirectory": "${workspaceFolder}/.cmake-vscode/my_cpp_pkg/Debug",
+    "cmake.configureEnvironment": {
+        "CMAKE_PREFIX_PATH": "/opt/ros/humble",
+        "AMENT_PREFIX_PATH": "/opt/ros/humble",
+        "PYTHONPATH": "/opt/ros/humble/lib/python3.10/site-packages",
+        "PATH": "/opt/ros/humble/bin:${env:PATH}"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "python.experiments.enabled": false,
+    "python.languageServer": "Jedi",
+    "python.analysis.nodeArguments": [
+        "--max-old-space-size=4096"
+    ],
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.indexing": false,
+    "python.analysis.persistAllIndices": false
+}

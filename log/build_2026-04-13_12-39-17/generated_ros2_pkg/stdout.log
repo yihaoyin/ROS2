@@ -1,0 +1,103 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[35m[1mConsolidate compiler generated dependencies of target action_client_node[0m
+[35m[1mConsolidate compiler generated dependencies of target action_server_node[0m
+[35m[1mConsolidate compiler generated dependencies of target intra_process_node[0m
+[35m[1mConsolidate compiler generated dependencies of target subscription_node[0m
+[35m[1mConsolidate compiler generated dependencies of target publisher_node[0m
+[35m[1mConsolidate compiler generated dependencies of target timer_node[0m
+[  3%] [32mBuilding CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/lifecycle_node_manager.dir/src/lifecycle_node_manager.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/node_with_parameters.dir/src/node_with_parameters.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/client_node.dir/src/client_node.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/waitable_node.dir/src/waitable_node.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/service_node.dir/src/service_node.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/parameter_event_publisher.dir/src/parameter_event_publisher.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/timer_node.dir/src/timer_node.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/action_server_node.dir/src/action_server_node.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/subscription_node.dir/src/subscription_node.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/action_client_node.dir/src/action_client_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/intra_process_node.dir/src/intra_process_node.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable node_with_parameters[0m
+[ 73%] [32m[1mLinking CXX executable parameter_event_publisher[0m
+[ 73%] [32m[1mLinking CXX executable publisher_node[0m
+[ 73%] [32m[1mLinking CXX executable subscription_node[0m
+[ 73%] [32m[1mLinking CXX executable lifecycle_node_manager[0m
+[ 73%] [32m[1mLinking CXX executable executor_node[0m
+[ 73%] Built target parameter_event_publisher
+[ 73%] Built target lifecycle_node_manager
+[ 73%] Built target publisher_node
+[ 73%] Built target subscription_node
+[ 73%] Built target executor_node
+[ 73%] Built target node_with_parameters
+[ 76%] [32m[1mLinking CXX executable waitable_node[0m
+[ 80%] [32m[1mLinking CXX executable intra_process_node[0m
+[ 84%] [32m[1mLinking CXX executable timer_node[0m
+[ 88%] [32m[1mLinking CXX executable client_node[0m
+[ 92%] [32m[1mLinking CXX executable action_client_node[0m
+[ 96%] [32m[1mLinking CXX executable service_node[0m
+[100%] [32m[1mLinking CXX executable action_server_node[0m
+[100%] Built target waitable_node
+[100%] Built target intra_process_node
+[100%] Built target timer_node
+[100%] Built target client_node
+[100%] Built target action_client_node
+[100%] Built target service_node
+[100%] Built target action_server_node
+-- Install configuration: ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/action_client_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/action_client_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/action_server_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/action_server_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/client_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/client_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/executor_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/executor_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/intra_process_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/intra_process_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/lifecycle_node_manager
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/lifecycle_node_manager" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/node_with_parameters
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/node_with_parameters" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/parameter_event_publisher
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/parameter_event_publisher" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/publisher_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/publisher_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/service_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/service_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/subscription_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/subscription_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/timer_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/timer_node" to ""
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/waitable_node
+-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/waitable_node" to ""
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch/generated_system.launch.py
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/generated_ros2_pkg
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/generated_ros2_pkg
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.sh
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.dsv
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.bash
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.sh
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.zsh
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.dsv
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.dsv
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/packages/generated_ros2_pkg
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig.cmake
+-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig-version.cmake
+-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.xml

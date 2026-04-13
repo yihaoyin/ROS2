@@ -1,0 +1,78 @@
+[0.016s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg -- -j20 -l20
+[0.067s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.192s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.479s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.482s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.491s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.504s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.519s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.563s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.566s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[12.761s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.815s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[12.893s] -- Configuring done
+[12.934s] -- Generating done
+[12.946s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[12.988s] [35m[1mConsolidate compiler generated dependencies of target bt_navigator[0m
+[12.989s] [35m[1mConsolidate compiler generated dependencies of target controller_server[0m
+[12.989s] [35m[1mConsolidate compiler generated dependencies of target behavior_server[0m
+[12.991s] [35m[1mConsolidate compiler generated dependencies of target lifecycle_manager[0m
+[12.991s] [35m[1mConsolidate compiler generated dependencies of target planner_server[0m
+[12.995s] [35m[1mConsolidate compiler generated dependencies of target recoveries_server[0m
+[12.996s] [35m[1mConsolidate compiler generated dependencies of target waypoint_follower[0m
+[13.014s] [  7%] [32mBuilding CXX object CMakeFiles/lifecycle_manager.dir/src/lifecycle_manager.cpp.o[0m
+[13.014s] [ 14%] [32mBuilding CXX object CMakeFiles/bt_navigator.dir/src/bt_navigator.cpp.o[0m
+[13.018s] [ 21%] [32mBuilding CXX object CMakeFiles/recoveries_server.dir/src/recoveries_server.cpp.o[0m
+[13.018s] [ 35%] [32mBuilding CXX object CMakeFiles/controller_server.dir/src/controller_server.cpp.o[0m
+[13.018s] [ 35%] [32mBuilding CXX object CMakeFiles/planner_server.dir/src/planner_server.cpp.o[0m
+[13.019s] [ 42%] [32mBuilding CXX object CMakeFiles/behavior_server.dir/src/behavior_server.cpp.o[0m
+[13.021s] [ 50%] [32mBuilding CXX object CMakeFiles/waypoint_follower.dir/src/waypoint_follower.cpp.o[0m
+[19.566s] [ 71%] [32m[1mLinking CXX executable lifecycle_manager[0m
+[19.566s] [ 71%] [32m[1mLinking CXX executable recoveries_server[0m
+[19.567s] [ 71%] [32m[1mLinking CXX executable behavior_server[0m
+[19.918s] [ 71%] Built target recoveries_server
+[19.922s] [ 71%] Built target lifecycle_manager
+[19.926s] [ 71%] Built target behavior_server
+[20.448s] [ 78%] [32m[1mLinking CXX executable waypoint_follower[0m
+[20.506s] [ 85%] [32m[1mLinking CXX executable bt_navigator[0m
+[20.806s] [ 85%] Built target waypoint_follower
+[20.841s] [ 85%] Built target bt_navigator
+[23.100s] [ 92%] [32m[1mLinking CXX executable planner_server[0m
+[23.129s] [100%] [32m[1mLinking CXX executable controller_server[0m
+[23.718s] [100%] Built target planner_server
+[23.736s] [100%] Built target controller_server
+[23.761s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg -- -j20 -l20
+[23.777s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg
+[23.782s] -- Install configuration: ""
+[23.783s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/behavior_server
+[23.784s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/behavior_server" to ""
+[23.785s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/bt_navigator
+[23.787s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/bt_navigator" to ""
+[23.787s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/controller_server
+[23.789s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/controller_server" to ""
+[23.790s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/lifecycle_manager
+[23.791s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/lifecycle_manager" to ""
+[23.791s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/planner_server
+[23.794s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/planner_server" to ""
+[23.794s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/recoveries_server
+[23.795s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/recoveries_server" to ""
+[23.795s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/waypoint_follower
+[23.797s] -- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/waypoint_follower" to ""
+[23.797s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch
+[23.797s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch/generated_system.launch.py
+[23.797s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/generated_ros2_pkg
+[23.797s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/generated_ros2_pkg
+[23.798s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.sh
+[23.798s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.dsv
+[23.798s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.sh
+[23.798s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.dsv
+[23.798s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.bash
+[23.798s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.sh
+[23.798s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.zsh
+[23.798s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.dsv
+[23.799s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.dsv
+[23.799s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/packages/generated_ros2_pkg
+[23.799s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig.cmake
+[23.799s] -- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig-version.cmake
+[23.800s] -- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.xml
+[23.805s] Invoked command in '/home/yinyihao/ros2/build/generated_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/generated_ros2_pkg

@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/yinyihao/ros2/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+MinimalPublisher	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  MinimalPublisher()$/;"	f	line:12	class:MinimalPublisher	file:
+MinimalPublisher	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^class MinimalPublisher : public rclcpp::Node$/;"	c	line:9	file:
+MinimalPublisher::MinimalPublisher	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  MinimalPublisher()$/;"	f	line:12	class:MinimalPublisher	file:
+MinimalPublisher::count_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  size_t count_;$/;"	m	line:31	class:MinimalPublisher	typeref:typename:size_t	file:
+MinimalPublisher::publisher_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;$/;"	m	line:30	class:MinimalPublisher	typeref:typename:rclcpp::Publisher<std_msgs::msg::String>::SharedPtr	file:
+MinimalPublisher::timer_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  rclcpp::TimerBase::SharedPtr timer_;$/;"	m	line:29	class:MinimalPublisher	typeref:typename:rclcpp::TimerBase::SharedPtr	file:
+MinimalPublisher::timer_callback	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  void timer_callback()$/;"	f	line:21	class:MinimalPublisher	typeref:typename:void	file:
+MinimalSubscriber	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  MinimalSubscriber()$/;"	f	line:7	class:MinimalSubscriber	file:
+MinimalSubscriber	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^class MinimalSubscriber : public rclcpp::Node$/;"	c	line:4	file:
+MinimalSubscriber::MinimalSubscriber	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  MinimalSubscriber()$/;"	f	line:7	class:MinimalSubscriber	file:
+MinimalSubscriber::subscription_	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;$/;"	m	line:21	class:MinimalSubscriber	typeref:typename:rclcpp::Subscription<std_msgs::msg::String>::SharedPtr	file:
+MinimalSubscriber::topic_callback	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const$/;"	f	line:16	class:MinimalSubscriber	typeref:typename:void	file:
+count_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  size_t count_;$/;"	m	line:31	class:MinimalPublisher	typeref:typename:size_t	file:
+main	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^int main(int argc, char * argv[])$/;"	f	line:24	typeref:typename:int
+main	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^int main(int argc, char * argv[])$/;"	f	line:34	typeref:typename:int
+publisher_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;$/;"	m	line:30	class:MinimalPublisher	typeref:typename:rclcpp::Publisher<std_msgs::msg::String>::SharedPtr	file:
+subscription_	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;$/;"	m	line:21	class:MinimalSubscriber	typeref:typename:rclcpp::Subscription<std_msgs::msg::String>::SharedPtr	file:
+timer_	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  rclcpp::TimerBase::SharedPtr timer_;$/;"	m	line:29	class:MinimalPublisher	typeref:typename:rclcpp::TimerBase::SharedPtr	file:
+timer_callback	/home/yinyihao/ros2/src/my_cpp_pkg/src/talker.cpp	/^  void timer_callback()$/;"	f	line:21	class:MinimalPublisher	typeref:typename:void	file:
+topic_callback	/home/yinyihao/ros2/src/my_cpp_pkg/src/listener.cpp	/^  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const$/;"	f	line:16	class:MinimalSubscriber	typeref:typename:void	file:

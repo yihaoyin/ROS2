@@ -1,0 +1,4 @@
+[console_scripts]
+mini_navigator_server = nav2_race_min.mini_navigator_server:main
+mini_race_stress = nav2_race_min.mini_race_stress:main
+

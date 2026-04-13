@@ -1,0 +1,25 @@
+[0.379s] Invoking command in '/home/yinyihao/ros2/src/nav2_race_min': PYTHONPATH=/home/yinyihao/ros2/build/nav2_race_min/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2_race_min build --build-base /home/yinyihao/ros2/build/nav2_race_min/build install --record /home/yinyihao/ros2/build/nav2_race_min/install.log --single-version-externally-managed install_data
+[0.529s] running egg_info
+[0.529s] writing ../../build/nav2_race_min/nav2_race_min.egg-info/PKG-INFO
+[0.530s] writing dependency_links to ../../build/nav2_race_min/nav2_race_min.egg-info/dependency_links.txt
+[0.530s] writing entry points to ../../build/nav2_race_min/nav2_race_min.egg-info/entry_points.txt
+[0.530s] writing requirements to ../../build/nav2_race_min/nav2_race_min.egg-info/requires.txt
+[0.530s] writing top-level names to ../../build/nav2_race_min/nav2_race_min.egg-info/top_level.txt
+[0.532s] reading manifest file '../../build/nav2_race_min/nav2_race_min.egg-info/SOURCES.txt'
+[0.532s] writing manifest file '../../build/nav2_race_min/nav2_race_min.egg-info/SOURCES.txt'
+[0.532s] running build
+[0.534s] running build_py
+[0.534s] copying nav2_race_min/mini_race_stress.py -> /home/yinyihao/ros2/build/nav2_race_min/build/lib/nav2_race_min
+[0.534s] running install
+[0.534s] running install_lib
+[0.535s] copying /home/yinyihao/ros2/build/nav2_race_min/build/lib/nav2_race_min/mini_race_stress.py -> /home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min
+[0.536s] byte-compiling /home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min/mini_race_stress.py to mini_race_stress.cpython-310.pyc
+[0.538s] running install_data
+[0.538s] running install_egg_info
+[0.539s] removing '/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min-0.0.1-py3.10.egg-info' (and everything under it)
+[0.540s] Copying ../../build/nav2_race_min/nav2_race_min.egg-info to /home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min-0.0.1-py3.10.egg-info
+[0.541s] running install_scripts
+[0.555s] Installing mini_navigator_server script to /home/yinyihao/ros2/install/nav2_race_min/lib/nav2_race_min
+[0.555s] Installing mini_race_stress script to /home/yinyihao/ros2/install/nav2_race_min/lib/nav2_race_min
+[0.556s] writing list of installed files to '/home/yinyihao/ros2/build/nav2_race_min/install.log'
+[0.570s] Invoked command in '/home/yinyihao/ros2/src/nav2_race_min' returned '0': PYTHONPATH=/home/yinyihao/ros2/build/nav2_race_min/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2_race_min build --build-base /home/yinyihao/ros2/build/nav2_race_min/build install --record /home/yinyihao/ros2/build/nav2_race_min/install.log --single-version-externally-managed install_data

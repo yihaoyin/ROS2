@@ -1,0 +1,41 @@
+[0.018s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg -- -j20 -l20
+[0.044s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.505s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.507s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.511s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.516s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.524s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.543s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.543s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[13.802s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.835s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[13.912s] -- Configuring done
+[14.017s] -- Generating done
+[14.050s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[14.076s] [35m[1mConsolidate compiler generated dependencies of target goal_pose[0m
+[14.084s] [  2%] [32mBuilding CXX object CMakeFiles/initialpose.dir/src/initialpose.cpp.o[0m
+[14.084s] [  2%] [32mBuilding CXX object CMakeFiles/amcl_pose.dir/src/amcl_pose.cpp.o[0m
+[14.084s] [  3%] [32mBuilding CXX object CMakeFiles/compute_path_to_pose__action_cancel_goal.dir/src/compute_path_to_pose__action_cancel_goal.cpp.o[0m
+[14.086s] [  4%] [32mBuilding CXX object CMakeFiles/global_costmap_costmap.dir/src/global_costmap_costmap.cpp.o[0m
+[14.086s] [  6%] [32mBuilding CXX object CMakeFiles/cmd_vel.dir/src/cmd_vel.cpp.o[0m
+[14.087s] [  7%] [32mBuilding CXX object CMakeFiles/lifecycle_manager_localization_manage_nodes.dir/src/lifecycle_manager_localization_manage_nodes.cpp.o[0m
+[14.087s] [  8%] [32mBuilding CXX object CMakeFiles/follow_path__action_cancel_goal.dir/src/follow_path__action_cancel_goal.cpp.o[0m
+[14.088s] [  9%] [32mBuilding CXX object CMakeFiles/follow_waypoints__action_cancel_goal.dir/src/follow_waypoints__action_cancel_goal.cpp.o[0m
+[14.088s] [ 10%] [32mBuilding CXX object CMakeFiles/compute_path_through_poses__action_cancel_goal.dir/src/compute_path_through_poses__action_cancel_goal.cpp.o[0m
+[14.090s] [ 12%] [32mBuilding CXX object CMakeFiles/lifecycle_manager_navigation_manage_nodes.dir/src/lifecycle_manager_navigation_manage_nodes.cpp.o[0m
+[14.090s] [ 13%] [32mBuilding CXX object CMakeFiles/backup__action_cancel_goal.dir/src/backup__action_cancel_goal.cpp.o[0m
+[14.091s] [ 14%] [32mBuilding CXX object CMakeFiles/local_costmap_costmap.dir/src/local_costmap_costmap.cpp.o[0m
+[14.091s] [ 15%] [32mBuilding CXX object CMakeFiles/map.dir/src/map.cpp.o[0m
+[14.094s] [ 17%] [32mBuilding CXX object CMakeFiles/nav2_behavior_server.dir/src/nav2_behavior_server.cpp.o[0m
+[14.094s] [ 18%] [32mBuilding CXX object CMakeFiles/nav2_amcl.dir/src/nav2_amcl.cpp.o[0m
+[14.094s] [ 19%] [32mBuilding CXX object CMakeFiles/nav2_collision_monitor.dir/src/nav2_collision_monitor.cpp.o[0m
+[14.098s] [ 21%] [32mBuilding CXX object CMakeFiles/nav2_bt_navigator.dir/src/nav2_bt_navigator.cpp.o[0m
+[14.098s] [ 21%] [32mBuilding CXX object CMakeFiles/goal_pose.dir/src/goal_pose.cpp.o[0m
+[14.104s] [ 23%] [32mBuilding CXX object CMakeFiles/nav2_controller.dir/src/nav2_controller.cpp.o[0m
+[14.104s] [ 24%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d.dir/src/nav2_costmap_2d.cpp.o[0m
+[37.912s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[37.912s] compilation terminated.
+[37.912s] gmake[2]: *** [CMakeFiles/follow_path__action_cancel_goal.dir/build.make:76: CMakeFiles/follow_path__action_cancel_goal.dir/src/follow_path__action_cancel_goal.cpp.o] Error 1
+[37.944s] gmake[1]: *** [CMakeFiles/Makefile2:347: CMakeFiles/follow_path__action_cancel_goal.dir/all] Error 2
+[37.944s] gmake[1]: *** Waiting for unfinished jobs....

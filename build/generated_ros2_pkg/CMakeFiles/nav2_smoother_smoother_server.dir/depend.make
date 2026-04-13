@@ -1,0 +1,2 @@
+# Empty dependencies file for nav2_smoother_smoother_server.
+# This may be replaced when dependencies are built.

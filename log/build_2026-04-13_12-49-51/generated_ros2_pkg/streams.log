@@ -1,0 +1,44 @@
+[0.009s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg -- -j20 -l20
+[0.023s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.100s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.375s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.376s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.380s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.416s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.417s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[21.438s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[21.495s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[21.629s] -- Configuring done
+[21.673s] -- Generating done
+[21.687s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[21.721s] [35m[1mConsolidate compiler generated dependencies of target bt_navigator[0m
+[21.723s] [35m[1mConsolidate compiler generated dependencies of target controller_server[0m
+[21.726s] [35m[1mConsolidate compiler generated dependencies of target planner_server[0m
+[21.726s] [35m[1mConsolidate compiler generated dependencies of target goal_pose[0m
+[21.727s] [35m[1mConsolidate compiler generated dependencies of target lifecycle_manager[0m
+[21.727s] [35m[1mConsolidate compiler generated dependencies of target behavior_server[0m
+[21.729s] [35m[1mConsolidate compiler generated dependencies of target map_server[0m
+[21.729s] [35m[1mConsolidate compiler generated dependencies of target waypoint_follower[0m
+[21.730s] [35m[1mConsolidate compiler generated dependencies of target tf[0m
+[21.731s] [35m[1mConsolidate compiler generated dependencies of target amcl[0m
+[21.737s] [  3%] [32mBuilding CXX object CMakeFiles/clicked_point.dir/src/clicked_point.cpp.o[0m
+[21.738s] [  6%] [32mBuilding CXX object CMakeFiles/map.dir/src/map.cpp.o[0m
+[21.743s] [ 13%] [32mBuilding CXX object CMakeFiles/scan.dir/src/scan.cpp.o[0m
+[21.743s] [ 13%] [32mBuilding CXX object CMakeFiles/odom.dir/src/odom.cpp.o[0m
+[21.744s] [ 16%] [32mBuilding CXX object CMakeFiles/initialpose.dir/src/initialpose.cpp.o[0m
+[21.751s] [ 20%] [32mBuilding CXX object CMakeFiles/bt_navigator.dir/src/bt_navigator.cpp.o[0m
+[21.756s] [ 26%] [32mBuilding CXX object CMakeFiles/controller_server.dir/src/controller_server.cpp.o[0m
+[21.756s] [ 26%] [32mBuilding CXX object CMakeFiles/tf.dir/src/tf.cpp.o[0m
+[21.757s] [ 30%] [32mBuilding CXX object CMakeFiles/lifecycle_manager.dir/src/lifecycle_manager.cpp.o[0m
+[21.757s] [ 33%] [32mBuilding CXX object CMakeFiles/planner_server.dir/src/planner_server.cpp.o[0m
+[21.757s] [ 36%] [32mBuilding CXX object CMakeFiles/goal_pose.dir/src/goal_pose.cpp.o[0m
+[21.758s] [ 40%] [32mBuilding CXX object CMakeFiles/behavior_server.dir/src/behavior_server.cpp.o[0m
+[21.759s] [ 43%] [32mBuilding CXX object CMakeFiles/amcl.dir/src/amcl.cpp.o[0m
+[21.760s] [ 46%] [32mBuilding CXX object CMakeFiles/waypoint_follower.dir/src/waypoint_follower.cpp.o[0m
+[21.761s] [ 50%] [32mBuilding CXX object CMakeFiles/map_server.dir/src/map_server.cpp.o[0m
+[28.385s] [ 56%] [32m[1mLinking CXX executable lifecycle_manager[0m
+[28.386s] [ 56%] [32m[1mLinking CXX executable waypoint_follower[0m
+[28.884s] [ 56%] Built target lifecycle_manager
+[28.898s] [ 56%] Built target waypoint_follower

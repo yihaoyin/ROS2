@@ -1,0 +1,62 @@
+[0.029s] Invoking command in '/home/yinyihao/ros2/build/nav2_race_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/nav2_race_cpp -- -j20 -l20
+[0.203s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.325s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.834s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.837s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.845s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.858s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.870s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.908s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.911s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[18.339s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[18.454s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[18.475s] -- Found rclcpp_action: 16.0.16 (/opt/ros/humble/share/rclcpp_action/cmake)
+[18.509s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[18.608s] -- Configuring done
+[18.634s] -- Generating done
+[18.644s] -- Build files have been written to: /home/yinyihao/ros2/build/nav2_race_cpp
+[18.668s] [35m[1mConsolidate compiler generated dependencies of target lifecycle_manager_navigation_mini[0m
+[18.668s] [35m[1mConsolidate compiler generated dependencies of target planner_server_mini[0m
+[18.668s] [35m[1mConsolidate compiler generated dependencies of target controller_server_mini[0m
+[18.668s] [35m[1mConsolidate compiler generated dependencies of target bt_navigator_mini[0m
+[18.701s] [ 12%] [32mBuilding CXX object CMakeFiles/lifecycle_manager_navigation_mini.dir/src/lifecycle_manager_navigation_mini.cpp.o[0m
+[18.702s] [ 50%] [32mBuilding CXX object CMakeFiles/planner_server_mini.dir/src/planner_server_mini.cpp.o[0m
+[18.702s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_navigator_mini.dir/src/bt_navigator_mini.cpp.o[0m
+[18.702s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_server_mini.dir/src/controller_server_mini.cpp.o[0m
+[23.240s] [ 62%] [32m[1mLinking CXX executable planner_server_mini[0m
+[23.253s] [ 75%] [32m[1mLinking CXX executable lifecycle_manager_navigation_mini[0m
+[23.625s] [ 75%] Built target planner_server_mini
+[23.638s] [ 75%] Built target lifecycle_manager_navigation_mini
+[25.649s] [ 87%] [32m[1mLinking CXX executable controller_server_mini[0m
+[26.162s] [ 87%] Built target controller_server_mini
+[30.174s] [100%] [32m[1mLinking CXX executable bt_navigator_mini[0m
+[31.351s] [100%] Built target bt_navigator_mini
+[31.360s] Invoked command in '/home/yinyihao/ros2/build/nav2_race_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/nav2_race_cpp -- -j20 -l20
+[31.369s] Invoking command in '/home/yinyihao/ros2/build/nav2_race_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/nav2_race_cpp
+[31.379s] -- Install configuration: ""
+[31.380s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/bt_navigator_mini
+[31.395s] -- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/bt_navigator_mini" to ""
+[31.397s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/planner_server_mini
+[31.402s] -- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/planner_server_mini" to ""
+[31.404s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/controller_server_mini
+[31.414s] -- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/controller_server_mini" to ""
+[31.415s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/lifecycle_manager_navigation_mini
+[31.421s] -- Set runtime path of "/home/yinyihao/ros2/install/nav2_race_cpp/lib/nav2_race_cpp/lifecycle_manager_navigation_mini" to ""
+[31.422s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/launch
+[31.423s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/launch/nav2_race_cpp.launch.py
+[31.423s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/package_run_dependencies/nav2_race_cpp
+[31.423s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/parent_prefix_path/nav2_race_cpp
+[31.423s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/ament_prefix_path.sh
+[31.423s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/ament_prefix_path.dsv
+[31.425s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/path.sh
+[31.425s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/environment/path.dsv
+[31.426s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.bash
+[31.426s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.sh
+[31.426s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.zsh
+[31.427s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/local_setup.dsv
+[31.427s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/package.dsv
+[31.428s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/ament_index/resource_index/packages/nav2_race_cpp
+[31.428s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/cmake/nav2_race_cppConfig.cmake
+[31.428s] -- Up-to-date: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/cmake/nav2_race_cppConfig-version.cmake
+[31.428s] -- Installing: /home/yinyihao/ros2/install/nav2_race_cpp/share/nav2_race_cpp/package.xml
+[31.433s] Invoked command in '/home/yinyihao/ros2/build/nav2_race_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --install /home/yinyihao/ros2/build/nav2_race_cpp

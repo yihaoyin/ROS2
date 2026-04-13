@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.000383] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.000663] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.000778] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.000789] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.000798] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.000805] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.000812] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.000819] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.000826] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.000833] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.000840] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000847] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.000854] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.000861] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.000868] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.000875] (-) JobUnselected: {'identifier': 'nav2_behaviors'}
+[0.000882] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.000889] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.000896] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.000903] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.000910] (-) JobUnselected: {'identifier': 'nav2_collision_monitor'}
+[0.000917] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.000924] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.000930] (-) JobUnselected: {'identifier': 'nav2_constrained_smoother'}
+[0.000938] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.000944] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.000951] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.000958] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.000965] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.000972] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.000978] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.000985] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.000992] (-) JobUnselected: {'identifier': 'nav2_gazebo_spawner'}
+[0.001000] (-) JobUnselected: {'identifier': 'nav2_graceful_controller'}
+[0.001007] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.001014] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.001021] (-) JobUnselected: {'identifier': 'nav2_loopback_sim'}
+[0.001028] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.001035] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.001042] (-) JobUnselected: {'identifier': 'nav2_mppi_controller'}
+[0.001049] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.001055] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.001063] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.001070] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.001076] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.001084] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.001107] (-) JobUnselected: {'identifier': 'nav2_recoveries'}
+[0.001131] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.001155] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.001180] (-) JobUnselected: {'identifier': 'nav2_ros_common'}
+[0.001322] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.001363] (-) JobUnselected: {'identifier': 'nav2_route'}
+[0.001375] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.001383] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.001390] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.001397] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.001404] (-) JobUnselected: {'identifier': 'nav2_smoother'}
+[0.001411] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.001418] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.001425] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.001432] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.001439] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.001446] (-) JobUnselected: {'identifier': 'nav2_velocity_smoother'}
+[0.001457] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.001464] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.001471] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.001478] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.001485] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.001492] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.001499] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.001506] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.001513] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.001520] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.001527] (-) JobUnselected: {'identifier': 'opennav_docking'}
+[0.001534] (-) JobUnselected: {'identifier': 'opennav_docking_bt'}
+[0.001541] (-) JobUnselected: {'identifier': 'opennav_docking_core'}
+[0.001547] (-) JobUnselected: {'identifier': 'opennav_following'}
+[0.001554] (-) JobUnselected: {'identifier': 'smac_planner'}
+[0.001564] (nav2_race_min) JobQueued: {'identifier': 'nav2_race_min', 'dependencies': OrderedDict([('nav2_common', '/home/yinyihao/ros2/install/nav2_common'), ('nav2_msgs', '/home/yinyihao/ros2/install/nav2_msgs')])}
+[0.001578] (nav2_race_min) JobStarted: {'identifier': 'nav2_race_min'}
+[0.101029] (-) TimerEvent: {}
+[0.202791] (-) TimerEvent: {}
+[0.304579] (-) TimerEvent: {}
+[0.406367] (-) TimerEvent: {}
+[0.438196] (nav2_race_min) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/nav2_race_min', 'build', '--build-base', '/home/yinyihao/ros2/build/nav2_race_min/build', 'install', '--record', '/home/yinyihao/ros2/build/nav2_race_min/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yinyihao/ros2/src/nav2_race_min', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yinyihao', 'GIT_EDITOR': ':', 'GIT_ASKPASS': '/home/yinyihao/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yinyihao', 'OLDPWD': '/home/yinyihao/ros2', 'TERM_PROGRAM_VERSION': '1.114.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cb7e0d77-0710-4933-866d-6bd45592734a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yinyihao/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yinyihao/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yinyihao', 'NAME': 'ISCAS-yyh', 'WSL_INTEROP': '/run/WSL/58640_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignorespace', 'PATH': '/opt/ros/humble/bin:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/yinyihao/.vscode-server/bin/e7fb5e96c0730b9deb70b33781f98e2f35975036/bin/remote-cli:/home/yinyihao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/d/vscode/Microsoft VS Code:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MinGW/bin:/mnt/d/anaconda:/mnt/d/anaconda/Scripts:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/matlab/runtime/win64:/mnt/d/matlab/bin:/mnt/c/Users/尹义豪/mosek/11.0/tools/platform/win64x86/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/d/anaconda:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Scripts:/mnt/c/Users/yyh20/AppData/Local/Microsoft/WindowsApps:/mnt/d/PyCharm Community Edition 2024.3.1.1/bin:/mnt/d/MinGW/bin:/mnt/d/vscode/Microsoft VS Code/bin:/mnt/c/Users/yyh20/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-fef85a54ea0153c4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/yinyihao/.vscode-server/data/User/workspaceStorage/b758aea3f5b121cbebbd6350b0f43e98/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5f498ac157.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'PWD': '/home/yinyihao/ros2/build/nav2_race_min', 'GIT_MERGE_AUTOEDIT': 'no', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yinyihao/ros2/build/nav2_race_min/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[0.507574] (-) TimerEvent: {}
+[0.565871] (nav2_race_min) StdoutLine: {'line': b'running egg_info\n'}
+[0.566205] (nav2_race_min) StdoutLine: {'line': b'writing ../../build/nav2_race_min/nav2_race_min.egg-info/PKG-INFO\n'}
+[0.566605] (nav2_race_min) StdoutLine: {'line': b'writing dependency_links to ../../build/nav2_race_min/nav2_race_min.egg-info/dependency_links.txt\n'}
+[0.566780] (nav2_race_min) StdoutLine: {'line': b'writing entry points to ../../build/nav2_race_min/nav2_race_min.egg-info/entry_points.txt\n'}
+[0.566968] (nav2_race_min) StdoutLine: {'line': b'writing requirements to ../../build/nav2_race_min/nav2_race_min.egg-info/requires.txt\n'}
+[0.567025] (nav2_race_min) StdoutLine: {'line': b'writing top-level names to ../../build/nav2_race_min/nav2_race_min.egg-info/top_level.txt\n'}
+[0.568225] (nav2_race_min) StdoutLine: {'line': b"reading manifest file '../../build/nav2_race_min/nav2_race_min.egg-info/SOURCES.txt'\n"}
+[0.569066] (nav2_race_min) StdoutLine: {'line': b"writing manifest file '../../build/nav2_race_min/nav2_race_min.egg-info/SOURCES.txt'\n"}
+[0.569273] (nav2_race_min) StdoutLine: {'line': b'running build\n'}
+[0.569354] (nav2_race_min) StdoutLine: {'line': b'running build_py\n'}
+[0.569636] (nav2_race_min) StdoutLine: {'line': b'running install\n'}
+[0.569686] (nav2_race_min) StdoutLine: {'line': b'running install_lib\n'}
+[0.570577] (nav2_race_min) StdoutLine: {'line': b'running install_data\n'}
+[0.570750] (nav2_race_min) StdoutLine: {'line': b'copying launch/race_min.launch.py -> /home/yinyihao/ros2/install/nav2_race_min/share/nav2_race_min/launch\n'}
+[0.571069] (nav2_race_min) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.572275] (nav2_race_min) StdoutLine: {'line': b"removing '/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[0.572574] (nav2_race_min) StdoutLine: {'line': b'Copying ../../build/nav2_race_min/nav2_race_min.egg-info to /home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages/nav2_race_min-0.0.1-py3.10.egg-info\n'}
+[0.573230] (nav2_race_min) StdoutLine: {'line': b'running install_scripts\n'}
+[0.586925] (nav2_race_min) StdoutLine: {'line': b'Installing mini_navigator_server script to /home/yinyihao/ros2/install/nav2_race_min/lib/nav2_race_min\n'}
+[0.587067] (nav2_race_min) StdoutLine: {'line': b'Installing mini_race_stress script to /home/yinyihao/ros2/install/nav2_race_min/lib/nav2_race_min\n'}
+[0.587259] (nav2_race_min) StdoutLine: {'line': b"writing list of installed files to '/home/yinyihao/ros2/build/nav2_race_min/install.log'\n"}
+[0.601728] (nav2_race_min) CommandEnded: {'returncode': 0}
+[0.607779] (-) TimerEvent: {}
+[0.612847] (nav2_race_min) JobEnded: {'identifier': 'nav2_race_min', 'rc': 0}
+[0.613756] (-) EventReactorShutdown: {}

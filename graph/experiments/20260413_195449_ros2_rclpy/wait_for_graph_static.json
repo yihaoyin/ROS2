@@ -1,0 +1,190 @@
+{
+  "nodes": [
+    "/multi_threaded_node",
+    "/rclpy_node",
+    "/service_client_node"
+  ],
+  "wait_edges": [
+    {
+      "from": "/rclpy_node",
+      "to": "/service_client_node",
+      "type": "blocking",
+      "reason": "blocking_in_callback",
+      "evidence": {
+        "source": "callback_wait_graph_projection"
+      }
+    },
+    {
+      "from": "/service_client_node",
+      "to": "/rclpy_node",
+      "type": "blocking",
+      "reason": "service_call",
+      "evidence": {
+        "source": "callback_wait_graph_projection"
+      }
+    }
+  ],
+  "edge_type_counts": {
+    "blocking": 2
+  },
+  "cycle_candidates": [],
+  "deadlock_assessment": {
+    "definite_deadlocks": [],
+    "potential_deadlocks": [
+      {
+        "callbacks": [
+          "/multi_threaded_node:cb_deadlock_risk",
+          "/multi_threaded_node:cb_timer_lock"
+        ],
+        "nodes": [
+          "/multi_threaded_node"
+        ],
+        "hops": [
+          {
+            "from": "/multi_threaded_node:cb_deadlock_risk",
+            "to": "/multi_threaded_node:cb_timer_lock"
+          },
+          {
+            "from": "/multi_threaded_node:cb_timer_lock",
+            "to": "/multi_threaded_node:cb_deadlock_risk"
+          }
+        ],
+        "certainty": "potential",
+        "rule": "callback_cycle_requires_runtime_confirmation"
+      }
+    ],
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 1,
+      "cycle_count": 1,
+      "analysis_basis": "callback_wait_graph_only"
+    },
+    "rules": [
+      "deadlock analysis uses callback_wait_graph only",
+      "node-level wait_edges are projection for visualization only",
+      "definite if a callback cycle exists and all involved nodes are single_threaded",
+      "otherwise potential and requires runtime confirmation"
+    ],
+    "notes": [
+      "llm_semantics_merged=callback_edges:5,executors:3,reverse_edges:0"
+    ]
+  },
+  "assumptions": [
+    "Potential/executor edges are conservative (may include false positives).",
+    "Blocking inference is keyword-based static heuristic, not path-sensitive proof.",
+    "This graph models wait dependencies, not data-flow edges."
+  ],
+  "callback_wait_graph": [
+    {
+      "from": "/multi_threaded_node:cb_deadlock_risk",
+      "to": "/multi_threaded_node:cb_timer_lock",
+      "type": "blocking",
+      "reason": "blocking_in_callback",
+      "source": "llm_callback_wait_edges"
+    },
+    {
+      "from": "/multi_threaded_node:cb_timer_lock",
+      "to": "/multi_threaded_node:cb_deadlock_risk",
+      "type": "blocking",
+      "reason": "blocking_in_callback",
+      "source": "llm_callback_wait_edges"
+    },
+    {
+      "from": "/rclpy_node:cb_sub_param",
+      "to": "/service_client_node:cb_service_call",
+      "type": "blocking",
+      "reason": "blocking_in_callback",
+      "source": "llm_callback_wait_edges"
+    },
+    {
+      "from": "/rclpy_node:cb_timer_param",
+      "to": "/service_client_node:service_server",
+      "type": "blocking",
+      "reason": "service_call",
+      "source": "llm_callbacks",
+      "service": "/introspection_service"
+    },
+    {
+      "from": "/service_client_node:cb_service_call",
+      "to": "/rclpy_node:cb_timer_param",
+      "type": "blocking",
+      "reason": "service_call",
+      "source": "llm_callback_wait_edges",
+      "reasons": [
+        "blocking_in_callback",
+        "service_call"
+      ],
+      "sources": [
+        "llm_callback_wait_edges",
+        "heuristic"
+      ],
+      "service": "/introspection_service"
+    }
+  ],
+  "executor_semantics": [
+    {
+      "node": "/multi_threaded_node",
+      "executor": "multi_threaded",
+      "callback_sources": [
+        "subscription",
+        "timer"
+      ]
+    },
+    {
+      "node": "/rclpy_node",
+      "executor": "single_threaded",
+      "callback_sources": [
+        "timer",
+        "subscription"
+      ]
+    },
+    {
+      "node": "/service_client_node",
+      "executor": "single_threaded",
+      "callback_sources": [
+        "service"
+      ]
+    }
+  ],
+  "deadlock_assessment_legacy": {
+    "definite_deadlocks": [],
+    "potential_deadlocks": [
+      {
+        "callbacks": [
+          "/multi_threaded_node:cb_deadlock_risk",
+          "/multi_threaded_node:cb_timer_lock"
+        ],
+        "nodes": [
+          "/multi_threaded_node"
+        ],
+        "hops": [
+          {
+            "from": "/multi_threaded_node:cb_deadlock_risk",
+            "to": "/multi_threaded_node:cb_timer_lock"
+          },
+          {
+            "from": "/multi_threaded_node:cb_timer_lock",
+            "to": "/multi_threaded_node:cb_deadlock_risk"
+          }
+        ],
+        "certainty": "potential",
+        "rule": "callback_cycle_requires_runtime_confirmation"
+      }
+    ],
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 1,
+      "cycle_count": 1,
+      "analysis_basis": "callback_wait_graph_only"
+    },
+    "rules": [
+      "deadlock analysis uses callback_wait_graph only",
+      "node-level wait_edges are projection for visualization only",
+      "definite if a callback cycle exists and all involved nodes are single_threaded",
+      "otherwise potential and requires runtime confirmation"
+    ],
+    "notes": [
+      "llm_semantics_merged=callback_edges:5,executors:3,reverse_edges:0"
+    ]
+  }
+}

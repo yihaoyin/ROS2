@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "repo_url": "https://github.com/ros2/rclcpp",
+    "ref": "rolling",
+    "project_name": "rclcpp",
+    "language": [
+      "cpp"
+    ]
+  },
+  "graph_seed": {
+    "nodes": [
+      "/add_two_ints_server",
+      "/listener",
+      "/service_user",
+      "/talker"
+    ],
+    "topics": [
+      "/chatter"
+    ],
+    "edges": [
+      {
+        "from": "/talker",
+        "to": "/chatter",
+        "kind": "pub"
+      }
+    ],
+    "node_semantics": [
+      {
+        "name": "/talker",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer",
+            "source": "timer",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": []
+      },
+      {
+        "name": "/listener",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_sub",
+            "source": "subscription",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": []
+      },
+      {
+        "name": "/service_user",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [
+          "/add_two_ints"
+        ],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_sub",
+            "source": "subscription",
+            "waits_for_callbacks": [
+              "/add_two_ints_server:cb_service"
+            ],
+            "waits_for_services": [
+              "/add_two_ints"
+            ],
+            "blocking_calls": [
+              "wait_for_service",
+              "future_get"
+            ]
+          }
+        ],
+        "callback_wait_edges": [
+          {
+            "from": "/service_user:cb_sub",
+            "to": "/add_two_ints_server:cb_service",
+            "reason": "blocking_in_callback waiting for service"
+          }
+        ]
+      },
+      {
+        "name": "/add_two_ints_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/add_two_ints"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_service",
+            "source": "service",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+[0.012s] Invoking command in '/home/yinyihao/ros2/build/generated_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble /usr/bin/cmake --build /home/yinyihao/ros2/build/generated_ros2_pkg -- -j20 -l20
+[0.050s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.150s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.545s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.548s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.560s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.571s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.583s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.618s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.621s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[24.009s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[24.108s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[24.169s] -- Configuring done
+[24.214s] -- Generating done
+[24.238s] -- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg
+[24.281s] [35m[1mConsolidate compiler generated dependencies of target parameter_event_subscriber[0m
+[24.281s] [35m[1mConsolidate compiler generated dependencies of target parameter_event_publisher[0m
+[24.283s] [35m[1mConsolidate compiler generated dependencies of target rclcpp_lifecycle_node[0m
+[24.286s] [35m[1mConsolidate compiler generated dependencies of target callback_group_executor[0m
+[24.287s] [35m[1mConsolidate compiler generated dependencies of target subscription_callback_executor[0m
+[24.290s] [35m[1mConsolidate compiler generated dependencies of target timer_callback_executor[0m
+[24.290s] [  7%] [32mBuilding CXX object CMakeFiles/graph_publisher.dir/src/graph_publisher.cpp.o[0m
+[24.290s] [  7%] [32mBuilding CXX object CMakeFiles/graph_listener.dir/src/graph_listener.cpp.o[0m
+[24.292s] [ 10%] [32mBuilding CXX object CMakeFiles/client_callback_executor.dir/src/client_callback_executor.cpp.o[0m
+[24.292s] [ 14%] [32mBuilding CXX object CMakeFiles/lifecycle_state_machine.dir/src/lifecycle_state_machine.cpp.o[0m
+[24.295s] [ 17%] [32mBuilding CXX object CMakeFiles/rate_controller.dir/src/rate_controller.cpp.o[0m
+[24.297s] [ 21%] [32mBuilding CXX object CMakeFiles/service_callback_executor.dir/src/service_callback_executor.cpp.o[0m
+[24.298s] [ 25%] [32mBuilding CXX object CMakeFiles/wall_rate_controller.dir/src/wall_rate_controller.cpp.o[0m
+[24.298s] [ 28%] [32mBuilding CXX object CMakeFiles/waitable_callback_executor.dir/src/waitable_callback_executor.cpp.o[0m
+[24.326s] [ 39%] [32mBuilding CXX object CMakeFiles/timer_callback_executor.dir/src/timer_callback_executor.cpp.o[0m
+[24.326s] [ 42%] [32mBuilding CXX object CMakeFiles/subscription_callback_executor.dir/src/subscription_callback_executor.cpp.o[0m
+[24.326s] [ 39%] [32mBuilding CXX object CMakeFiles/rclcpp_lifecycle_node.dir/src/rclcpp_lifecycle_node.cpp.o[0m
+[24.326s] [ 42%] [32mBuilding CXX object CMakeFiles/parameter_event_subscriber.dir/src/parameter_event_subscriber.cpp.o[0m
+[24.326s] [ 46%] [32mBuilding CXX object CMakeFiles/parameter_event_publisher.dir/src/parameter_event_publisher.cpp.o[0m
+[24.329s] [ 50%] [32mBuilding CXX object CMakeFiles/callback_group_executor.dir/src/callback_group_executor.cpp.o[0m
+[32.413s] [ 53%] [32m[1mLinking CXX executable parameter_event_subscriber[0m
+[32.424s] [ 57%] [32m[1mLinking CXX executable subscription_callback_executor[0m
+[32.433s] [ 60%] [32m[1mLinking CXX executable timer_callback_executor[0m
+[32.438s] [ 64%] [32m[1mLinking CXX executable client_callback_executor[0m
+[32.515s] [ 67%] [32m[1mLinking CXX executable service_callback_executor[0m
+[32.519s] [ 71%] [32m[1mLinking CXX executable waitable_callback_executor[0m
+[32.699s] [ 75%] [32m[1mLinking CXX executable parameter_event_publisher[0m
+[32.797s] [ 75%] Built target parameter_event_subscriber
+[32.798s] [ 75%] Built target client_callback_executor
+[32.798s] [ 75%] Built target timer_callback_executor
+[32.803s] [ 75%] Built target service_callback_executor
+[32.803s] [ 75%] Built target subscription_callback_executor
+[32.821s] [ 75%] Built target waitable_callback_executor
+[32.987s] [ 75%] Built target parameter_event_publisher
+[34.353s] [ 78%] [32m[1mLinking CXX executable rate_controller[0m
+[34.370s] [ 82%] [32m[1mLinking CXX executable graph_publisher[0m
+[34.508s] [ 85%] [32m[1mLinking CXX executable wall_rate_controller[0m
+[34.720s] [ 85%] Built target rate_controller
+[34.761s] [ 85%] Built target graph_publisher
+[34.865s] [ 85%] Built target wall_rate_controller

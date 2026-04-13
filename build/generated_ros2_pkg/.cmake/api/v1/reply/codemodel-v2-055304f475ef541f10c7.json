@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5f8de12b308a4814ac66.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "generated_ros2_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "generated_ros2_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generated_ros2_pkg_uninstall-69e2eb12b2ce3e5e91d9.json",
+					"name" : "generated_ros2_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minimal_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minimal_publisher-1a8dcffd43363a1cf041.json",
+					"name" : "minimal_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minimal_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minimal_subscriber-2241a6151aa774627edf.json",
+					"name" : "minimal_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "service_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-service_client-991cf7413aefdd469206.json",
+					"name" : "service_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "service_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-service_server-a205cb60398e5e894945.json",
+					"name" : "service_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "timer_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-timer_node-02a212da39307fb3e655.json",
+					"name" : "timer_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-09e82d875df7621b85f2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yinyihao/ros2/build/generated_ros2_pkg",
+		"source" : "/home/yinyihao/ros2/src/generated_ros2_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

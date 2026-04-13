@@ -1,0 +1,517 @@
+[0.000000] (-) TimerEvent: {}
+[0.000305] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000621] (-) JobUnselected: {'identifier': 'nav2_race_cpp'}
+[0.000732] (-) JobUnselected: {'identifier': 'nav2_race_min'}
+[0.000891] (generated_ros2_pkg) JobQueued: {'identifier': 'generated_ros2_pkg', 'dependencies': OrderedDict()}
+[0.000934] (generated_ros2_pkg) JobStarted: {'identifier': 'generated_ros2_pkg'}
+[0.005648] (generated_ros2_pkg) JobProgress: {'identifier': 'generated_ros2_pkg', 'progress': 'cmake'}
+[0.006586] (generated_ros2_pkg) JobProgress: {'identifier': 'generated_ros2_pkg', 'progress': 'build'}
+[0.007460] (generated_ros2_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yinyihao/ros2/build/generated_ros2_pkg'], 'cwd': '/home/yinyihao/ros2/build/generated_ros2_pkg', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_BUILD_PARALLEL_LEVEL', '1'), ('USER', 'yinyihao'), ('GIT_EDITOR', ':'), ('GIT_ASKPASS', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yinyihao'), ('OLDPWD', '/home/yinyihao/ros2'), ('TERM_PROGRAM_VERSION', '1.115.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b5c57277-0b9b-4193-be87-8a382b5640bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('MAKEFLAGS', '-j1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yinyihao/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yinyihao'), ('NAME', 'ISCAS-yyh'), ('WSL_INTEROP', '/run/WSL/1093966_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LLM_API_KEY', 'ms-f643b13e-e6d6-4e41-89f7-f3576c1902af'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/yinyihao/.local/bin:/opt/ros/humble/bin:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/remote-cli:/home/yinyihao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/d/vscode/Microsoft VS Code:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MinGW/bin:/mnt/d/anaconda:/mnt/d/anaconda/Scripts:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/matlab/runtime/win64:/mnt/d/matlab/bin:/mnt/c/Users/尹义豪/mosek/11.0/tools/platform/win64x86/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/d/anaconda:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Scripts:/mnt/c/Users/yyh20/AppData/Local/Microsoft/WindowsApps:/mnt/d/PyCharm Community Edition 2024.3.1.1/bin:/mnt/d/MinGW/bin:/mnt/d/vscode/Microsoft VS Code/bin:/mnt/c/Users/yyh20/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-fef85a54ea0153c4.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/yinyihao/.vscode-server/data/User/workspaceStorage/b758aea3f5b121cbebbd6350b0f43e98/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5f498ac157.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/yinyihao/ros2/install/nav2_race_min:/home/yinyihao/ros2/install/nav2_race_cpp:/home/yinyihao/ros2/install/my_cpp_pkg:/home/yinyihao/ros2/install/generated_ros2_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/yinyihao/ros2/build/generated_ros2_pkg'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/yinyihao/ros2/install/nav2_race_cpp:/home/yinyihao/ros2/install/my_cpp_pkg:/home/yinyihao/ros2/install/generated_ros2_pkg:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.027868] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099648] (-) TimerEvent: {}
+[0.124821] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199784] (-) TimerEvent: {}
+[0.300299] (-) TimerEvent: {}
+[0.401136] (-) TimerEvent: {}
+[0.457570] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.458914] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.468657] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.483224] (generated_ros2_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.489921] (generated_ros2_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.501252] (-) TimerEvent: {}
+[0.507877] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.509074] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601395] (-) TimerEvent: {}
+[0.701654] (-) TimerEvent: {}
+[0.801920] (-) TimerEvent: {}
+[0.902199] (-) TimerEvent: {}
+[1.002483] (-) TimerEvent: {}
+[1.102763] (-) TimerEvent: {}
+[1.203040] (-) TimerEvent: {}
+[1.303333] (-) TimerEvent: {}
+[1.403966] (-) TimerEvent: {}
+[1.504246] (-) TimerEvent: {}
+[1.604567] (-) TimerEvent: {}
+[1.704833] (-) TimerEvent: {}
+[1.805080] (-) TimerEvent: {}
+[1.905325] (-) TimerEvent: {}
+[2.005565] (-) TimerEvent: {}
+[2.105925] (-) TimerEvent: {}
+[2.206544] (-) TimerEvent: {}
+[2.306884] (-) TimerEvent: {}
+[2.407369] (-) TimerEvent: {}
+[2.507610] (-) TimerEvent: {}
+[2.607876] (-) TimerEvent: {}
+[2.708150] (-) TimerEvent: {}
+[2.808596] (-) TimerEvent: {}
+[2.909015] (-) TimerEvent: {}
+[3.009389] (-) TimerEvent: {}
+[3.109812] (-) TimerEvent: {}
+[3.210195] (-) TimerEvent: {}
+[3.310841] (-) TimerEvent: {}
+[3.411398] (-) TimerEvent: {}
+[3.512320] (-) TimerEvent: {}
+[3.612944] (-) TimerEvent: {}
+[3.713392] (-) TimerEvent: {}
+[3.814048] (-) TimerEvent: {}
+[3.914630] (-) TimerEvent: {}
+[4.015686] (-) TimerEvent: {}
+[4.116570] (-) TimerEvent: {}
+[4.217067] (-) TimerEvent: {}
+[4.317444] (-) TimerEvent: {}
+[4.418213] (-) TimerEvent: {}
+[4.519151] (-) TimerEvent: {}
+[4.620110] (-) TimerEvent: {}
+[4.720877] (-) TimerEvent: {}
+[4.821322] (-) TimerEvent: {}
+[4.921760] (-) TimerEvent: {}
+[5.022270] (-) TimerEvent: {}
+[5.122972] (-) TimerEvent: {}
+[5.223947] (-) TimerEvent: {}
+[5.324507] (-) TimerEvent: {}
+[5.425430] (-) TimerEvent: {}
+[5.526736] (-) TimerEvent: {}
+[5.627001] (-) TimerEvent: {}
+[5.727521] (-) TimerEvent: {}
+[5.828370] (-) TimerEvent: {}
+[5.929142] (-) TimerEvent: {}
+[6.029485] (-) TimerEvent: {}
+[6.130166] (-) TimerEvent: {}
+[6.230940] (-) TimerEvent: {}
+[6.331498] (-) TimerEvent: {}
+[6.431828] (-) TimerEvent: {}
+[6.532611] (-) TimerEvent: {}
+[6.633153] (-) TimerEvent: {}
+[6.733837] (-) TimerEvent: {}
+[6.834241] (-) TimerEvent: {}
+[6.934773] (-) TimerEvent: {}
+[7.035269] (-) TimerEvent: {}
+[7.135780] (-) TimerEvent: {}
+[7.236445] (-) TimerEvent: {}
+[7.337233] (-) TimerEvent: {}
+[7.438150] (-) TimerEvent: {}
+[7.538802] (-) TimerEvent: {}
+[7.639582] (-) TimerEvent: {}
+[7.740067] (-) TimerEvent: {}
+[7.840742] (-) TimerEvent: {}
+[7.941298] (-) TimerEvent: {}
+[8.042083] (-) TimerEvent: {}
+[8.142783] (-) TimerEvent: {}
+[8.243135] (-) TimerEvent: {}
+[8.343603] (-) TimerEvent: {}
+[8.444153] (-) TimerEvent: {}
+[8.545182] (-) TimerEvent: {}
+[8.645730] (-) TimerEvent: {}
+[8.746246] (-) TimerEvent: {}
+[8.846976] (-) TimerEvent: {}
+[8.948018] (-) TimerEvent: {}
+[9.048888] (-) TimerEvent: {}
+[9.149614] (-) TimerEvent: {}
+[9.250308] (-) TimerEvent: {}
+[9.351097] (-) TimerEvent: {}
+[9.451591] (-) TimerEvent: {}
+[9.552186] (-) TimerEvent: {}
+[9.652851] (-) TimerEvent: {}
+[9.753680] (-) TimerEvent: {}
+[9.854467] (-) TimerEvent: {}
+[9.955131] (-) TimerEvent: {}
+[10.055367] (-) TimerEvent: {}
+[10.155658] (-) TimerEvent: {}
+[10.255940] (-) TimerEvent: {}
+[10.356264] (-) TimerEvent: {}
+[10.456844] (-) TimerEvent: {}
+[10.557749] (-) TimerEvent: {}
+[10.658445] (-) TimerEvent: {}
+[10.758938] (-) TimerEvent: {}
+[10.859461] (-) TimerEvent: {}
+[10.960171] (-) TimerEvent: {}
+[11.060654] (-) TimerEvent: {}
+[11.160973] (-) TimerEvent: {}
+[11.261603] (-) TimerEvent: {}
+[11.362490] (-) TimerEvent: {}
+[11.463387] (-) TimerEvent: {}
+[11.564568] (-) TimerEvent: {}
+[11.665278] (-) TimerEvent: {}
+[11.765636] (-) TimerEvent: {}
+[11.866169] (-) TimerEvent: {}
+[11.966542] (-) TimerEvent: {}
+[12.067040] (-) TimerEvent: {}
+[12.167478] (-) TimerEvent: {}
+[12.267916] (-) TimerEvent: {}
+[12.368327] (-) TimerEvent: {}
+[12.468924] (-) TimerEvent: {}
+[12.569491] (-) TimerEvent: {}
+[12.670363] (-) TimerEvent: {}
+[12.771389] (-) TimerEvent: {}
+[12.872097] (-) TimerEvent: {}
+[12.973028] (-) TimerEvent: {}
+[13.073940] (-) TimerEvent: {}
+[13.174642] (-) TimerEvent: {}
+[13.275081] (-) TimerEvent: {}
+[13.375659] (-) TimerEvent: {}
+[13.476212] (-) TimerEvent: {}
+[13.576848] (-) TimerEvent: {}
+[13.677607] (-) TimerEvent: {}
+[13.778556] (-) TimerEvent: {}
+[13.879326] (-) TimerEvent: {}
+[13.980000] (-) TimerEvent: {}
+[14.080857] (-) TimerEvent: {}
+[14.181849] (-) TimerEvent: {}
+[14.282484] (-) TimerEvent: {}
+[14.382805] (-) TimerEvent: {}
+[14.483538] (-) TimerEvent: {}
+[14.584471] (-) TimerEvent: {}
+[14.684935] (-) TimerEvent: {}
+[14.785794] (-) TimerEvent: {}
+[14.886966] (-) TimerEvent: {}
+[14.987484] (-) TimerEvent: {}
+[15.088039] (-) TimerEvent: {}
+[15.188504] (-) TimerEvent: {}
+[15.289129] (-) TimerEvent: {}
+[15.389454] (-) TimerEvent: {}
+[15.490002] (-) TimerEvent: {}
+[15.590826] (-) TimerEvent: {}
+[15.691423] (-) TimerEvent: {}
+[15.792165] (-) TimerEvent: {}
+[15.893046] (-) TimerEvent: {}
+[15.993714] (-) TimerEvent: {}
+[16.094526] (-) TimerEvent: {}
+[16.195333] (-) TimerEvent: {}
+[16.296295] (-) TimerEvent: {}
+[16.396954] (-) TimerEvent: {}
+[16.497899] (-) TimerEvent: {}
+[16.598359] (-) TimerEvent: {}
+[16.698892] (-) TimerEvent: {}
+[16.799557] (-) TimerEvent: {}
+[16.899978] (-) TimerEvent: {}
+[17.000597] (-) TimerEvent: {}
+[17.101397] (-) TimerEvent: {}
+[17.202208] (-) TimerEvent: {}
+[17.302993] (-) TimerEvent: {}
+[17.403593] (-) TimerEvent: {}
+[17.503957] (-) TimerEvent: {}
+[17.604389] (-) TimerEvent: {}
+[17.704874] (-) TimerEvent: {}
+[17.805653] (-) TimerEvent: {}
+[17.906327] (-) TimerEvent: {}
+[18.007002] (-) TimerEvent: {}
+[18.107687] (-) TimerEvent: {}
+[18.208393] (-) TimerEvent: {}
+[18.309306] (-) TimerEvent: {}
+[18.410944] (-) TimerEvent: {}
+[18.511833] (-) TimerEvent: {}
+[18.612629] (-) TimerEvent: {}
+[18.713597] (-) TimerEvent: {}
+[18.814341] (-) TimerEvent: {}
+[18.915140] (-) TimerEvent: {}
+[19.015746] (-) TimerEvent: {}
+[19.116392] (-) TimerEvent: {}
+[19.216880] (-) TimerEvent: {}
+[19.317707] (-) TimerEvent: {}
+[19.418331] (-) TimerEvent: {}
+[19.518984] (-) TimerEvent: {}
+[19.619373] (-) TimerEvent: {}
+[19.693681] (generated_ros2_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.719560] (-) TimerEvent: {}
+[19.727168] (generated_ros2_pkg) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[19.806374] (generated_ros2_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.819877] (-) TimerEvent: {}
+[19.855885] (generated_ros2_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[19.877210] (generated_ros2_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/yinyihao/ros2/build/generated_ros2_pkg\n'}
+[19.896165] (generated_ros2_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target client_node\x1b[0m\n'}
+[19.906372] (generated_ros2_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/client_node.dir/src/client_node.cpp.o\x1b[0m\n'}
+[19.920138] (-) TimerEvent: {}
+[20.020537] (-) TimerEvent: {}
+[20.120995] (-) TimerEvent: {}
+[20.221406] (-) TimerEvent: {}
+[20.321736] (-) TimerEvent: {}
+[20.422166] (-) TimerEvent: {}
+[20.522481] (-) TimerEvent: {}
+[20.622894] (-) TimerEvent: {}
+[20.723146] (-) TimerEvent: {}
+[20.823457] (-) TimerEvent: {}
+[20.923714] (-) TimerEvent: {}
+[21.024003] (-) TimerEvent: {}
+[21.124398] (-) TimerEvent: {}
+[21.224689] (-) TimerEvent: {}
+[21.325003] (-) TimerEvent: {}
+[21.425280] (-) TimerEvent: {}
+[21.525619] (-) TimerEvent: {}
+[21.626058] (-) TimerEvent: {}
+[21.726525] (-) TimerEvent: {}
+[21.827154] (-) TimerEvent: {}
+[21.927584] (-) TimerEvent: {}
+[22.027837] (-) TimerEvent: {}
+[22.128208] (-) TimerEvent: {}
+[22.228498] (-) TimerEvent: {}
+[22.328788] (-) TimerEvent: {}
+[22.429139] (-) TimerEvent: {}
+[22.529493] (-) TimerEvent: {}
+[22.629809] (-) TimerEvent: {}
+[22.730247] (-) TimerEvent: {}
+[22.830828] (-) TimerEvent: {}
+[22.931219] (-) TimerEvent: {}
+[23.031494] (-) TimerEvent: {}
+[23.132278] (-) TimerEvent: {}
+[23.233426] (-) TimerEvent: {}
+[23.333704] (-) TimerEvent: {}
+[23.434077] (-) TimerEvent: {}
+[23.534528] (-) TimerEvent: {}
+[23.634810] (-) TimerEvent: {}
+[23.735096] (-) TimerEvent: {}
+[23.835552] (-) TimerEvent: {}
+[23.872319] (generated_ros2_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX executable client_node\x1b[0m\n'}
+[23.935707] (-) TimerEvent: {}
+[24.036410] (-) TimerEvent: {}
+[24.137177] (-) TimerEvent: {}
+[24.237884] (-) TimerEvent: {}
+[24.339479] (-) TimerEvent: {}
+[24.416501] (generated_ros2_pkg) StdoutLine: {'line': b'[ 20%] Built target client_node\n'}
+[24.426595] (generated_ros2_pkg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o\x1b[0m\n'}
+[24.439661] (-) TimerEvent: {}
+[24.540303] (-) TimerEvent: {}
+[24.641519] (-) TimerEvent: {}
+[24.741826] (-) TimerEvent: {}
+[24.842197] (-) TimerEvent: {}
+[24.942470] (-) TimerEvent: {}
+[25.042801] (-) TimerEvent: {}
+[25.143377] (-) TimerEvent: {}
+[25.243678] (-) TimerEvent: {}
+[25.343953] (-) TimerEvent: {}
+[25.444321] (-) TimerEvent: {}
+[25.544881] (-) TimerEvent: {}
+[25.645292] (-) TimerEvent: {}
+[25.745641] (-) TimerEvent: {}
+[25.845865] (-) TimerEvent: {}
+[25.946123] (-) TimerEvent: {}
+[26.046412] (-) TimerEvent: {}
+[26.146717] (-) TimerEvent: {}
+[26.247021] (-) TimerEvent: {}
+[26.347587] (-) TimerEvent: {}
+[26.447904] (-) TimerEvent: {}
+[26.548179] (-) TimerEvent: {}
+[26.648456] (-) TimerEvent: {}
+[26.748874] (-) TimerEvent: {}
+[26.849278] (-) TimerEvent: {}
+[26.949630] (-) TimerEvent: {}
+[27.049887] (-) TimerEvent: {}
+[27.150285] (-) TimerEvent: {}
+[27.250745] (-) TimerEvent: {}
+[27.351026] (-) TimerEvent: {}
+[27.451296] (-) TimerEvent: {}
+[27.551533] (-) TimerEvent: {}
+[27.651782] (-) TimerEvent: {}
+[27.671491] (generated_ros2_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable minimal_publisher\x1b[0m\n'}
+[27.751927] (-) TimerEvent: {}
+[27.852256] (-) TimerEvent: {}
+[27.952560] (-) TimerEvent: {}
+[28.047219] (generated_ros2_pkg) StdoutLine: {'line': b'[ 40%] Built target minimal_publisher\n'}
+[28.052646] (-) TimerEvent: {}
+[28.057441] (generated_ros2_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o\x1b[0m\n'}
+[28.152746] (-) TimerEvent: {}
+[28.253060] (-) TimerEvent: {}
+[28.353994] (-) TimerEvent: {}
+[28.455144] (-) TimerEvent: {}
+[28.555487] (-) TimerEvent: {}
+[28.656307] (-) TimerEvent: {}
+[28.756645] (-) TimerEvent: {}
+[28.856977] (-) TimerEvent: {}
+[28.957240] (-) TimerEvent: {}
+[29.057523] (-) TimerEvent: {}
+[29.158156] (-) TimerEvent: {}
+[29.259640] (-) TimerEvent: {}
+[29.359901] (-) TimerEvent: {}
+[29.460210] (-) TimerEvent: {}
+[29.560421] (-) TimerEvent: {}
+[29.660746] (-) TimerEvent: {}
+[29.761049] (-) TimerEvent: {}
+[29.861387] (-) TimerEvent: {}
+[29.961887] (-) TimerEvent: {}
+[30.062280] (-) TimerEvent: {}
+[30.162748] (-) TimerEvent: {}
+[30.263180] (-) TimerEvent: {}
+[30.363509] (-) TimerEvent: {}
+[30.463758] (-) TimerEvent: {}
+[30.564006] (-) TimerEvent: {}
+[30.664256] (-) TimerEvent: {}
+[30.764505] (-) TimerEvent: {}
+[30.864760] (-) TimerEvent: {}
+[30.965002] (-) TimerEvent: {}
+[31.065276] (-) TimerEvent: {}
+[31.165542] (-) TimerEvent: {}
+[31.265809] (-) TimerEvent: {}
+[31.366097] (-) TimerEvent: {}
+[31.466402] (-) TimerEvent: {}
+[31.566820] (-) TimerEvent: {}
+[31.667094] (-) TimerEvent: {}
+[31.767346] (-) TimerEvent: {}
+[31.867606] (-) TimerEvent: {}
+[31.967838] (-) TimerEvent: {}
+[32.068087] (-) TimerEvent: {}
+[32.168328] (-) TimerEvent: {}
+[32.268591] (-) TimerEvent: {}
+[32.368955] (-) TimerEvent: {}
+[32.469647] (-) TimerEvent: {}
+[32.570131] (-) TimerEvent: {}
+[32.670367] (-) TimerEvent: {}
+[32.770638] (-) TimerEvent: {}
+[32.870957] (-) TimerEvent: {}
+[32.971263] (-) TimerEvent: {}
+[33.071751] (-) TimerEvent: {}
+[33.172057] (-) TimerEvent: {}
+[33.272315] (-) TimerEvent: {}
+[33.372560] (-) TimerEvent: {}
+[33.472846] (-) TimerEvent: {}
+[33.573085] (-) TimerEvent: {}
+[33.673440] (-) TimerEvent: {}
+[33.773688] (-) TimerEvent: {}
+[33.833432] (generated_ros2_pkg) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable minimal_subscriber\x1b[0m\n'}
+[33.873871] (-) TimerEvent: {}
+[33.974339] (-) TimerEvent: {}
+[34.075074] (-) TimerEvent: {}
+[34.175758] (-) TimerEvent: {}
+[34.276233] (-) TimerEvent: {}
+[34.376481] (-) TimerEvent: {}
+[34.451663] (generated_ros2_pkg) StdoutLine: {'line': b'[ 60%] Built target minimal_subscriber\n'}
+[34.458239] (generated_ros2_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target service_server\x1b[0m\n'}
+[34.471626] (generated_ros2_pkg) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/service_server.dir/src/service_server.cpp.o\x1b[0m\n'}
+[34.476556] (-) TimerEvent: {}
+[34.576876] (-) TimerEvent: {}
+[34.677190] (-) TimerEvent: {}
+[34.777480] (-) TimerEvent: {}
+[34.877978] (-) TimerEvent: {}
+[34.978414] (-) TimerEvent: {}
+[35.078819] (-) TimerEvent: {}
+[35.179262] (-) TimerEvent: {}
+[35.279676] (-) TimerEvent: {}
+[35.380205] (-) TimerEvent: {}
+[35.480608] (-) TimerEvent: {}
+[35.580967] (-) TimerEvent: {}
+[35.681316] (-) TimerEvent: {}
+[35.781649] (-) TimerEvent: {}
+[35.883323] (-) TimerEvent: {}
+[35.983826] (-) TimerEvent: {}
+[36.084241] (-) TimerEvent: {}
+[36.184662] (-) TimerEvent: {}
+[36.284919] (-) TimerEvent: {}
+[36.385246] (-) TimerEvent: {}
+[36.485551] (-) TimerEvent: {}
+[36.585786] (-) TimerEvent: {}
+[36.686024] (-) TimerEvent: {}
+[36.786243] (-) TimerEvent: {}
+[36.886510] (-) TimerEvent: {}
+[36.986782] (-) TimerEvent: {}
+[37.087194] (-) TimerEvent: {}
+[37.188064] (-) TimerEvent: {}
+[37.288319] (-) TimerEvent: {}
+[37.388612] (-) TimerEvent: {}
+[37.488851] (-) TimerEvent: {}
+[37.589127] (-) TimerEvent: {}
+[37.689416] (-) TimerEvent: {}
+[37.789646] (-) TimerEvent: {}
+[37.889901] (-) TimerEvent: {}
+[37.990249] (-) TimerEvent: {}
+[38.090605] (-) TimerEvent: {}
+[38.190923] (-) TimerEvent: {}
+[38.291220] (-) TimerEvent: {}
+[38.391431] (-) TimerEvent: {}
+[38.491754] (-) TimerEvent: {}
+[38.592051] (-) TimerEvent: {}
+[38.692361] (-) TimerEvent: {}
+[38.792818] (-) TimerEvent: {}
+[38.893120] (-) TimerEvent: {}
+[38.993435] (-) TimerEvent: {}
+[39.093705] (-) TimerEvent: {}
+[39.193950] (-) TimerEvent: {}
+[39.294451] (-) TimerEvent: {}
+[39.394925] (-) TimerEvent: {}
+[39.495178] (-) TimerEvent: {}
+[39.595430] (-) TimerEvent: {}
+[39.695675] (-) TimerEvent: {}
+[39.795967] (-) TimerEvent: {}
+[39.896350] (-) TimerEvent: {}
+[39.996806] (-) TimerEvent: {}
+[40.097188] (-) TimerEvent: {}
+[40.197577] (-) TimerEvent: {}
+[40.297979] (-) TimerEvent: {}
+[40.398305] (-) TimerEvent: {}
+[40.498732] (-) TimerEvent: {}
+[40.599018] (-) TimerEvent: {}
+[40.699370] (-) TimerEvent: {}
+[40.797010] (generated_ros2_pkg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable service_server\x1b[0m\n'}
+[40.799427] (-) TimerEvent: {}
+[40.899795] (-) TimerEvent: {}
+[41.000304] (-) TimerEvent: {}
+[41.100892] (-) TimerEvent: {}
+[41.201682] (-) TimerEvent: {}
+[41.301970] (-) TimerEvent: {}
+[41.402380] (-) TimerEvent: {}
+[41.429244] (generated_ros2_pkg) StdoutLine: {'line': b'[ 80%] Built target service_server\n'}
+[41.438934] (generated_ros2_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target timer_node\x1b[0m\n'}
+[41.449708] (generated_ros2_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/timer_node.dir/src/timer_node.cpp.o\x1b[0m\n'}
+[41.502484] (-) TimerEvent: {}
+[41.602724] (-) TimerEvent: {}
+[41.703075] (-) TimerEvent: {}
+[41.803365] (-) TimerEvent: {}
+[41.903667] (-) TimerEvent: {}
+[42.003957] (-) TimerEvent: {}
+[42.104248] (-) TimerEvent: {}
+[42.204717] (-) TimerEvent: {}
+[42.305184] (-) TimerEvent: {}
+[42.405527] (-) TimerEvent: {}
+[42.505807] (-) TimerEvent: {}
+[42.606117] (-) TimerEvent: {}
+[42.706427] (-) TimerEvent: {}
+[42.806935] (-) TimerEvent: {}
+[42.907240] (-) TimerEvent: {}
+[43.007521] (-) TimerEvent: {}
+[43.107752] (-) TimerEvent: {}
+[43.208050] (-) TimerEvent: {}
+[43.308327] (-) TimerEvent: {}
+[43.408619] (-) TimerEvent: {}
+[43.508968] (-) TimerEvent: {}
+[43.609293] (-) TimerEvent: {}
+[43.709594] (-) TimerEvent: {}
+[43.809892] (-) TimerEvent: {}
+[43.910564] (-) TimerEvent: {}
+[44.010931] (-) TimerEvent: {}
+[44.013050] (generated_ros2_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable timer_node\x1b[0m\n'}
+[44.111048] (-) TimerEvent: {}
+[44.211388] (-) TimerEvent: {}
+[44.311927] (-) TimerEvent: {}
+[44.412475] (-) TimerEvent: {}
+[44.448335] (generated_ros2_pkg) StdoutLine: {'line': b'[100%] Built target timer_node\n'}
+[44.455042] (generated_ros2_pkg) CommandEnded: {'returncode': 0}
+[44.455912] (generated_ros2_pkg) JobProgress: {'identifier': 'generated_ros2_pkg', 'progress': 'install'}
+[44.461988] (generated_ros2_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yinyihao/ros2/build/generated_ros2_pkg'], 'cwd': '/home/yinyihao/ros2/build/generated_ros2_pkg', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_BUILD_PARALLEL_LEVEL', '1'), ('USER', 'yinyihao'), ('GIT_EDITOR', ':'), ('GIT_ASKPASS', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yinyihao'), ('OLDPWD', '/home/yinyihao/ros2'), ('TERM_PROGRAM_VERSION', '1.115.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b5c57277-0b9b-4193-be87-8a382b5640bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('MAKEFLAGS', '-j1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yinyihao/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yinyihao'), ('NAME', 'ISCAS-yyh'), ('WSL_INTEROP', '/run/WSL/1093966_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LLM_API_KEY', 'ms-f643b13e-e6d6-4e41-89f7-f3576c1902af'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/yinyihao/.local/bin:/opt/ros/humble/bin:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/yinyihao/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/yinyihao/.vscode-server/bin/41dd792b5e652393e7787322889ed5fdc58bd75b/bin/remote-cli:/home/yinyihao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/d/vscode/Microsoft VS Code:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/d/MinGW/bin:/mnt/d/anaconda:/mnt/d/anaconda/Scripts:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/matlab/runtime/win64:/mnt/d/matlab/bin:/mnt/c/Users/尹义豪/mosek/11.0/tools/platform/win64x86/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/yyh20/AppData/Local/Programs/Python/Python38/:/mnt/d/anaconda:/mnt/d/anaconda/Library/mingw-w64/bin:/mnt/d/anaconda/Library/usr/bin:/mnt/d/anaconda/Library/bin:/mnt/d/anaconda/Scripts:/mnt/c/Users/yyh20/AppData/Local/Microsoft/WindowsApps:/mnt/d/PyCharm Community Edition 2024.3.1.1/bin:/mnt/d/MinGW/bin:/mnt/d/vscode/Microsoft VS Code/bin:/mnt/c/Users/yyh20/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yinyihao/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-fef85a54ea0153c4.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/yinyihao/.vscode-server/data/User/workspaceStorage/b758aea3f5b121cbebbd6350b0f43e98/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5f498ac157.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/yinyihao/ros2/install/nav2_race_min:/home/yinyihao/ros2/install/nav2_race_cpp:/home/yinyihao/ros2/install/my_cpp_pkg:/home/yinyihao/ros2/install/generated_ros2_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/yinyihao/ros2/build/generated_ros2_pkg'), ('GIT_MERGE_AUTOEDIT', 'no'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yinyihao/ros2/install/nav2_race_min/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/yinyihao/ros2/install/nav2_race_cpp:/home/yinyihao/ros2/install/my_cpp_pkg:/home/yinyihao/ros2/install/generated_ros2_pkg:/home/yinyihao/ros2/install/nav2_race_min:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[44.465936] (generated_ros2_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.466118] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/client_node\n'}
+[44.467493] (generated_ros2_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/client_node" to ""\n'}
+[44.467589] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/minimal_publisher\n'}
+[44.468482] (generated_ros2_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/minimal_publisher" to ""\n'}
+[44.468553] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/minimal_subscriber\n'}
+[44.470857] (generated_ros2_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/minimal_subscriber" to ""\n'}
+[44.471571] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/service_server\n'}
+[44.474318] (generated_ros2_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/service_server" to ""\n'}
+[44.474922] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/timer_node\n'}
+[44.475647] (generated_ros2_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yinyihao/ros2/install/generated_ros2_pkg/lib/generated_ros2_pkg/timer_node" to ""\n'}
+[44.475758] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch\n'}
+[44.475949] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/launch/generated_system.launch.py\n'}
+[44.476046] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/generated_ros2_pkg\n'}
+[44.476106] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/generated_ros2_pkg\n'}
+[44.476190] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.sh\n'}
+[44.476292] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/ament_prefix_path.dsv\n'}
+[44.476455] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.sh\n'}
+[44.476523] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/environment/path.dsv\n'}
+[44.476554] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.bash\n'}
+[44.476616] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.sh\n'}
+[44.476668] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.zsh\n'}
+[44.476729] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/local_setup.dsv\n'}
+[44.476788] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.dsv\n'}
+[44.476840] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/ament_index/resource_index/packages/generated_ros2_pkg\n'}
+[44.476887] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig.cmake\n'}
+[44.476916] (generated_ros2_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/cmake/generated_ros2_pkgConfig-version.cmake\n'}
+[44.476946] (generated_ros2_pkg) StdoutLine: {'line': b'-- Installing: /home/yinyihao/ros2/install/generated_ros2_pkg/share/generated_ros2_pkg/package.xml\n'}
+[44.478126] (generated_ros2_pkg) CommandEnded: {'returncode': 0}
+[44.490112] (generated_ros2_pkg) JobEnded: {'identifier': 'generated_ros2_pkg', 'rc': 0}
+[44.490859] (-) EventReactorShutdown: {}
