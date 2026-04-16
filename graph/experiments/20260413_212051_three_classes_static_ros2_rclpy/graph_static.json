@@ -1,0 +1,500 @@
+{
+  "nodes": [
+    "/clock_node",
+    "/ctx_mgr_test",
+    "/example_node",
+    "/foo",
+    "/my_node",
+    "/mynode",
+    "/node_name",
+    "/pub_node",
+    "/publisher_node",
+    "/test_action_client_node",
+    "/test_destroy_client_asap",
+    "/test_destroy_publisher_asap",
+    "/test_destroy_service_asap",
+    "/test_destroy_subscription_asap",
+    "/test_destroy_timer_asap",
+    "/test_destruction_order_node_1",
+    "/test_destruction_order_node_2",
+    "/test_destruction_order_node_3",
+    "/test_lifecycle_node_init_1",
+    "/test_lifecycle_node_init_2",
+    "/test_lifecycle_node_init_3",
+    "/test_lifecycle_publisher",
+    "/test_lifecycle_services_client",
+    "/test_node",
+    "/test_node1",
+    "/test_node2",
+    "/test_node3",
+    "/test_node4",
+    "/test_node_no_sim",
+    "/test_pub_node",
+    "/test_rate",
+    "/test_rate_shutdown",
+    "/test_rosout_subscription",
+    "/test_service_client_node",
+    "/test_service_server_node",
+    "/test_sub_node",
+    "/test_time_until_next_call",
+    "/test_timer_cancel_reset",
+    "/test_timer_no_callback",
+    "/test_timer_number_callbacks",
+    "/test_timer_with_info",
+    "/test_timer_with_partial",
+    "/test_timer_without_autostart",
+    "/testactionclient",
+    "/testactionserver",
+    "/testcallbackgroup",
+    "/testclient",
+    "/testcreatewhilespinning",
+    "/testexecutor",
+    "/testqosevent",
+    "/testtimesource2"
+  ],
+  "topics": [
+    {
+      "name": "/chatter",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/chatter/{bad_sub}",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/foo",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/foo/{bad_sub}",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/pub1_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/pub2_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/pub_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/raw_subscription_test",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/sub_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/take_test",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/test_node",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/test_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/testcreatewhilespinning",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/trigger_long",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/trigger_short",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "/chatter",
+      "to": "/test_node_no_sim",
+      "kind": "sub"
+    },
+    {
+      "from": "/chatter",
+      "to": "/testcallbackgroup",
+      "kind": "sub"
+    },
+    {
+      "from": "/foo",
+      "to": "/testcreatewhilespinning",
+      "kind": "sub"
+    },
+    {
+      "from": "/foo/{bad_sub}",
+      "to": "/test_node_no_sim",
+      "kind": "sub"
+    },
+    {
+      "from": "/pub_node",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/pub_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_client_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_publisher_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_service_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_subscription_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_timer_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node1",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node2",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node3",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node4",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node",
+      "to": "/foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node_no_sim",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node_no_sim",
+      "to": "/chatter/{bad_sub}",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node_no_sim",
+      "to": "/raw_subscription_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node_no_sim",
+      "to": "/take_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/raw_subscription_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/take_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/trigger_long",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/trigger_short",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_rate",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_rate_shutdown",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_time_until_next_call",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_cancel_reset",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_no_callback",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_number_callbacks",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_with_info",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_with_partial",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_without_autostart",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/trigger_long",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/trigger_short",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/foo",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/foo",
+      "kind": "sub"
+    }
+  ]
+}

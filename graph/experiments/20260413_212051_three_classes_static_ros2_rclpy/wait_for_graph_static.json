@@ -1,0 +1,689 @@
+{
+  "graph_summary": {
+    "node_count": 51,
+    "wait_edge_count": 20,
+    "callback_resource_edge_count": 1186,
+    "key_callback_resource_edge_count": 18,
+    "key_callback_resource_edge_total": 713,
+    "wait_edges_truncated": false,
+    "callback_resource_edges_truncated": true,
+    "communication_trigger_edge_count": 23,
+    "cycle_candidate_count": 11
+  },
+  "wait_edges": [
+    {
+      "from": "/clock_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_action_client_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_service_client_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_service_server_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_sub_node",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/node_name",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/test_node",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/test_node_no_sim",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/testcallbackgroup",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/testclient",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/ctx_mgr_test",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/node_name",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/test_node",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/test_node_no_sim",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/test_service_server_node",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/testcallbackgroup",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/testclient",
+      "to": "/testclient",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/testcreatewhilespinning",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/testcreatewhilespinning",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    }
+  ],
+  "model_context": {
+    "executor_count": 85,
+    "callback_group_count": 51,
+    "assignment_count": 51,
+    "explicit_executor_count": 34,
+    "explicit_callback_group_count": 0
+  },
+  "callback_resource_graph": [
+    {
+      "from": "/clock_node:cb_service_163",
+      "to": "/test_service_server_node:service_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/clock_node:cb_service_163",
+      "to": "future:service_response:/test_service:/clock_node:cb_service_163",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/clock_node:cb_service_163",
+      "to": "resource:callback_group:cg::/clock_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_node:cb_service_163",
+      "to": "resource:executor_slot:exec::/clock_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/clock_node:cb_timer_250",
+      "to": "/test_service_server_node:service_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/clock_node:cb_timer_250",
+      "to": "resource:callback_group:cg::/clock_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_node:cb_timer_250",
+      "to": "resource:executor_slot:exec::/clock_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/clock_node:cb_timer_706",
+      "to": "/test_service_server_node:service_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/clock_node:cb_timer_706",
+      "to": "resource:callback_group:cg::/clock_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_node:cb_timer_706",
+      "to": "resource:executor_slot:exec::/clock_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/clock_node:cb_timer_707",
+      "to": "/test_service_server_node:service_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/clock_node:cb_timer_707",
+      "to": "resource:callback_group:cg::/clock_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_node:cb_timer_707",
+      "to": "resource:executor_slot:exec::/clock_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/ctx_mgr_test:service_server",
+      "to": "resource:callback_group:cg::/ctx_mgr_test::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/ctx_mgr_test:service_server",
+      "to": "resource:executor_slot:exec::/ctx_mgr_test",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/node_name:service_server",
+      "to": "resource:callback_group:cg::/node_name::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/node_name:service_server",
+      "to": "resource:executor_slot:exec::/node_name",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/test_action_client_node:cb_service_163",
+      "to": "/test_service_server_node:service_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    }
+  ],
+  "edge_type_counts": {
+    "blocking": 6,
+    "executor_block": 1,
+    "potential": 13
+  },
+  "edge_class_counts": {
+    "callback_blocking": 1,
+    "communication": 1,
+    "service_action": 18
+  },
+  "class_assessment": {
+    "communication": {
+      "wait_edge_count": 1,
+      "trigger_edge_count": 23,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 0
+    },
+    "service_action": {
+      "wait_edge_count": 18,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 21
+    },
+    "callback_blocking": {
+      "wait_edge_count": 1,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 19
+    }
+  },
+  "cycle_candidates": [
+    {
+      "kind": "scc",
+      "size": 14,
+      "sample_nodes": [
+        "/testexecutor:cb_timer_146",
+        "/testexecutor:cb_timer_261",
+        "/testexecutor:cb_timer_551",
+        "/testexecutor:cb_timer_581"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 8,
+      "sample_nodes": [
+        "/testcreatewhilespinning:cb_service_74",
+        "/testcreatewhilespinning:cb_subscription_61",
+        "/testcreatewhilespinning:cb_timer_90",
+        "future:service_response:/foo:/testcreatewhilespinning:cb_service_74"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 56,
+      "sample_nodes": [
+        "/testcallbackgroup:cb_service_179",
+        "/testcallbackgroup:cb_service_182",
+        "/testcallbackgroup:cb_subscription_162",
+        "/testcallbackgroup:cb_timer_139"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 5,
+      "sample_nodes": [
+        "/testactionclient:cb_service_48",
+        "/testactionclient:cb_service_51",
+        "/testactionclient:cb_service_54",
+        "resource:callback_group:cg::/testactionclient::default"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 6,
+      "sample_nodes": [
+        "/test_sub_node:cb_service_163",
+        "/test_sub_node:cb_timer_250",
+        "/test_sub_node:cb_timer_706",
+        "/test_sub_node:cb_timer_707"
+      ]
+    }
+  ],
+  "node_level_assessment": {
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 3
+    }
+  },
+  "deadlock_assessment": {
+    "definite_deadlocks": [],
+    "potential_deadlocks": [
+      {
+        "node_count": 22,
+        "sample_nodes": [
+          "/testcallbackgroup:cb_service_179",
+          "/testcallbackgroup:service_server",
+          "resource:callback_group:cg::/testcallbackgroup::default",
+          "/testcallbackgroup:cb_service_182"
+        ],
+        "node_kinds": {
+          "callbacks": 10,
+          "futures": 7,
+          "resources": 3,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 8,
+        "sample_nodes": [
+          "/testcallbackgroup:cb_service_179",
+          "/testcallbackgroup:service_server",
+          "resource:callback_group:cg::/testcallbackgroup::default",
+          "/testcallbackgroup:cb_service_182"
+        ],
+        "node_kinds": {
+          "callbacks": 3,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 7,
+        "sample_nodes": [
+          "/test_service_server_node:cb_service_163",
+          "/test_service_server_node:service_server",
+          "resource:callback_group:cg::/test_service_server_node::default",
+          "/test_service_server_node:cb_timer_250"
+        ],
+        "node_kinds": {
+          "callbacks": 3,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 6,
+        "sample_nodes": [
+          "/testcreatewhilespinning:cb_service_74",
+          "resource:callback_group:cg::/testcreatewhilespinning::default",
+          "/testcreatewhilespinning:cb_subscription_61",
+          "resource:executor_slot:exec::/testcreatewhilespinning"
+        ],
+        "node_kinds": {
+          "callbacks": 3,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_service_server_node:cb_service_163",
+          "/test_service_server_node:service_server",
+          "resource:callback_group:cg::/test_service_server_node::default",
+          "/test_service_server_node:cb_timer_250"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/testcreatewhilespinning:cb_service_74",
+          "resource:callback_group:cg::/testcreatewhilespinning::default",
+          "/testcreatewhilespinning:cb_subscription_61",
+          "future:service_response:/foo:/testcreatewhilespinning:cb_subscription_61"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_service_server_node:cb_service_163",
+          "/test_service_server_node:service_server",
+          "resource:callback_group:cg::/test_service_server_node::default",
+          "/test_service_server_node:cb_timer_250"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 0,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_service_server_node:cb_service_163",
+          "/test_service_server_node:service_server",
+          "resource:executor_slot:exec::/test_service_server_node",
+          "/test_service_server_node:cb_timer_250"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "scheduled_by",
+          "waits_for"
+        ]
+      }
+    ],
+    "overall": "potential_deadlock",
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 21,
+      "reported_definite_count": 0,
+      "reported_potential_count": 8
+    },
+    "primary_graph": "callback_resource_graph",
+    "rules": [
+      "definite only if every cycle hop has grounded blocking evidence",
+      "inferred/low-confidence edges are excluded from definite",
+      "wait_for_service and spin_until_future_complete are conservative (potential by default)",
+      "otherwise cycle is potential"
+    ]
+  },
+  "config": {
+    "use_llm_relations": false,
+    "mode": "evidence_plus_rules",
+    "semantic_edges_ingested": 7
+  },
+  "assumptions": [
+    "Potential/executor edges are conservative (may include false positives).",
+    "Blocking inference is keyword-based static heuristic, not path-sensitive proof.",
+    "This graph models wait dependencies, not data-flow edges.",
+    "All semantics are static: source code scan + optional LLM static spec; runtime trace is not used for wait-for."
+  ]
+}

@@ -1,0 +1,1895 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "repo_url": "https://github.com/ros-navigation/navigation2",
+    "ref": "main",
+    "project_name": "navigation2",
+    "language": [
+      "cpp",
+      "python"
+    ]
+  },
+  "graph_seed": {
+    "nodes": [
+      "/amcl",
+      "/base_footprint_publisher",
+      "/basic",
+      "/behavior_server",
+      "/binary_state_sub",
+      "/bt_navigator",
+      "/cm_metrics_catcher",
+      "/collision_detector",
+      "/collision_monitor",
+      "/controller_server",
+      "/costmap",
+      "/costmap_filter_info_pub",
+      "/costmap_filter_info_server",
+      "/docking_server",
+      "/dummy_navigator",
+      "/dummycontroller",
+      "/dummyplanner",
+      "/dwa_gen",
+      "/fake_cm_bag_source",
+      "/fibonacci_node",
+      "/fibonacci_server_node",
+      "/following_server",
+      "/holonomic",
+      "/lifecycle_manager",
+      "/lifecycle_node_test",
+      "/loopback_simulator",
+      "/map_publisher",
+      "/map_saver",
+      "/map_server",
+      "/mask_pub",
+      "/max_xy",
+      "/min_theta",
+      "/min_xy",
+      "/nav2_test_cli",
+      "/nonzero",
+      "/planner_server",
+      "/plannertester",
+      "/route_example",
+      "/route_server",
+      "/smoother_server",
+      "/speed_limit_sub",
+      "/st_gen",
+      "/test_action_server",
+      "/test_docking_server",
+      "/test_following_server",
+      "/test_node",
+      "/test_object_pose_publisher",
+      "/test_service",
+      "/too_slow",
+      "/vector_object_server",
+      "/velocity_smoother",
+      "/waypoint_follower"
+    ],
+    "topics": [
+      "/activate_server",
+      "/clock",
+      "/cmd_vel",
+      "/cmd_vel_smoothed",
+      "/deactivate_server",
+      "/filtered_dynamic_pose",
+      "/map",
+      "/odom",
+      "/omit_preemption",
+      "/plan",
+      "/plan_smoothed",
+      "/route",
+      "/tracking_feedback",
+      "/transformed_global_plan"
+    ],
+    "edges": [
+      {
+        "from": "/controller_server",
+        "to": "/tracking_feedback",
+        "kind": "pub"
+      },
+      {
+        "from": "/controller_server",
+        "to": "/transformed_global_plan",
+        "kind": "pub"
+      },
+      {
+        "from": "/dummycontroller",
+        "to": "/cmd_vel",
+        "kind": "pub"
+      },
+      {
+        "from": "/fake_cm_bag_source",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/fake_cm_bag_source",
+        "to": "/cmd_vel_smoothed",
+        "kind": "pub"
+      },
+      {
+        "from": "/fibonacci_server_node",
+        "to": "/activate_server",
+        "kind": "pub"
+      },
+      {
+        "from": "/fibonacci_server_node",
+        "to": "/deactivate_server",
+        "kind": "pub"
+      },
+      {
+        "from": "/fibonacci_server_node",
+        "to": "/omit_preemption",
+        "kind": "pub"
+      },
+      {
+        "from": "/following_server",
+        "to": "/filtered_dynamic_pose",
+        "kind": "pub"
+      },
+      {
+        "from": "/loopback_simulator",
+        "to": "/odom",
+        "kind": "pub"
+      },
+      {
+        "from": "/planner_server",
+        "to": "/plan",
+        "kind": "pub"
+      },
+      {
+        "from": "/plannertester",
+        "to": "/map",
+        "kind": "pub"
+      },
+      {
+        "from": "/route_server",
+        "to": "/route",
+        "kind": "pub"
+      },
+      {
+        "from": "/smoother_server",
+        "to": "/plan_smoothed",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_docking_server",
+        "to": "/odom",
+        "kind": "pub"
+      }
+    ],
+    "node_semantics": [
+      {
+        "name": "/amcl",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/global_localization",
+          "/nomotion_update",
+          "/set_initial_pose"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_1",
+            "source": "subscription",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_2",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_3",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_4",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_1439",
+            "source": "subscription",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_1454",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_1460",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_1466",
+            "source": "service",
+            "callback_group": "cg::/amcl::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/base_footprint_publisher",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/basic",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/behavior_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "action"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_23",
+            "source": "action",
+            "callback_group": "cg::/behavior_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/binary_state_sub",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/bt_navigator",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_24",
+            "source": "subscription",
+            "callback_group": "cg::/bt_navigator::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/cm_metrics_catcher",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/collision_detector",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/collision_monitor",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/toggle"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_22",
+            "source": "service",
+            "callback_group": "cg::/collision_monitor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_87",
+            "source": "service",
+            "callback_group": "cg::/collision_monitor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/controller_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_11",
+            "source": "service",
+            "callback_group": "cg::/controller_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/costmap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_21",
+            "source": "subscription",
+            "callback_group": "cg::/costmap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_211",
+            "source": "subscription",
+            "callback_group": "cg::/costmap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/costmap_filter_info_pub",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/costmap_filter_info_server",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/docking_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/dock_robot",
+          "/undock_robot"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_5",
+            "source": "service",
+            "callback_group": "cg::/docking_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_6",
+            "source": "service",
+            "callback_group": "cg::/docking_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/dummy_navigator",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/dummycontroller",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/dummyplanner",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/dwa_gen",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/fake_cm_bag_source",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_27",
+            "source": "timer",
+            "callback_group": "cg::/fake_cm_bag_source::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_61",
+            "source": "timer",
+            "callback_group": "cg::/fake_cm_bag_source::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/fibonacci_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/fibonacci_server_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [
+          "/fibonacci"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "future_get",
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/fibonacci_server_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/fibonacci"
+            ],
+            "blocking_calls": [
+              "future_get",
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/following_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/follow_object"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_16",
+            "source": "timer",
+            "callback_group": "cg::/following_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/holonomic",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/lifecycle_manager",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/lifecycle_node_test",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/loopback_simulator",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [
+          "/map_server/map"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_25",
+            "source": "subscription",
+            "callback_group": "cg::/loopback_simulator::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_75",
+            "source": "subscription",
+            "callback_group": "cg::/loopback_simulator::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/map_server/map"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/map_publisher",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/map_saver",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "future_get",
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_10",
+            "source": "service",
+            "callback_group": "cg::/map_saver::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/map_server/map"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/map_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/map_server/load_map",
+          "/map_server/map"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_8",
+            "source": "service",
+            "callback_group": "cg::/map_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_9",
+            "source": "service",
+            "callback_group": "cg::/map_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/mask_pub",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/max_xy",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/min_theta",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/min_xy",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/nav2_test_cli",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/nonzero",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/planner_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/compute_path_to_pose",
+          "/is_path_valid",
+          "/plan_path"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_12",
+            "source": "service",
+            "callback_group": "cg::/planner_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/plannertester",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [
+          "/is_path_valid"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/plannertester::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/is_path_valid"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/route_example",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [
+          "/route_server/ReroutingService/reroute"
+        ],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/route_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [
+          "/compute_and_track_route",
+          "/compute_route"
+        ],
+        "service_servers": [
+          "/route_server/ReroutingService/reroute"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_15",
+            "source": "service",
+            "callback_group": "cg::/route_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/smoother_server",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/speed_limit_sub",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/st_gen",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_action_server",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_docking_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [
+          "/dock_robot",
+          "/undock_robot"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_7",
+            "source": "timer",
+            "callback_group": "cg::/test_docking_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_236",
+            "source": "timer",
+            "callback_group": "cg::/test_docking_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_following_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [
+          "/follow_object"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_17",
+            "source": "timer",
+            "callback_group": "cg::/test_following_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_110",
+            "source": "timer",
+            "callback_group": "cg::/test_following_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_timer_300",
+            "source": "timer",
+            "callback_group": "cg::/test_following_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_26",
+            "source": "subscription",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_object_pose_publisher",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_110",
+            "source": "timer",
+            "callback_group": "cg::/test_object_pose_publisher::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_timer_300",
+            "source": "timer",
+            "callback_group": "cg::/test_object_pose_publisher::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_service",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [
+          "/hello_world"
+        ],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/too_slow",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/vector_object_server",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/add_shapes",
+          "/get_shapes",
+          "/remove_shapes"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_18",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_19",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_20",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_62",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_66",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_70",
+            "source": "service",
+            "callback_group": "cg::/vector_object_server::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/velocity_smoother",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/waypoint_follower",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "action",
+          "service"
+        ],
+        "service_clients": [
+          "/pause",
+          "/resume"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_13",
+            "source": "action",
+            "callback_group": "cg::/waypoint_follower::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/pause",
+              "/resume"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_14",
+            "source": "service",
+            "callback_group": "cg::/waypoint_follower::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      }
+    ],
+    "semantic_edges": [
+      {
+        "from": "/docking_server:cb_5",
+        "to": "future:service_response:/parameter_service:/docking_server:cb_5",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Callback on /docking_server explicitly waits for /parameter_service using spin_until_future_complete",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/docking_server:cb_6",
+        "to": "future:service_response:/parameter_service:/docking_server:cb_6",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Callback on /docking_server explicitly waits for /parameter_service using spin_until_future_complete",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/map_saver:cb_10",
+        "to": "future:service_response:/map_server/map:/map_saver:cb_10",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Callback on /map_saver waits for response from /map_server/map via spin_until_future_complete",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/waypoint_follower:cb_13",
+        "to": "future:service_response:/pause:/waypoint_follower:cb_13",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Action callback on /waypoint_follower uses spin_until_future_complete to wait for /pause service",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/waypoint_follower:cb_13",
+        "to": "future:service_response:/resume:/waypoint_follower:cb_13",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Action callback on /waypoint_follower uses spin_until_future_complete to wait for /resume service",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/waypoint_follower:cb_14",
+        "to": "future:service_response:/parameter_service:/waypoint_follower:cb_14",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Service callback on /waypoint_follower waits for /parameter_service using wait_for_service",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/route_server:cb_15",
+        "to": "future:service_response:/compute_route:/route_server:cb_15",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Service callback on /route_server waits for /compute_route using spin_until_future_complete",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/route_server:cb_15",
+        "to": "future:service_response:/compute_and_track_route:/route_server:cb_15",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Service callback on /route_server waits for /compute_and_track_route using spin_until_future_complete",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/loopback_simulator:cb_25",
+        "to": "future:service_response:/map_server/map:/loopback_simulator:cb_25",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Subscription callback on /loopback_simulator calls service client for /map_server/map with blocking wait",
+        "provenance": "inferred",
+        "confidence": "medium",
+        "definite_eligible": false,
+        "model_uncertainty": false
+      }
+    ],
+    "executors": [
+      {
+        "id": "exec::/amcl",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/behavior_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/bt_navigator",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/collision_monitor",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/controller_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/costmap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/docking_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/fake_cm_bag_source",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/fibonacci_server_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/following_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/loopback_simulator",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/map_saver",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/map_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/planner_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/plannertester",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/route_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_docking_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_following_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_object_pose_publisher",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/vector_object_server",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/waypoint_follower",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec_1",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "explicit"
+      }
+    ],
+    "callback_groups": [
+      {
+        "id": "cg::/amcl::default",
+        "node": "/amcl",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/behavior_server::default",
+        "node": "/behavior_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/bt_navigator::default",
+        "node": "/bt_navigator",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/collision_monitor::default",
+        "node": "/collision_monitor",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/controller_server::default",
+        "node": "/controller_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/costmap::default",
+        "node": "/costmap",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/docking_server::default",
+        "node": "/docking_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/fake_cm_bag_source::default",
+        "node": "/fake_cm_bag_source",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/fibonacci_server_node::default",
+        "node": "/fibonacci_server_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/fibonacci_server_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/following_server::default",
+        "node": "/following_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/loopback_simulator::default",
+        "node": "/loopback_simulator",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/map_saver::default",
+        "node": "/map_saver",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/map_server::default",
+        "node": "/map_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/planner_server::default",
+        "node": "/planner_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/plannertester::default",
+        "node": "/plannertester",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/plannertester",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/route_server::default",
+        "node": "/route_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/test_docking_server::default",
+        "node": "/test_docking_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/test_following_server::default",
+        "node": "/test_following_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/test_node::default",
+        "node": "/test_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/test_object_pose_publisher::default",
+        "node": "/test_object_pose_publisher",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_object_pose_publisher",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/vector_object_server::default",
+        "node": "/vector_object_server",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/waypoint_follower::default",
+        "node": "/waypoint_follower",
+        "type": "MutuallyExclusive",
+        "executor": "exec_1",
+        "origin": "implicit_default"
+      }
+    ],
+    "assignments": [
+      {
+        "callback_group": "cg::/amcl::default",
+        "executor": "exec::/amcl",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/amcl::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/behavior_server::default",
+        "executor": "exec::/behavior_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/behavior_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/bt_navigator::default",
+        "executor": "exec::/bt_navigator",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/bt_navigator::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/collision_monitor::default",
+        "executor": "exec::/collision_monitor",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/collision_monitor::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/controller_server::default",
+        "executor": "exec::/controller_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/controller_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/costmap::default",
+        "executor": "exec::/costmap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/costmap::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/docking_server::default",
+        "executor": "exec::/docking_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/docking_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/fake_cm_bag_source::default",
+        "executor": "exec::/fake_cm_bag_source",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/fake_cm_bag_source::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/fibonacci_server_node::default",
+        "executor": "exec::/fibonacci_server_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/following_server::default",
+        "executor": "exec::/following_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/following_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/loopback_simulator::default",
+        "executor": "exec::/loopback_simulator",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/loopback_simulator::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/map_saver::default",
+        "executor": "exec::/map_saver",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/map_saver::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/map_server::default",
+        "executor": "exec::/map_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/map_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/planner_server::default",
+        "executor": "exec::/planner_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/planner_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/plannertester::default",
+        "executor": "exec::/plannertester",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/route_server::default",
+        "executor": "exec::/route_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/route_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_docking_server::default",
+        "executor": "exec::/test_docking_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_docking_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_following_server::default",
+        "executor": "exec::/test_following_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_following_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node::default",
+        "executor": "exec::/test_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_object_pose_publisher::default",
+        "executor": "exec::/test_object_pose_publisher",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/vector_object_server::default",
+        "executor": "exec::/vector_object_server",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/vector_object_server::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/waypoint_follower::default",
+        "executor": "exec::/waypoint_follower",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/waypoint_follower::default",
+        "executor": "exec_1",
+        "origin": "inferred"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4792 @@
+{
+  "nodes": [
+    "/clock_node",
+    "/ctx_mgr_test",
+    "/example_node",
+    "/foo",
+    "/my_node",
+    "/mynode",
+    "/pub_node",
+    "/publisher_node",
+    "/test_action_client_node",
+    "/test_destroy_client_asap",
+    "/test_destroy_publisher_asap",
+    "/test_destroy_service_asap",
+    "/test_destroy_subscription_asap",
+    "/test_destroy_timer_asap",
+    "/test_destruction_order_node_1",
+    "/test_destruction_order_node_2",
+    "/test_destruction_order_node_3",
+    "/test_lifecycle_node_init_1",
+    "/test_lifecycle_node_init_2",
+    "/test_lifecycle_node_init_3",
+    "/test_lifecycle_publisher",
+    "/test_lifecycle_services_client",
+    "/test_node1",
+    "/test_node2",
+    "/test_node3",
+    "/test_node4",
+    "/test_pub_node",
+    "/test_rate",
+    "/test_rate_shutdown",
+    "/test_rosout_subscription",
+    "/test_service_client_node",
+    "/test_service_server_node",
+    "/test_sub_node",
+    "/test_time_until_next_call",
+    "/test_timer_cancel_reset",
+    "/test_timer_no_callback",
+    "/test_timer_number_callbacks",
+    "/test_timer_with_info",
+    "/test_timer_with_partial",
+    "/test_timer_without_autostart",
+    "/testactionclient",
+    "/testactionserver",
+    "/testcallbackgroup",
+    "/testclient",
+    "/testcreatewhilespinning",
+    "/testexecutor",
+    "/testqosevent",
+    "/testtimesource2"
+  ],
+  "topics": [
+    {
+      "name": "/chatter"
+    },
+    {
+      "name": "/foo"
+    },
+    {
+      "name": "/pub1_topic"
+    },
+    {
+      "name": "/pub2_topic"
+    },
+    {
+      "name": "/pub_topic"
+    },
+    {
+      "name": "/raw_subscription_test"
+    },
+    {
+      "name": "/sub_topic"
+    },
+    {
+      "name": "/take_test"
+    },
+    {
+      "name": "/test_node"
+    },
+    {
+      "name": "/test_topic"
+    },
+    {
+      "name": "/testcreatewhilespinning"
+    },
+    {
+      "name": "/topic"
+    },
+    {
+      "name": "/trigger_long"
+    },
+    {
+      "name": "/trigger_short"
+    }
+  ],
+  "edges": [
+    {
+      "from": "/chatter",
+      "to": "/testcallbackgroup",
+      "kind": "sub"
+    },
+    {
+      "from": "/foo",
+      "to": "/testcreatewhilespinning",
+      "kind": "sub"
+    },
+    {
+      "from": "/pub_node",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/pub_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_client_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_publisher_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_service_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_subscription_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_destroy_timer_asap",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node1",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node2",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node3",
+      "kind": "sub"
+    },
+    {
+      "from": "/sub_topic",
+      "to": "/test_node4",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_client_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_publisher_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_service_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_subscription_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_destroy_timer_asap",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node",
+      "to": "/foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node1",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node2",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node3",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_node4",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub2_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/pub_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/raw_subscription_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/take_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/trigger_long",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_pub_node",
+      "to": "/trigger_short",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_rate",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_rate_shutdown",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_time_until_next_call",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_cancel_reset",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_no_callback",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_number_callbacks",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_with_info",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_with_partial",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_timer_without_autostart",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/trigger_long",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcallbackgroup",
+      "to": "/trigger_short",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/foo",
+      "kind": "pub"
+    },
+    {
+      "from": "/testcreatewhilespinning",
+      "to": "/foo",
+      "kind": "sub"
+    }
+  ],
+  "dynamic_runtime": {
+    "runtime": {
+      "start_time_ns": 1776322891600774136,
+      "end_time_ns": 1776322898304245452,
+      "duration_sec": 6.703471316
+    },
+    "timer": {
+      "sample_interval_sec": 0.2,
+      "trigger_count": 33,
+      "trigger_interval_ms": {
+        "mean": 198.33987896874999,
+        "p50": 200.4802705,
+        "p95": 210.1170817,
+        "max": 218.371513
+      },
+      "trigger_timestamps_ns": [
+        1776322891855889298,
+        1776322892002019300,
+        1776322892204826514,
+        1776322892402253295,
+        1776322892603229815,
+        1776322892802846672,
+        1776322893003455845,
+        1776322893201967958,
+        1776322893411853845,
+        1776322893630225358,
+        1776322893802236941,
+        1776322894003407610,
+        1776322894213807263,
+        1776322894404013082,
+        1776322894603119226,
+        1776322894805071516,
+        1776322895014866672,
+        1776322895203975356,
+        1776322895409918599,
+        1776322895604007995,
+        1776322895806072901,
+        1776322896002019663,
+        1776322896202376621,
+        1776322896403191431,
+        1776322896603795014,
+        1776322896804883893,
+        1776322897003650693,
+        1776322897202917369,
+        1776322897403093233,
+        1776322897602780784,
+        1776322897805102614,
+        1776322898001585799,
+        1776322898202765425
+      ]
+    },
+    "topics_runtime": [
+      {
+        "topic": "/chatter",
+        "type": "std_msgs/msg/String",
+        "recv_count": 92,
+        "proc_count": 92,
+        "recv_rate_hz": 13.724232664412582,
+        "proc_rate_hz": 13.724232664412582,
+        "inter_arrival_ms": {
+          "mean": 50.411795098901095,
+          "p50": 35.429661,
+          "p95": 118.353376,
+          "max": 419.253525
+        },
+        "callback_processing_ms": {
+          "mean": 0.0011575652173913043,
+          "p50": 0.001123,
+          "p95": 0.00199235,
+          "max": 0.005406
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 11,
+            "proc_count": 11,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 19,
+            "proc_count": 19,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 27,
+            "proc_count": 27,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 31,
+            "proc_count": 31,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 34,
+            "proc_count": 34,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 39,
+            "proc_count": 39,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 42,
+            "proc_count": 42,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 47,
+            "proc_count": 47,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 51,
+            "proc_count": 51,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 54,
+            "proc_count": 54,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 59,
+            "proc_count": 59,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 62,
+            "proc_count": 62,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 67,
+            "proc_count": 67,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 71,
+            "proc_count": 71,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 74,
+            "proc_count": 74,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 79,
+            "proc_count": 79,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 82,
+            "proc_count": 82,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 87,
+            "proc_count": 87,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 91,
+            "proc_count": 91,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_timer_no_callback",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_number_callbacks",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_info",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_partial",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_without_autostart",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate_shutdown",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_time_until_next_call",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_cancel_reset",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/foo",
+        "type": "std_msgs/msg/String",
+        "recv_count": 8,
+        "proc_count": 8,
+        "recv_rate_hz": 1.1934115360358768,
+        "proc_rate_hz": 1.1934115360358768,
+        "inter_arrival_ms": {
+          "mean": 499.3165677142857,
+          "p50": 498.09632,
+          "p95": 515.2255365999999,
+          "max": 519.485782
+        },
+        "callback_processing_ms": {
+          "mean": 0.000840625,
+          "p50": 0.0007205,
+          "p95": 0.0016473999999999998,
+          "max": 0.001772
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/testcreatewhilespinning",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/testcreatewhilespinning",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/parameter_events",
+        "type": "rcl_interfaces/msg/ParameterEvent",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_no_callback",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_number_callbacks",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_info",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_partial",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_without_autostart",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionserver",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_services_client",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcreatewhilespinning",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testexecutor",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testqosevent",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testtimesource2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/ctx_mgr_test",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/example_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/mynode",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate_shutdown",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rosout_subscription",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_server_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_sub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_action_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_time_until_next_call",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_cancel_reset",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/test_timer_no_callback",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_number_callbacks",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_info",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_partial",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_without_autostart",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionserver",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_services_client",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcreatewhilespinning",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testexecutor",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testqosevent",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testtimesource2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/ctx_mgr_test",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/example_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/mynode",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate_shutdown",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rosout_subscription",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_server_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_sub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_action_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_time_until_next_call",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_cancel_reset",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/pub1_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 99,
+        "proc_count": 99,
+        "recv_rate_hz": 14.768467758443975,
+        "proc_rate_hz": 14.768467758443975,
+        "inter_arrival_ms": {
+          "mean": 61.66300521428572,
+          "p50": 14.7936275,
+          "p95": 229.61216564999978,
+          "max": 497.828909
+        },
+        "callback_processing_ms": {
+          "mean": 0.0012501919191919193,
+          "p50": 0.001355,
+          "p95": 0.002033299999999998,
+          "max": 0.002736
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 23,
+            "proc_count": 23,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 29,
+            "proc_count": 29,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 33,
+            "proc_count": 33,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 38,
+            "proc_count": 38,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 42,
+            "proc_count": 42,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 43,
+            "proc_count": 43,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 49,
+            "proc_count": 49,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 53,
+            "proc_count": 53,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 58,
+            "proc_count": 58,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 62,
+            "proc_count": 62,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 63,
+            "proc_count": 63,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 69,
+            "proc_count": 69,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 73,
+            "proc_count": 73,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 78,
+            "proc_count": 78,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 82,
+            "proc_count": 82,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 83,
+            "proc_count": 83,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 89,
+            "proc_count": 89,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 93,
+            "proc_count": 93,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 98,
+            "proc_count": 98,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/pub2_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 98,
+        "proc_count": 98,
+        "recv_rate_hz": 14.61929131643949,
+        "proc_rate_hz": 14.61929131643949,
+        "inter_arrival_ms": {
+          "mean": 60.92675446391752,
+          "p50": 13.701426,
+          "p95": 230.77990199999974,
+          "max": 497.873185
+        },
+        "callback_processing_ms": {
+          "mean": 0.0006622857142857143,
+          "p50": 0.000692,
+          "p95": 0.0013924999999999992,
+          "max": 0.001865
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 23,
+            "proc_count": 23,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 29,
+            "proc_count": 29,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 33,
+            "proc_count": 33,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 38,
+            "proc_count": 38,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 42,
+            "proc_count": 42,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 43,
+            "proc_count": 43,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 49,
+            "proc_count": 49,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 53,
+            "proc_count": 53,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 58,
+            "proc_count": 58,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 62,
+            "proc_count": 62,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 63,
+            "proc_count": 63,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 69,
+            "proc_count": 69,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 73,
+            "proc_count": 73,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 78,
+            "proc_count": 78,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 82,
+            "proc_count": 82,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 83,
+            "proc_count": 83,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 89,
+            "proc_count": 89,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 93,
+            "proc_count": 93,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 98,
+            "proc_count": 98,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/pub_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 98,
+        "proc_count": 98,
+        "recv_rate_hz": 14.61929131643949,
+        "proc_rate_hz": 14.61929131643949,
+        "inter_arrival_ms": {
+          "mean": 60.92538296907216,
+          "p50": 13.708467,
+          "p95": 230.76040279999972,
+          "max": 497.898403
+        },
+        "callback_processing_ms": {
+          "mean": 0.0005623877551020408,
+          "p50": 0.000573,
+          "p95": 0.0013066999999999994,
+          "max": 0.00199
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 23,
+            "proc_count": 23,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 29,
+            "proc_count": 29,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 33,
+            "proc_count": 33,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 38,
+            "proc_count": 38,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 42,
+            "proc_count": 42,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 43,
+            "proc_count": 43,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 49,
+            "proc_count": 49,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 53,
+            "proc_count": 53,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 58,
+            "proc_count": 58,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 62,
+            "proc_count": 62,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 63,
+            "proc_count": 63,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 69,
+            "proc_count": 69,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 73,
+            "proc_count": 73,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 78,
+            "proc_count": 78,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 82,
+            "proc_count": 82,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 83,
+            "proc_count": 83,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 89,
+            "proc_count": 89,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 93,
+            "proc_count": 93,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 98,
+            "proc_count": 98,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/raw_subscription_test",
+        "type": "std_msgs/msg/String",
+        "recv_count": 9,
+        "proc_count": 9,
+        "recv_rate_hz": 1.3425879780403613,
+        "proc_rate_hz": 1.3425879780403613,
+        "inter_arrival_ms": {
+          "mean": 472.736982625,
+          "p50": 498.78012,
+          "p95": 519.2664242999999,
+          "max": 522.192012
+        },
+        "callback_processing_ms": {
+          "mean": 0.0007056666666666666,
+          "p50": 0.000645,
+          "p95": 0.0013405999999999997,
+          "max": 0.001509
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/rosout",
+        "type": "rcl_interfaces/msg/Log",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_no_callback",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_number_callbacks",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_info",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_with_partial",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_without_autostart",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testactionserver",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destruction_order_node_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_node_init_3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testclient",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_lifecycle_services_client",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testcreatewhilespinning",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testexecutor",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testqosevent",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/testtimesource2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/ctx_mgr_test",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/example_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/mynode",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rate_shutdown",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_rosout_subscription",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_service_server_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_sub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_action_client_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_time_until_next_call",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_timer_cancel_reset",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/sub_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322891855889298,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892002019300,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892204826514,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892402253295,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892603229815,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322892802846672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893003455845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893201967958,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_destroy_service_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_subscription_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_timer_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/test_node1",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node2",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node3",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_node4",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_client_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_destroy_publisher_asap",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/take_test",
+        "type": "std_msgs/msg/String",
+        "recv_count": 9,
+        "proc_count": 9,
+        "recv_rate_hz": 1.3425879780403613,
+        "proc_rate_hz": 1.3425879780403613,
+        "inter_arrival_ms": {
+          "mean": 472.341590125,
+          "p50": 498.59422,
+          "p95": 519.31021415,
+          "max": 522.130861
+        },
+        "callback_processing_ms": {
+          "mean": 0.0005862222222222222,
+          "p50": 0.000608,
+          "p95": 0.0010037999999999998,
+          "max": 0.001169
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/test_node",
+        "type": "std_msgs/msg/String",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/test_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 9,
+        "proc_count": 9,
+        "recv_rate_hz": 1.3425879780403613,
+        "proc_rate_hz": 1.3425879780403613,
+        "inter_arrival_ms": {
+          "mean": 472.340875875,
+          "p50": 498.506269,
+          "p95": 519.31566215,
+          "max": 522.061164
+        },
+        "callback_processing_ms": {
+          "mean": 0.000582111111111111,
+          "p50": 0.000485,
+          "p95": 0.0010877999999999999,
+          "max": 0.001237
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/testcreatewhilespinning",
+        "type": "std_msgs/msg/String",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          },
+          {
+            "node": "/generated/foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ]
+      },
+      {
+        "topic": "/topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 19,
+        "proc_count": 19,
+        "recv_rate_hz": 2.8343523980852074,
+        "proc_rate_hz": 2.8343523980852074,
+        "inter_arrival_ms": {
+          "mean": 251.31724050000003,
+          "p50": 245.935896,
+          "p95": 339.02034759999987,
+          "max": 420.408361
+        },
+        "callback_processing_ms": {
+          "mean": 0.000689157894736842,
+          "p50": 0.000712,
+          "p95": 0.0012586000000000001,
+          "max": 0.001273
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893411853845,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 1,
+            "proc_count": 1,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 11,
+            "proc_count": 11,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 13,
+            "proc_count": 13,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 17,
+            "proc_count": 17,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 19,
+            "proc_count": 19,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/trigger_long",
+        "type": "std_msgs/msg/String",
+        "recv_count": 18,
+        "proc_count": 18,
+        "recv_rate_hz": 2.6851759560807227,
+        "proc_rate_hz": 2.6851759560807227,
+        "inter_arrival_ms": {
+          "mean": 228.4873338235294,
+          "p50": 114.198287,
+          "p95": 401.7879592,
+          "max": 408.123476
+        },
+        "callback_processing_ms": {
+          "mean": 0.0011282222222222223,
+          "p50": 0.000732,
+          "p95": 0.0028225499999999975,
+          "max": 0.004265
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 11,
+            "proc_count": 11,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/trigger_short",
+        "type": "std_msgs/msg/String",
+        "recv_count": 18,
+        "proc_count": 18,
+        "recv_rate_hz": 2.6851759560807227,
+        "proc_rate_hz": 2.6851759560807227,
+        "inter_arrival_ms": {
+          "mean": 228.50946117647058,
+          "p50": 114.351653,
+          "p95": 401.734141,
+          "max": 407.949517
+        },
+        "callback_processing_ms": {
+          "mean": 0.0006730555555555556,
+          "p50": 0.000624,
+          "p95": 0.0015559499999999989,
+          "max": 0.00223
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322893630225358,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322893802236941,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894003407610,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894213807263,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894404013082,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894603119226,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322894805071516,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895014866672,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895203975356,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895409918599,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895604007995,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322895806072901,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896002019663,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896202376621,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896403191431,
+            "recv_count": 11,
+            "proc_count": 11,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896603795014,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322896804883893,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897003650693,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897202917369,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897403093233,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897602780784,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322897805102614,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898001585799,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322898202765425,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/testcallbackgroup",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_pub_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      }
+    ]
+  },
+  "static_alignment": {
+    "static_edge_count": 69,
+    "dynamic_raw_edge_count": 225,
+    "dynamic_dedup_edge_count": 63,
+    "dynamic_subset_of_static": true,
+    "dynamic_extra_edge_count": 0,
+    "dynamic_extra_edges_sample": [],
+    "expectation": "dynamic extraction is independent; subset relation is a validation target, not a filter rule"
+  }
+}

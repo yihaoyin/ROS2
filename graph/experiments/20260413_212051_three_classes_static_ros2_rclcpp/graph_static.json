@@ -1,0 +1,304 @@
+{
+  "nodes": [
+    "/clock_publisher",
+    "/clock_thread_testing_node",
+    "/my_node",
+    "/sim_clock_publisher_node",
+    "/subscription_class_node_inheritance",
+    "/test_component_bar",
+    "/test_component_foo",
+    "/timer_node"
+  ],
+  "topics": [
+    {
+      "name": "/chatter",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/clock",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/content_filter_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/custom_allocator_test",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/loaned_message_test_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/node1_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/service/_service_event",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/test_drop",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/test_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/topic_name",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/wait_for_last_message_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/wait_for_message_topic",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "/clock",
+      "to": "/clock_publisher",
+      "kind": "sub"
+    },
+    {
+      "from": "/clock_publisher",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/clock_thread_testing_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/my_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/my_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/service/_service_event",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/service/_service_event",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/sim_clock_publisher_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/subscription_class_node_inheritance",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/content_filter_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/custom_allocator_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/loaned_message_test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/node1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_drop",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/topic_name",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/wait_for_last_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/wait_for_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/content_filter_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/custom_allocator_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/loaned_message_test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/node1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_drop",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/topic_name",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/wait_for_last_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/wait_for_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_drop",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_drop",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_topic",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_topic",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/topic",
+      "to": "/subscription_class_node_inheritance",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic_name",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic_name",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    }
+  ]
+}

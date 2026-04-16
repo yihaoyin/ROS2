@@ -1,0 +1,550 @@
+{
+  "graph_summary": {
+    "node_count": 52,
+    "wait_edge_count": 5,
+    "callback_resource_edge_count": 149,
+    "key_callback_resource_edge_count": 18,
+    "key_callback_resource_edge_total": 101,
+    "wait_edges_truncated": false,
+    "callback_resource_edges_truncated": true,
+    "communication_trigger_edge_count": 0,
+    "cycle_candidate_count": 4
+  },
+  "wait_edges": [
+    {
+      "from": "/loopback_simulator",
+      "to": "/map_server",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/map_saver",
+      "to": "/map_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/plannertester",
+      "to": "/planner_server",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_docking_server",
+      "to": "/docking_server",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/test_following_server",
+      "to": "/following_server",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    }
+  ],
+  "model_context": {
+    "executor_count": 75,
+    "callback_group_count": 52,
+    "assignment_count": 52,
+    "explicit_executor_count": 23,
+    "explicit_callback_group_count": 0
+  },
+  "callback_resource_graph": [
+    {
+      "from": "/amcl:cb_1",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_2",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_3",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_4",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_service_1454",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_service_1460",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_service_1466",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/amcl:cb_subscription_1439",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/behavior_server:cb_23",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/bt_navigator:cb_24",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/collision_monitor:cb_22",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/collision_monitor:cb_service_87",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/controller_server:cb_11",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/costmap:cb_21",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/costmap:cb_subscription_211",
+      "to": "resource:executor_slot:exec_1",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/docking_server:cb_5",
+      "to": "future:service_response:/parameter_service:/docking_server:cb_5",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "Callback on /docking_server explicitly waits for /parameter_service using spin_until_future_complete"
+    },
+    {
+      "from": "/docking_server:cb_5",
+      "to": "future:service_response:/parameter_service:/docking_server:cb_5",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/docking_server:cb_5",
+      "to": "resource:callback_group:cg::/docking_server::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    }
+  ],
+  "edge_type_counts": {
+    "blocking": 3,
+    "potential": 2
+  },
+  "edge_class_counts": {
+    "service_action": 5
+  },
+  "class_assessment": {
+    "communication": {
+      "wait_edge_count": 0,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 0
+    },
+    "service_action": {
+      "wait_edge_count": 5,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 10
+    },
+    "callback_blocking": {
+      "wait_edge_count": 0,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 10
+    }
+  },
+  "cycle_candidates": [
+    {
+      "kind": "scc",
+      "size": 4,
+      "sample_nodes": [
+        "/test_object_pose_publisher:cb_timer_110",
+        "/test_object_pose_publisher:cb_timer_300",
+        "resource:callback_group:cg::/test_object_pose_publisher::default",
+        "resource:executor_slot:exec::/test_object_pose_publisher"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/plannertester:cb_blocking_auto",
+        "resource:callback_group:cg::/plannertester::default",
+        "resource:executor_slot:exec::/plannertester"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/fibonacci_server_node:cb_blocking_auto",
+        "resource:callback_group:cg::/fibonacci_server_node::default",
+        "resource:executor_slot:exec::/fibonacci_server_node"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 23,
+      "sample_nodes": [
+        "/docking_server:cb_5",
+        "/docking_server:cb_6",
+        "/loopback_simulator:cb_subscription_75",
+        "/map_saver:cb_10"
+      ]
+    }
+  ],
+  "node_level_assessment": {
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 0
+    }
+  },
+  "deadlock_assessment": {
+    "definite_deadlocks": [],
+    "potential_deadlocks": [
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/docking_server:cb_5",
+          "future:service_response:/parameter_service:/docking_server:cb_5",
+          "resource:callback_group:cg::/docking_server::default",
+          "resource:executor_slot:exec_1"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/map_saver:cb_10",
+          "/map_server:service_server",
+          "future:service_response:/map_server/map:/map_saver:cb_10",
+          "resource:callback_group:cg::/map_saver::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/waypoint_follower:cb_13",
+          "future:service_response:/pause:/waypoint_follower:cb_13",
+          "future:service_response:/resume:/waypoint_follower:cb_13",
+          "resource:callback_group:cg::/waypoint_follower::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 2,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/route_server:cb_15",
+          "future:service_response:/compute_and_track_route:/route_server:cb_15",
+          "future:service_response:/compute_route:/route_server:cb_15",
+          "resource:callback_group:cg::/route_server::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 2,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/fibonacci_server_node:cb_blocking_auto",
+          "future:service_response:/fibonacci:/fibonacci_server_node:cb_blocking_auto",
+          "resource:callback_group:cg::/fibonacci_server_node::default",
+          "resource:executor_slot:exec::/fibonacci_server_node"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/loopback_simulator:cb_subscription_75",
+          "future:service_response:/map_server/map:/loopback_simulator:cb_subscription_75",
+          "/map_server:cb_8",
+          "resource:executor_slot:exec_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/map_saver:cb_10",
+          "future:service_response:/map_server/map:/map_saver:cb_10",
+          "/map_server:cb_8",
+          "resource:executor_slot:exec_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/loopback_simulator:cb_25",
+          "future:service_response:/map_server/map:/loopback_simulator:cb_25",
+          "resource:callback_group:cg::/loopback_simulator::default",
+          "resource:executor_slot:exec_1"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 1,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "low",
+        "relations": [
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      }
+    ],
+    "overall": "potential_deadlock",
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 10,
+      "reported_definite_count": 0,
+      "reported_potential_count": 8
+    },
+    "primary_graph": "callback_resource_graph",
+    "rules": [
+      "definite only if every cycle hop has grounded blocking evidence",
+      "inferred/low-confidence edges are excluded from definite",
+      "wait_for_service and spin_until_future_complete are conservative (potential by default)",
+      "otherwise cycle is potential"
+    ]
+  },
+  "config": {
+    "use_llm_relations": false,
+    "mode": "evidence_plus_rules",
+    "semantic_edges_ingested": 9
+  },
+  "assumptions": [
+    "Potential/executor edges are conservative (may include false positives).",
+    "Blocking inference is keyword-based static heuristic, not path-sensitive proof.",
+    "This graph models wait dependencies, not data-flow edges.",
+    "All semantics are static: source code scan + optional LLM static spec; runtime trace is not used for wait-for."
+  ]
+}

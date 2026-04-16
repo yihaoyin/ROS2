@@ -1,0 +1,3854 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "repo_url": "https://github.com/ros2/rclpy",
+    "ref": "rolling",
+    "project_name": "rclpy",
+    "language": [
+      "python"
+    ]
+  },
+  "graph_seed": {
+    "nodes": [
+      "/clock_node",
+      "/ctx_mgr_test",
+      "/example_node",
+      "/foo",
+      "/my_node",
+      "/mynode",
+      "/node_name",
+      "/pub_node",
+      "/publisher_node",
+      "/test_action_client_node",
+      "/test_destroy_client_asap",
+      "/test_destroy_publisher_asap",
+      "/test_destroy_service_asap",
+      "/test_destroy_subscription_asap",
+      "/test_destroy_timer_asap",
+      "/test_destruction_order_node_1",
+      "/test_destruction_order_node_2",
+      "/test_destruction_order_node_3",
+      "/test_lifecycle_node_init_1",
+      "/test_lifecycle_node_init_2",
+      "/test_lifecycle_node_init_3",
+      "/test_lifecycle_publisher",
+      "/test_lifecycle_services_client",
+      "/test_node",
+      "/test_node1",
+      "/test_node2",
+      "/test_node3",
+      "/test_node4",
+      "/test_node_no_sim",
+      "/test_pub_node",
+      "/test_rate",
+      "/test_rate_shutdown",
+      "/test_rosout_subscription",
+      "/test_service_client_node",
+      "/test_service_server_node",
+      "/test_sub_node",
+      "/test_time_until_next_call",
+      "/test_timer_cancel_reset",
+      "/test_timer_no_callback",
+      "/test_timer_number_callbacks",
+      "/test_timer_with_info",
+      "/test_timer_with_partial",
+      "/test_timer_without_autostart",
+      "/testactionclient",
+      "/testactionserver",
+      "/testcallbackgroup",
+      "/testclient",
+      "/testcreatewhilespinning",
+      "/testexecutor",
+      "/testqosevent",
+      "/testtimesource2"
+    ],
+    "topics": [
+      "/chatter",
+      "/chatter/{bad_sub}",
+      "/foo",
+      "/foo/{bad_sub}",
+      "/pub1_topic",
+      "/pub2_topic",
+      "/pub_topic",
+      "/raw_subscription_test",
+      "/sub_topic",
+      "/take_test",
+      "/test_node",
+      "/test_topic",
+      "/testcreatewhilespinning",
+      "/topic",
+      "/trigger_long",
+      "/trigger_short"
+    ],
+    "edges": [
+      {
+        "from": "/chatter",
+        "to": "/test_node_no_sim",
+        "kind": "sub"
+      },
+      {
+        "from": "/chatter",
+        "to": "/testcallbackgroup",
+        "kind": "sub"
+      },
+      {
+        "from": "/foo",
+        "to": "/testcreatewhilespinning",
+        "kind": "sub"
+      },
+      {
+        "from": "/foo/{bad_sub}",
+        "to": "/test_node_no_sim",
+        "kind": "sub"
+      },
+      {
+        "from": "/pub_node",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/pub_node",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_destroy_client_asap",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_destroy_publisher_asap",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_destroy_service_asap",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_destroy_subscription_asap",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_destroy_timer_asap",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_node1",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_node2",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_node3",
+        "kind": "sub"
+      },
+      {
+        "from": "/sub_topic",
+        "to": "/test_node4",
+        "kind": "sub"
+      },
+      {
+        "from": "/test_destroy_client_asap",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_client_asap",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_client_asap",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_publisher_asap",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_publisher_asap",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_publisher_asap",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_service_asap",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_service_asap",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_service_asap",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_subscription_asap",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_subscription_asap",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_subscription_asap",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_timer_asap",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_timer_asap",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_destroy_timer_asap",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node",
+        "to": "/foo",
+        "kind": "sub"
+      },
+      {
+        "from": "/test_node1",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node1",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node1",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node2",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node2",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node2",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node3",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node3",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node3",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node4",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node4",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node4",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node_no_sim",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node_no_sim",
+        "to": "/chatter/{bad_sub}",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node_no_sim",
+        "to": "/raw_subscription_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_node_no_sim",
+        "to": "/take_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/pub1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/pub2_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/pub_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/raw_subscription_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/take_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/trigger_long",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_pub_node",
+        "to": "/trigger_short",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_rate",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_rate_shutdown",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_time_until_next_call",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_cancel_reset",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_no_callback",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_number_callbacks",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_with_info",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_with_partial",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_timer_without_autostart",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/testcallbackgroup",
+        "to": "/trigger_long",
+        "kind": "pub"
+      },
+      {
+        "from": "/testcallbackgroup",
+        "to": "/trigger_short",
+        "kind": "pub"
+      },
+      {
+        "from": "/testcreatewhilespinning",
+        "to": "/foo",
+        "kind": "pub"
+      },
+      {
+        "from": "/testcreatewhilespinning",
+        "to": "/foo",
+        "kind": "sub"
+      }
+    ],
+    "node_semantics": [
+      {
+        "name": "/clock_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/clock_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/clock_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/clock_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/clock_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/ctx_mgr_test",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "service_client"
+        ],
+        "service_clients": [
+          "/service"
+        ],
+        "service_servers": [
+          "/service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_service_133",
+            "source": "service",
+            "callback_group": "cg::/ctx_mgr_test::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/example_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/foo",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/my_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_subscription_355",
+            "source": "subscription",
+            "callback_group": "cg::/my_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/mynode",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/node_name",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription"
+        ],
+        "service_clients": [
+          "/foo/{bad_sub}",
+          "/get/parameters",
+          "/service"
+        ],
+        "service_servers": [
+          "/foo/{bad_sub}",
+          "/get/parameters",
+          "/service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_service_133",
+            "source": "service",
+            "callback_group": "cg::/node_name::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/pub_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/publisher_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_action_client_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/test_action_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/test_action_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/test_action_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/test_action_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destroy_client_asap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_destroy_client_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destroy_publisher_asap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_destroy_publisher_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destroy_service_asap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_destroy_service_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destroy_subscription_asap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_destroy_subscription_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destroy_timer_asap",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_destroy_timer_asap::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destruction_order_node_1",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destruction_order_node_2",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_destruction_order_node_3",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_lifecycle_node_init_1",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_lifecycle_node_init_2",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_lifecycle_node_init_3",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_lifecycle_publisher",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_lifecycle_services_client",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/foo/{bad_sub}",
+          "/get/parameters"
+        ],
+        "service_servers": [
+          "/foo/{bad_sub}",
+          "/get/parameters"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node1",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_node1::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node2",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_node2::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node3",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_node3::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node4",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/cli_service"
+        ],
+        "service_servers": [
+          "/srv_service"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_82",
+            "source": "timer",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_83",
+            "source": "timer",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_103",
+            "source": "timer",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_140",
+            "source": "subscription",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_258",
+            "source": "timer",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_232",
+            "source": "service",
+            "callback_group": "cg::/test_node4::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_node_no_sim",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "subscription"
+        ],
+        "service_clients": [
+          "/foo/{bad_sub}",
+          "/get/parameters"
+        ],
+        "service_servers": [
+          "/foo/{bad_sub}",
+          "/get/parameters"
+        ],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_subscription_119",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_123",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_125",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_127",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_129",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_209",
+            "source": "service",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_211",
+            "source": "service",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_213",
+            "source": "service",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_215",
+            "source": "service",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_120",
+            "source": "subscription",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_service_208",
+            "source": "service",
+            "callback_group": "cg::/test_node_no_sim::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_pub_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/test_pub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/test_pub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/test_pub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/test_pub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_rate",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_rate_shutdown",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_rosout_subscription",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_service_client_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "service_client",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/test_service_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/test_service_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/test_service_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/test_service_client_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_service_server_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [
+          "/test_service"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/test_service_server_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/test_service_server_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/test_service_server_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/test_service_server_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_sub_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "timer"
+        ],
+        "service_clients": [
+          "/test_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_250",
+            "source": "timer",
+            "callback_group": "cg::/test_sub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_706",
+            "source": "timer",
+            "callback_group": "cg::/test_sub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_707",
+            "source": "timer",
+            "callback_group": "cg::/test_sub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_163",
+            "source": "service",
+            "callback_group": "cg::/test_sub_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/test_service"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_time_until_next_call",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_time_until_next_call::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_cancel_reset",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_cancel_reset::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_no_callback",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_no_callback::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_number_callbacks",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_number_callbacks::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_with_info",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_info::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_with_partial",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_with_partial::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_timer_without_autostart",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_timer_84",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_113",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_145",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_192",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_222",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_242",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_294",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_334",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_356",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_timer_368",
+            "source": "timer",
+            "callback_group": "cg::/test_timer_without_autostart::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testactionclient",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service"
+        ],
+        "service_clients": [],
+        "service_servers": [
+          "/cancel",
+          "/result",
+          "/test_client"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_service_48",
+            "source": "service",
+            "callback_group": "cg::/testactionclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_51",
+            "source": "service",
+            "callback_group": "cg::/testactionclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_54",
+            "source": "service",
+            "callback_group": "cg::/testactionclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testactionserver",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testcallbackgroup",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "service_client",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/get/parameters"
+        ],
+        "service_servers": [
+          "/get/parameters"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_49",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_50",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_139",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_140",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_154",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_156",
+            "source": "timer",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_subscription_162",
+            "source": "subscription",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_179",
+            "source": "service",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_service_182",
+            "source": "service",
+            "callback_group": "cg::/testcallbackgroup::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testclient",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "service_client"
+        ],
+        "service_clients": [
+          "/get/parameters",
+          "/service",
+          "/test_direct_destroy",
+          "/test_server",
+          "/test_service",
+          "/test_wfs_exists"
+        ],
+        "service_servers": [
+          "/get/parameters",
+          "/service",
+          "/test_wfs_exists"
+        ],
+        "blocking_calls": [
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_service_225",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_249",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_272",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_294",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_115",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_129",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_150",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_174",
+            "source": "service",
+            "callback_group": "cg::/testclient::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/get/parameters",
+              "/service",
+              "/test_direct_destroy",
+              "/test_wfs_exists"
+            ],
+            "blocking_calls": [
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testcreatewhilespinning",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "service",
+          "service_client",
+          "subscription",
+          "timer"
+        ],
+        "service_clients": [
+          "/foo"
+        ],
+        "service_servers": [
+          "/foo"
+        ],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_subscription_61",
+            "source": "subscription",
+            "callback_group": "cg::/testcreatewhilespinning::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/foo"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_service_74",
+            "source": "service",
+            "callback_group": "cg::/testcreatewhilespinning::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/foo"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          },
+          {
+            "id": "cb_timer_90",
+            "source": "timer",
+            "callback_group": "cg::/testcreatewhilespinning::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/foo"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testexecutor",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_62",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_96",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_146",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_261",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_551",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_581",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_605",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_648",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_669",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_703",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_802",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          },
+          {
+            "id": "cb_timer_809",
+            "source": "timer",
+            "callback_group": "cg::/testexecutor::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": [
+              "spin_until_future_complete"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testqosevent",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [
+          "spin_until_future_complete"
+        ],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/testtimesource2",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      }
+    ],
+    "semantic_edges": [
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/get/parameters:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /get/parameters",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/service:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /service",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/test_direct_destroy:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /test_direct_destroy",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/test_server:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /test_server",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/test_service:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /test_service",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testclient",
+        "to": "future:service_response:/test_wfs_exists:/testclient",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /test_wfs_exists",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      },
+      {
+        "from": "/testcreatewhilespinning",
+        "to": "future:service_response:/foo:/testcreatewhilespinning",
+        "relation": "waits_for",
+        "type": "blocking",
+        "deadlock_class": "service_action",
+        "reason": "Node calls wait_for_service on /foo",
+        "provenance": "grounded",
+        "confidence": "high",
+        "definite_eligible": true,
+        "model_uncertainty": false
+      }
+    ],
+    "executors": [
+      {
+        "id": "exec::/clock_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/ctx_mgr_test",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/my_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/node_name",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_action_client_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_destroy_client_asap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_destroy_publisher_asap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_destroy_service_asap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_destroy_subscription_asap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_destroy_timer_asap",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node1",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node2",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node3",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node4",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_node_no_sim",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_pub_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_service_client_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_service_server_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_sub_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_time_until_next_call",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_cancel_reset",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_no_callback",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_number_callbacks",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_with_info",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_with_partial",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_timer_without_autostart",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/testactionclient",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/testcallbackgroup",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/testclient",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/testcreatewhilespinning",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/testexecutor",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec_multi",
+        "kind": "MultiThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "explicit"
+      },
+      {
+        "id": "exec_single",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "explicit"
+      }
+    ],
+    "callback_groups": [
+      {
+        "id": "cg::/clock_node::default",
+        "node": "/clock_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/clock_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/ctx_mgr_test::default",
+        "node": "/ctx_mgr_test",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/ctx_mgr_test",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/my_node::default",
+        "node": "/my_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/my_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/node_name::default",
+        "node": "/node_name",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/node_name",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_action_client_node::default",
+        "node": "/test_action_client_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_action_client_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_destroy_client_asap::default",
+        "node": "/test_destroy_client_asap",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_destroy_client_asap",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_destroy_publisher_asap::default",
+        "node": "/test_destroy_publisher_asap",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_destroy_publisher_asap",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_destroy_service_asap::default",
+        "node": "/test_destroy_service_asap",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_destroy_service_asap",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_destroy_subscription_asap::default",
+        "node": "/test_destroy_subscription_asap",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_destroy_subscription_asap",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_destroy_timer_asap::default",
+        "node": "/test_destroy_timer_asap",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_destroy_timer_asap",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node1::default",
+        "node": "/test_node1",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node1",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node2::default",
+        "node": "/test_node2",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node2",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node3::default",
+        "node": "/test_node3",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node3",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node4::default",
+        "node": "/test_node4",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node4",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node::default",
+        "node": "/test_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_node_no_sim::default",
+        "node": "/test_node_no_sim",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_node_no_sim",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_pub_node::default",
+        "node": "/test_pub_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_pub_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_service_client_node::default",
+        "node": "/test_service_client_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_service_client_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_service_server_node::default",
+        "node": "/test_service_server_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_service_server_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_sub_node::default",
+        "node": "/test_sub_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_sub_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_time_until_next_call::default",
+        "node": "/test_time_until_next_call",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_time_until_next_call",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_cancel_reset::default",
+        "node": "/test_timer_cancel_reset",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_cancel_reset",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_no_callback::default",
+        "node": "/test_timer_no_callback",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_no_callback",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_number_callbacks::default",
+        "node": "/test_timer_number_callbacks",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_number_callbacks",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_with_info::default",
+        "node": "/test_timer_with_info",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_with_info",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_with_partial::default",
+        "node": "/test_timer_with_partial",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_with_partial",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_timer_without_autostart::default",
+        "node": "/test_timer_without_autostart",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/test_timer_without_autostart",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/testactionclient::default",
+        "node": "/testactionclient",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/testactionclient",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/testcallbackgroup::default",
+        "node": "/testcallbackgroup",
+        "type": "MutuallyExclusive",
+        "executor": "exec_single",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/testclient::default",
+        "node": "/testclient",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/testclient",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/testcreatewhilespinning::default",
+        "node": "/testcreatewhilespinning",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/testcreatewhilespinning",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/testexecutor::default",
+        "node": "/testexecutor",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/testexecutor",
+        "origin": "inferred"
+      }
+    ],
+    "assignments": [
+      {
+        "callback_group": "cg::/clock_node::default",
+        "executor": "exec::/clock_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/ctx_mgr_test::default",
+        "executor": "exec::/ctx_mgr_test",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/my_node::default",
+        "executor": "exec::/my_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/node_name::default",
+        "executor": "exec::/node_name",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_action_client_node::default",
+        "executor": "exec::/test_action_client_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_destroy_client_asap::default",
+        "executor": "exec::/test_destroy_client_asap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_destroy_publisher_asap::default",
+        "executor": "exec::/test_destroy_publisher_asap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_destroy_service_asap::default",
+        "executor": "exec::/test_destroy_service_asap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_destroy_subscription_asap::default",
+        "executor": "exec::/test_destroy_subscription_asap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_destroy_timer_asap::default",
+        "executor": "exec::/test_destroy_timer_asap",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node1::default",
+        "executor": "exec::/test_node1",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node2::default",
+        "executor": "exec::/test_node2",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node3::default",
+        "executor": "exec::/test_node3",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node4::default",
+        "executor": "exec::/test_node4",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node::default",
+        "executor": "exec::/test_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_node_no_sim::default",
+        "executor": "exec::/test_node_no_sim",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_pub_node::default",
+        "executor": "exec::/test_pub_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_service_client_node::default",
+        "executor": "exec::/test_service_client_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_service_server_node::default",
+        "executor": "exec::/test_service_server_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_sub_node::default",
+        "executor": "exec::/test_sub_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_time_until_next_call::default",
+        "executor": "exec::/test_time_until_next_call",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_cancel_reset::default",
+        "executor": "exec::/test_timer_cancel_reset",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_no_callback::default",
+        "executor": "exec::/test_timer_no_callback",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_number_callbacks::default",
+        "executor": "exec::/test_timer_number_callbacks",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_with_info::default",
+        "executor": "exec::/test_timer_with_info",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_with_partial::default",
+        "executor": "exec::/test_timer_with_partial",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_timer_without_autostart::default",
+        "executor": "exec::/test_timer_without_autostart",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testactionclient::default",
+        "executor": "exec::/testactionclient",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testcallbackgroup::default",
+        "executor": "exec::/testcallbackgroup",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testcallbackgroup::default",
+        "executor": "exec_single",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testclient::default",
+        "executor": "exec::/testclient",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testcreatewhilespinning::default",
+        "executor": "exec::/testcreatewhilespinning",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/testexecutor::default",
+        "executor": "exec::/testexecutor",
+        "origin": "inferred"
+      }
+    ]
+  }
+}

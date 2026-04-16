@@ -1,0 +1,78 @@
+#include <chrono>
+#include <memory>
+#include <string>
+
+#include "rclcpp/rclcpp.hpp"
+#include "rclcpp/executors/single_threaded_executor.hpp"
+#include "rclcpp/executors/multi_threaded_executor.hpp"
+#include "std_msgs/msg/string.hpp"
+#include "std_srvs/srv/trigger.hpp"
+
+using namespace std::chrono_literals;
+
+class RouteServerNode : public rclcpp::Node
+{
+public:
+  RouteServerNode()
+  : rclcpp::Node("route_server")
+  {
+    pub_0_ = this->create_publisher<std_msgs::msg::String>("/route", 10);
+
+    srv_server_0_ = this->create_service<std_srvs::srv::Trigger>("/route_server/ReroutingService/reroute", std::bind(&RouteServerNode::on_srv_server_0, this, std::placeholders::_1, std::placeholders::_2));
+    srv_client_0_ = this->create_client<std_srvs::srv::Trigger>("/compute_and_track_route");
+    srv_client_1_ = this->create_client<std_srvs::srv::Trigger>("/compute_route");
+    timer_pub_0_ = this->create_wall_timer(500ms, std::bind(&RouteServerNode::on_pub_timer_0, this));
+    timer_srv_client_0_ = this->create_wall_timer(1000ms, std::bind(&RouteServerNode::on_srv_client_timer_0, this));
+    timer_srv_client_1_ = this->create_wall_timer(1000ms, std::bind(&RouteServerNode::on_srv_client_timer_1, this));
+  }
+
+private:
+  void on_pub_timer_0()
+  {
+    std_msgs::msg::String msg;
+    msg.data = "tick";
+    pub_0_->publish(msg);
+  }
+
+  void on_srv_server_0(const std::shared_ptr<std_srvs::srv::Trigger::Request> req, std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
+  {
+    (void)req;
+    resp->success = true;
+    resp->message = "ok";
+  }
+
+  void on_srv_client_timer_0()
+  {
+    if (!srv_client_0_->service_is_ready()) return;
+    auto req = std::make_shared<std_srvs::srv::Trigger::Request>();
+    auto fut = srv_client_0_->async_send_request(req);
+    (void)fut;
+  }
+
+  void on_srv_client_timer_1()
+  {
+    if (!srv_client_1_->service_is_ready()) return;
+    auto req = std::make_shared<std_srvs::srv::Trigger::Request>();
+    auto fut = srv_client_1_->async_send_request(req);
+    (void)fut;
+  }
+
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_0_;
+  rclcpp::TimerBase::SharedPtr timer_pub_0_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_server_0_;
+  rclcpp::Client<std_srvs::srv::Trigger>::SharedPtr srv_client_0_;
+  rclcpp::TimerBase::SharedPtr timer_srv_client_0_;
+  rclcpp::Client<std_srvs::srv::Trigger>::SharedPtr srv_client_1_;
+  rclcpp::TimerBase::SharedPtr timer_srv_client_1_;
+};
+
+int main(int argc, char ** argv)
+{
+  rclcpp::init(argc, argv);
+    auto node = std::make_shared<RouteServerNode>();
+  rclcpp::executors::SingleThreadedExecutor exec;
+  exec.add_node(node);
+  exec.spin();
+  rclcpp::shutdown();
+  return 0;
+}

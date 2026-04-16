@@ -1,0 +1,4237 @@
+{
+  "nodes": [
+    "/clock_publisher",
+    "/clock_thread_testing_node",
+    "/my_node",
+    "/sim_clock_publisher_node",
+    "/subscription_class_node_inheritance",
+    "/test_component_bar",
+    "/test_component_foo",
+    "/timer_node"
+  ],
+  "topics": [
+    {
+      "name": "/chatter"
+    },
+    {
+      "name": "/clock"
+    },
+    {
+      "name": "/content_filter_topic"
+    },
+    {
+      "name": "/custom_allocator_test"
+    },
+    {
+      "name": "/loaned_message_test_topic"
+    },
+    {
+      "name": "/node1_topic"
+    },
+    {
+      "name": "/service/_service_event"
+    },
+    {
+      "name": "/test_drop"
+    },
+    {
+      "name": "/test_topic"
+    },
+    {
+      "name": "/topic"
+    },
+    {
+      "name": "/topic_name"
+    },
+    {
+      "name": "/wait_for_last_message_topic"
+    },
+    {
+      "name": "/wait_for_message_topic"
+    }
+  ],
+  "edges": [
+    {
+      "from": "/clock",
+      "to": "/clock_publisher",
+      "kind": "sub"
+    },
+    {
+      "from": "/clock_publisher",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/clock_thread_testing_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/my_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/my_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/service/_service_event",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/service/_service_event",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/sim_clock_publisher_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/subscription_class_node_inheritance",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/content_filter_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/custom_allocator_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/loaned_message_test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/node1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_drop",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/topic_name",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/wait_for_last_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/wait_for_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/chatter",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/content_filter_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/custom_allocator_test",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/loaned_message_test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/node1_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_drop",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/topic_name",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/wait_for_last_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/wait_for_message_topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_drop",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_drop",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_topic",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/test_topic",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/topic",
+      "kind": "pub"
+    },
+    {
+      "from": "/topic",
+      "to": "/subscription_class_node_inheritance",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic_name",
+      "to": "/test_component_bar",
+      "kind": "sub"
+    },
+    {
+      "from": "/topic_name",
+      "to": "/test_component_foo",
+      "kind": "sub"
+    }
+  ],
+  "dynamic_runtime": {
+    "runtime": {
+      "start_time_ns": 1776322504465510192,
+      "end_time_ns": 1776322511142965931,
+      "duration_sec": 6.677455739
+    },
+    "timer": {
+      "sample_interval_sec": 0.2,
+      "trigger_count": 33,
+      "trigger_interval_ms": {
+        "mean": 196.75699515624999,
+        "p50": 199.996895,
+        "p95": 202.89636295,
+        "max": 206.273177
+      },
+      "trigger_timestamps_ns": [
+        1776322504771930149,
+        1776322504866124555,
+        1776322505069747705,
+        1776322505268079789,
+        1776322505468209229,
+        1776322505674482406,
+        1776322505867142031,
+        1776322506067587363,
+        1776322506269557959,
+        1776322506467134299,
+        1776322506666368037,
+        1776322506867780637,
+        1776322507067423193,
+        1776322507266790795,
+        1776322507467994802,
+        1776322507666270487,
+        1776322507868163076,
+        1776322508068002103,
+        1776322508268479171,
+        1776322508467711396,
+        1776322508670013115,
+        1776322508868936168,
+        1776322509066571464,
+        1776322509267801359,
+        1776322509468040191,
+        1776322509668114761,
+        1776322509868033981,
+        1776322510066630276,
+        1776322510267771648,
+        1776322510466511487,
+        1776322510666322617,
+        1776322510867992219,
+        1776322511068153994
+      ]
+    },
+    "topics_runtime": [
+      {
+        "topic": "/chatter",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.83942169565216,
+          "p50": 12.198057,
+          "p95": 507.72064869999997,
+          "max": 510.336443
+        },
+        "callback_processing_ms": {
+          "mean": 0.0009238749999999999,
+          "p50": 0.0006774999999999999,
+          "p95": 0.0019019,
+          "max": 0.001999
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/clock",
+        "type": "std_msgs/msg/String",
+        "recv_count": 61,
+        "proc_count": 61,
+        "recv_rate_hz": 9.135215924191991,
+        "proc_rate_hz": 9.135215924191991,
+        "inter_arrival_ms": {
+          "mean": 99.85297565,
+          "p50": 3.7618255,
+          "p95": 485.92667525,
+          "max": 500.378568
+        },
+        "callback_processing_ms": {
+          "mean": 0.0010589672131147542,
+          "p50": 0.000737,
+          "p95": 0.002157,
+          "max": 0.009951
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 7,
+            "proc_count": 7,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 25,
+            "proc_count": 25,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 25,
+            "proc_count": 25,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 35,
+            "proc_count": 35,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 35,
+            "proc_count": 35,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 45,
+            "proc_count": 45,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 45,
+            "proc_count": 45,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 50,
+            "proc_count": 50,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 50,
+            "proc_count": 50,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 50,
+            "proc_count": 50,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 55,
+            "proc_count": 55,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 55,
+            "proc_count": 55,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 60,
+            "proc_count": 60,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 60,
+            "proc_count": 60,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 60,
+            "proc_count": 60,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/clock_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_thread_testing_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/sim_clock_publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/timer_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/clock_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/content_filter_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.75782365217393,
+          "p50": 10.460334,
+          "p95": 507.9429366,
+          "max": 510.168699
+        },
+        "callback_processing_ms": {
+          "mean": 0.0004750833333333334,
+          "p50": 0.00032300000000000004,
+          "p95": 0.0009112999999999999,
+          "max": 0.001381
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/custom_allocator_test",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.75352821739133,
+          "p50": 10.438661,
+          "p95": 507.9968965,
+          "max": 510.076836
+        },
+        "callback_processing_ms": {
+          "mean": 0.00041116666666666667,
+          "p50": 0.00028399999999999996,
+          "p95": 0.0008412,
+          "max": 0.001017
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/loaned_message_test_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.75158260869566,
+          "p50": 10.460161,
+          "p95": 508.0358904,
+          "max": 509.998602
+        },
+        "callback_processing_ms": {
+          "mean": 0.00039670833333333333,
+          "p50": 0.000255,
+          "p95": 0.0007637,
+          "max": 0.000981
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/node1_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.5988907826087,
+          "p50": 7.099016,
+          "p95": 508.07976210000004,
+          "max": 509.947309
+        },
+        "callback_processing_ms": {
+          "mean": 0.00039758333333333334,
+          "p50": 0.00030250000000000003,
+          "p95": 0.0010888499999999995,
+          "max": 0.001162
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/parameter_events",
+        "type": "rcl_interfaces/msg/ParameterEvent",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/clock_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_thread_testing_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/sim_clock_publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/subscription_class_node_inheritance",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/timer_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/clock_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_thread_testing_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/sim_clock_publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/subscription_class_node_inheritance",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/timer_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/rosout",
+        "type": "rcl_interfaces/msg/Log",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/clock_publisher",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/clock_thread_testing_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/sim_clock_publisher_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/subscription_class_node_inheritance",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/timer_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/service/_service_event",
+        "type": "std_msgs/msg/String",
+        "recv_count": 0,
+        "proc_count": 0,
+        "recv_rate_hz": 0.0,
+        "proc_rate_hz": 0.0,
+        "inter_arrival_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "callback_processing_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/test_drop",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.5919712173913,
+          "p50": 7.075986,
+          "p95": 508.1255178,
+          "max": 509.906734
+        },
+        "callback_processing_ms": {
+          "mean": 0.00040525,
+          "p50": 0.000366,
+          "p95": 0.0008923999999999997,
+          "max": 0.001075
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/test_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 36,
+        "proc_count": 36,
+        "recv_rate_hz": 5.39127497165429,
+        "proc_rate_hz": 5.39127497165429,
+        "inter_arrival_ms": {
+          "mean": 156.7875733142857,
+          "p50": 6.484954,
+          "p95": 492.317752,
+          "max": 498.157702
+        },
+        "callback_processing_ms": {
+          "mean": 0.0005060833333333333,
+          "p50": 0.0005005,
+          "p95": 0.001011,
+          "max": 0.001597
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 5,
+            "proc_count": 5,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 9,
+            "proc_count": 9,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 15,
+            "proc_count": 15,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 21,
+            "proc_count": 21,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 21,
+            "proc_count": 21,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 27,
+            "proc_count": 27,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 27,
+            "proc_count": 27,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 30,
+            "proc_count": 30,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 33,
+            "proc_count": 33,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 33,
+            "proc_count": 33,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 36,
+            "proc_count": 36,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 36,
+            "proc_count": 36,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 36,
+            "proc_count": 36,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/subscription_class_node_inheritance",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 48,
+        "proc_count": 48,
+        "recv_rate_hz": 7.188366628872386,
+        "proc_rate_hz": 7.188366628872386,
+        "inter_arrival_ms": {
+          "mean": 116.75596223404256,
+          "p50": 5.133516,
+          "p95": 486.3404434,
+          "max": 490.194505
+        },
+        "callback_processing_ms": {
+          "mean": 0.0005381666666666667,
+          "p50": 0.00045149999999999997,
+          "p95": 0.00114945,
+          "max": 0.001709
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 28,
+            "proc_count": 28,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 28,
+            "proc_count": 28,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 32,
+            "proc_count": 32,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 32,
+            "proc_count": 32,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 32,
+            "proc_count": 32,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 36,
+            "proc_count": 36,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 36,
+            "proc_count": 36,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 40,
+            "proc_count": 40,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 44,
+            "proc_count": 44,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 44,
+            "proc_count": 44,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 48,
+            "proc_count": 48,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 48,
+            "proc_count": 48,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 48,
+            "proc_count": 48,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/my_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/timer_node",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/subscription_class_node_inheritance",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/topic_name",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.48919373913043,
+          "p50": 7.007316,
+          "p95": 508.1725949,
+          "max": 509.748076
+        },
+        "callback_processing_ms": {
+          "mean": 0.00040208333333333334,
+          "p50": 0.000257,
+          "p95": 0.0009751999999999992,
+          "max": 0.00129
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/wait_for_last_message_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.48483373913044,
+          "p50": 6.985752,
+          "p95": 508.39235959999996,
+          "max": 509.713951
+        },
+        "callback_processing_ms": {
+          "mean": 0.00033845833333333335,
+          "p50": 0.0002585,
+          "p95": 0.0006732499999999998,
+          "max": 0.001107
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      },
+      {
+        "topic": "/wait_for_message_topic",
+        "type": "std_msgs/msg/String",
+        "recv_count": 24,
+        "proc_count": 24,
+        "recv_rate_hz": 3.594183314436193,
+        "proc_rate_hz": 3.594183314436193,
+        "inter_arrival_ms": {
+          "mean": 238.4827815652174,
+          "p50": 6.965346,
+          "p95": 508.4282293,
+          "max": 509.680213
+        },
+        "callback_processing_ms": {
+          "mean": 0.00032670833333333336,
+          "p50": 0.00023500000000000002,
+          "p95": 0.0006701,
+          "max": 0.001021
+        },
+        "latency_ms": {
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "monitor_queue_depth": 50,
+        "backlog_max": 0,
+        "overflow_risk": false,
+        "timeline": [
+          {
+            "t_ns": 1776322504771930149,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322504866124555,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505069747705,
+            "recv_count": 0,
+            "proc_count": 0,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505268079789,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505468209229,
+            "recv_count": 2,
+            "proc_count": 2,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505674482406,
+            "recv_count": 3,
+            "proc_count": 3,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322505867142031,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506067587363,
+            "recv_count": 4,
+            "proc_count": 4,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506269557959,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506467134299,
+            "recv_count": 6,
+            "proc_count": 6,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506666368037,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322506867780637,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507067423193,
+            "recv_count": 8,
+            "proc_count": 8,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507266790795,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507467994802,
+            "recv_count": 10,
+            "proc_count": 10,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507666270487,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322507868163076,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508068002103,
+            "recv_count": 12,
+            "proc_count": 12,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508268479171,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508467711396,
+            "recv_count": 14,
+            "proc_count": 14,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508670013115,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322508868936168,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509066571464,
+            "recv_count": 16,
+            "proc_count": 16,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509267801359,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509468040191,
+            "recv_count": 18,
+            "proc_count": 18,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509668114761,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322509868033981,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510066630276,
+            "recv_count": 20,
+            "proc_count": 20,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510267771648,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510466511487,
+            "recv_count": 22,
+            "proc_count": 22,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510666322617,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322510867992219,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          },
+          {
+            "t_ns": 1776322511068153994,
+            "recv_count": 24,
+            "proc_count": 24,
+            "backlog": 0
+          }
+        ],
+        "publisher_endpoints": [
+          {
+            "node": "/generated/test_component_bar",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          },
+          {
+            "node": "/generated/test_component_foo",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.RELIABLE"
+          }
+        ],
+        "subscription_endpoints": [
+          {
+            "node": "/dynamic_trace_collector",
+            "qos_depth": 0,
+            "reliability": "ReliabilityPolicy.BEST_EFFORT"
+          }
+        ]
+      }
+    ]
+  },
+  "static_alignment": {
+    "static_edge_count": 42,
+    "dynamic_raw_edge_count": 83,
+    "dynamic_dedup_edge_count": 42,
+    "dynamic_subset_of_static": true,
+    "dynamic_extra_edge_count": 0,
+    "dynamic_extra_edges_sample": [],
+    "expectation": "dynamic extraction is independent; subset relation is a validation target, not a filter rule"
+  }
+}

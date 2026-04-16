@@ -1,0 +1,219 @@
+{
+  "nodes": [
+    "/amcl",
+    "/base_footprint_publisher",
+    "/basic",
+    "/behavior_server",
+    "/binary_state_sub",
+    "/bt_navigator",
+    "/cm_metrics_catcher",
+    "/collision_detector",
+    "/collision_monitor",
+    "/controller_server",
+    "/costmap",
+    "/costmap_filter_info_pub",
+    "/costmap_filter_info_server",
+    "/docking_server",
+    "/dummy_navigator",
+    "/dummycontroller",
+    "/dummyplanner",
+    "/dwa_gen",
+    "/fake_cm_bag_source",
+    "/fibonacci_node",
+    "/fibonacci_server_node",
+    "/following_server",
+    "/holonomic",
+    "/lifecycle_manager",
+    "/lifecycle_node_test",
+    "/loopback_simulator",
+    "/map_publisher",
+    "/map_saver",
+    "/map_server",
+    "/mask_pub",
+    "/max_xy",
+    "/min_theta",
+    "/min_xy",
+    "/nav2_test_cli",
+    "/nonzero",
+    "/planner_server",
+    "/plannertester",
+    "/route_example",
+    "/route_server",
+    "/smoother_server",
+    "/speed_limit_sub",
+    "/st_gen",
+    "/test_action_server",
+    "/test_docking_server",
+    "/test_following_server",
+    "/test_node",
+    "/test_object_pose_publisher",
+    "/test_service",
+    "/too_slow",
+    "/vector_object_server",
+    "/velocity_smoother",
+    "/waypoint_follower"
+  ],
+  "topics": [
+    {
+      "name": "/activate_server",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/clock",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/cmd_vel",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/cmd_vel_smoothed",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/deactivate_server",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/filtered_dynamic_pose",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/map",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/odom",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/omit_preemption",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/plan",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/plan_smoothed",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/route",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/tracking_feedback",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    },
+    {
+      "name": "/transformed_global_plan",
+      "types": [
+        "std_msgs::msg::String"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "/controller_server",
+      "to": "/tracking_feedback",
+      "kind": "pub"
+    },
+    {
+      "from": "/controller_server",
+      "to": "/transformed_global_plan",
+      "kind": "pub"
+    },
+    {
+      "from": "/dummycontroller",
+      "to": "/cmd_vel",
+      "kind": "pub"
+    },
+    {
+      "from": "/fake_cm_bag_source",
+      "to": "/clock",
+      "kind": "pub"
+    },
+    {
+      "from": "/fake_cm_bag_source",
+      "to": "/cmd_vel_smoothed",
+      "kind": "pub"
+    },
+    {
+      "from": "/fibonacci_server_node",
+      "to": "/activate_server",
+      "kind": "pub"
+    },
+    {
+      "from": "/fibonacci_server_node",
+      "to": "/deactivate_server",
+      "kind": "pub"
+    },
+    {
+      "from": "/fibonacci_server_node",
+      "to": "/omit_preemption",
+      "kind": "pub"
+    },
+    {
+      "from": "/following_server",
+      "to": "/filtered_dynamic_pose",
+      "kind": "pub"
+    },
+    {
+      "from": "/loopback_simulator",
+      "to": "/odom",
+      "kind": "pub"
+    },
+    {
+      "from": "/planner_server",
+      "to": "/plan",
+      "kind": "pub"
+    },
+    {
+      "from": "/plannertester",
+      "to": "/map",
+      "kind": "pub"
+    },
+    {
+      "from": "/route_server",
+      "to": "/route",
+      "kind": "pub"
+    },
+    {
+      "from": "/smoother_server",
+      "to": "/plan_smoothed",
+      "kind": "pub"
+    },
+    {
+      "from": "/test_docking_server",
+      "to": "/odom",
+      "kind": "pub"
+    }
+  ]
+}

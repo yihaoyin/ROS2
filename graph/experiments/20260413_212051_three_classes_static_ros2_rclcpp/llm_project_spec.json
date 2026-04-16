@@ -1,0 +1,980 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "repo_url": "https://github.com/ros2/rclcpp",
+    "ref": "rolling",
+    "project_name": "rclcpp",
+    "language": [
+      "cpp"
+    ]
+  },
+  "graph_seed": {
+    "nodes": [
+      "/clock_publisher",
+      "/clock_thread_testing_node",
+      "/my_node",
+      "/sim_clock_publisher_node",
+      "/subscription_class_node_inheritance",
+      "/test_component_bar",
+      "/test_component_foo",
+      "/timer_node"
+    ],
+    "topics": [
+      "/chatter",
+      "/clock",
+      "/content_filter_topic",
+      "/custom_allocator_test",
+      "/loaned_message_test_topic",
+      "/node1_topic",
+      "/service/_service_event",
+      "/test_drop",
+      "/test_topic",
+      "/topic",
+      "/topic_name",
+      "/wait_for_last_message_topic",
+      "/wait_for_message_topic"
+    ],
+    "edges": [
+      {
+        "from": "/clock",
+        "to": "/clock_publisher",
+        "kind": "sub"
+      },
+      {
+        "from": "/clock_publisher",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/clock_thread_testing_node",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/my_node",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/my_node",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/service/_service_event",
+        "to": "/test_component_bar",
+        "kind": "sub"
+      },
+      {
+        "from": "/service/_service_event",
+        "to": "/test_component_foo",
+        "kind": "sub"
+      },
+      {
+        "from": "/sim_clock_publisher_node",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/subscription_class_node_inheritance",
+        "to": "/test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/content_filter_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/custom_allocator_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/loaned_message_test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/node1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/test_drop",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/topic_name",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/wait_for_last_message_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_bar",
+        "to": "/wait_for_message_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/chatter",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/content_filter_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/custom_allocator_test",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/loaned_message_test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/node1_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/test_drop",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/test_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/topic_name",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/wait_for_last_message_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_component_foo",
+        "to": "/wait_for_message_topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/test_drop",
+        "to": "/test_component_bar",
+        "kind": "sub"
+      },
+      {
+        "from": "/test_drop",
+        "to": "/test_component_foo",
+        "kind": "sub"
+      },
+      {
+        "from": "/test_topic",
+        "to": "/test_component_bar",
+        "kind": "sub"
+      },
+      {
+        "from": "/test_topic",
+        "to": "/test_component_foo",
+        "kind": "sub"
+      },
+      {
+        "from": "/timer_node",
+        "to": "/clock",
+        "kind": "pub"
+      },
+      {
+        "from": "/timer_node",
+        "to": "/topic",
+        "kind": "pub"
+      },
+      {
+        "from": "/topic",
+        "to": "/subscription_class_node_inheritance",
+        "kind": "sub"
+      },
+      {
+        "from": "/topic",
+        "to": "/test_component_bar",
+        "kind": "sub"
+      },
+      {
+        "from": "/topic",
+        "to": "/test_component_foo",
+        "kind": "sub"
+      },
+      {
+        "from": "/topic_name",
+        "to": "/test_component_bar",
+        "kind": "sub"
+      },
+      {
+        "from": "/topic_name",
+        "to": "/test_component_foo",
+        "kind": "sub"
+      }
+    ],
+    "node_semantics": [
+      {
+        "name": "/clock_publisher",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [
+          "/parameter_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/clock_publisher::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/clock_thread_testing_node",
+        "executor": "single_threaded",
+        "callback_sources": [],
+        "service_clients": [
+          "/parameter_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/clock_thread_testing_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/my_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer",
+          "subscription"
+        ],
+        "service_clients": [
+          "/parameter_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/my_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/sim_clock_publisher_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [
+          "/parameter_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/sim_clock_publisher_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/subscription_class_node_inheritance",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "subscription"
+        ],
+        "service_clients": [],
+        "service_servers": [],
+        "blocking_calls": [],
+        "callbacks": [
+          {
+            "id": "cb_subscription_76",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_93",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_106",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_110",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_115",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_120",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_124",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_129",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_137",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_144",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_157",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_179",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_209",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_220",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_228",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_256",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_264",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_292",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_304",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_313",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_324",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_337",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_350",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_357",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_372",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_442",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_510",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_569",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_574",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_579",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_588",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_643",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_666",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_subscription_839",
+            "source": "subscription",
+            "callback_group": "cg::/subscription_class_node_inheritance::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_component_bar",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer",
+          "subscription",
+          "service"
+        ],
+        "service_clients": [
+          "/not_an_existing_service",
+          "/service",
+          "/test_qos_depth"
+        ],
+        "service_servers": [
+          "/not_a_service",
+          "/service",
+          "/test_service"
+        ],
+        "blocking_calls": [
+          "future_get",
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_1",
+            "source": "timer",
+            "callback_group": "cg::/test_component_bar::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_sub_1",
+            "source": "subscription",
+            "callback_group": "cg::/test_component_bar::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_svc_1",
+            "source": "service",
+            "callback_group": "cg::/test_component_bar::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/not_an_existing_service",
+              "/service",
+              "/test_qos_depth"
+            ],
+            "blocking_calls": [
+              "future_get",
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/test_component_foo",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer",
+          "subscription",
+          "service"
+        ],
+        "service_clients": [
+          "/not_an_existing_service",
+          "/service",
+          "/test_qos_depth"
+        ],
+        "service_servers": [
+          "/not_a_service",
+          "/service",
+          "/test_service"
+        ],
+        "blocking_calls": [
+          "future_get",
+          "spin_until_future_complete",
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_timer_1",
+            "source": "timer",
+            "callback_group": "cg::/test_component_foo::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_sub_1",
+            "source": "subscription",
+            "callback_group": "cg::/test_component_foo::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [],
+            "blocking_calls": []
+          },
+          {
+            "id": "cb_svc_1",
+            "source": "service",
+            "callback_group": "cg::/test_component_foo::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/not_an_existing_service",
+              "/service",
+              "/test_qos_depth"
+            ],
+            "blocking_calls": [
+              "future_get",
+              "spin_until_future_complete",
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      },
+      {
+        "name": "/timer_node",
+        "executor": "single_threaded",
+        "callback_sources": [
+          "timer"
+        ],
+        "service_clients": [
+          "/parameter_service"
+        ],
+        "service_servers": [],
+        "blocking_calls": [
+          "wait_for_service"
+        ],
+        "callbacks": [
+          {
+            "id": "cb_blocking_auto",
+            "source": "unknown",
+            "callback_group": "cg::/timer_node::default",
+            "waits_for_callbacks": [],
+            "waits_for_services": [
+              "/parameter_service"
+            ],
+            "blocking_calls": [
+              "wait_for_service"
+            ]
+          }
+        ],
+        "callback_wait_edges": [],
+        "semantic_edges": []
+      }
+    ],
+    "semantic_edges": [],
+    "executors": [
+      {
+        "id": "exec::/clock_publisher",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/clock_thread_testing_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/my_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/sim_clock_publisher_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/subscription_class_node_inheritance",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_component_bar",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/test_component_foo",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec::/timer_node",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "inferred"
+      },
+      {
+        "id": "exec_multi",
+        "kind": "MultiThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "explicit"
+      },
+      {
+        "id": "exec_single",
+        "kind": "SingleThreadedExecutor",
+        "thread_capacity": 1,
+        "origin": "explicit"
+      }
+    ],
+    "callback_groups": [
+      {
+        "id": "cg::/clock_publisher::default",
+        "node": "/clock_publisher",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/clock_publisher",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/clock_thread_testing_node::default",
+        "node": "/clock_thread_testing_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/clock_thread_testing_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/my_node::default",
+        "node": "/my_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/my_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/sim_clock_publisher_node::default",
+        "node": "/sim_clock_publisher_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/sim_clock_publisher_node",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/subscription_class_node_inheritance::default",
+        "node": "/subscription_class_node_inheritance",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/subscription_class_node_inheritance",
+        "origin": "inferred"
+      },
+      {
+        "id": "cg::/test_component_bar::default",
+        "node": "/test_component_bar",
+        "type": "MutuallyExclusive",
+        "executor": "exec_single",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/test_component_foo::default",
+        "node": "/test_component_foo",
+        "type": "MutuallyExclusive",
+        "executor": "exec_single",
+        "origin": "implicit_default"
+      },
+      {
+        "id": "cg::/timer_node::default",
+        "node": "/timer_node",
+        "type": "MutuallyExclusive",
+        "executor": "exec::/timer_node",
+        "origin": "inferred"
+      }
+    ],
+    "assignments": [
+      {
+        "callback_group": "cg::/clock_publisher::default",
+        "executor": "exec::/clock_publisher",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/clock_thread_testing_node::default",
+        "executor": "exec::/clock_thread_testing_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/my_node::default",
+        "executor": "exec::/my_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/sim_clock_publisher_node::default",
+        "executor": "exec::/sim_clock_publisher_node",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/subscription_class_node_inheritance::default",
+        "executor": "exec::/subscription_class_node_inheritance",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_component_bar::default",
+        "executor": "exec::/test_component_bar",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_component_bar::default",
+        "executor": "exec_single",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_component_foo::default",
+        "executor": "exec::/test_component_foo",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/test_component_foo::default",
+        "executor": "exec_single",
+        "origin": "inferred"
+      },
+      {
+        "callback_group": "cg::/timer_node::default",
+        "executor": "exec::/timer_node",
+        "origin": "inferred"
+      }
+    ]
+  }
+}

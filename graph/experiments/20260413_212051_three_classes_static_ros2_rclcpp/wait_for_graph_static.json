@@ -1,0 +1,701 @@
+{
+  "graph_summary": {
+    "node_count": 8,
+    "wait_edge_count": 26,
+    "callback_resource_edge_count": 132,
+    "key_callback_resource_edge_count": 18,
+    "key_callback_resource_edge_total": 64,
+    "wait_edges_truncated": true,
+    "callback_resource_edges_truncated": true,
+    "communication_trigger_edge_count": 31,
+    "cycle_candidate_count": 6
+  },
+  "wait_edges": [
+    {
+      "from": "/clock_publisher",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/clock_publisher",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/clock_thread_testing_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/clock_thread_testing_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/my_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/my_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/my_node",
+      "to": "/subscription_class_node_inheritance",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/my_node",
+      "to": "/subscription_class_node_inheritance",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/my_node",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/my_node",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/my_node",
+      "to": "/test_component_foo",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/my_node",
+      "to": "/test_component_foo",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/sim_clock_publisher_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/sim_clock_publisher_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/test_component_bar",
+      "to": "/test_component_foo",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "blocking_service_call"
+    },
+    {
+      "from": "/test_component_foo",
+      "to": "/test_component_foo",
+      "relation": "waits_for",
+      "type": "blocking",
+      "deadlock_class": "service_action",
+      "reason": "service_call"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/clock_publisher",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/subscription_class_node_inheritance",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/subscription_class_node_inheritance",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "executor_block",
+      "deadlock_class": "callback_blocking",
+      "reason": "single_thread_executor_with_blocking_callback"
+    },
+    {
+      "from": "/timer_node",
+      "to": "/test_component_bar",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "communication",
+      "reason": "blocking_callback_with_published_topic_dependency"
+    }
+  ],
+  "model_context": {
+    "executor_count": 18,
+    "callback_group_count": 8,
+    "assignment_count": 8,
+    "explicit_executor_count": 10,
+    "explicit_callback_group_count": 0
+  },
+  "callback_resource_graph": [
+    {
+      "from": "/clock_publisher:cb_blocking_auto",
+      "to": "future:service_response:/parameter_service:/clock_publisher:cb_blocking_auto",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/clock_publisher:cb_blocking_auto",
+      "to": "resource:callback_group:cg::/clock_publisher::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_publisher:cb_blocking_auto",
+      "to": "resource:executor_slot:exec::/clock_publisher",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/clock_publisher:cb_blocking_auto",
+      "to": "resource:service_availability:/parameter_service",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "wait_for_service_availability"
+    },
+    {
+      "from": "/clock_thread_testing_node:cb_blocking_auto",
+      "to": "future:service_response:/parameter_service:/clock_thread_testing_node:cb_blocking_auto",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/clock_thread_testing_node:cb_blocking_auto",
+      "to": "resource:callback_group:cg::/clock_thread_testing_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/clock_thread_testing_node:cb_blocking_auto",
+      "to": "resource:executor_slot:exec::/clock_thread_testing_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/clock_thread_testing_node:cb_blocking_auto",
+      "to": "resource:service_availability:/parameter_service",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "wait_for_service_availability"
+    },
+    {
+      "from": "/my_node:cb_blocking_auto",
+      "to": "future:service_response:/parameter_service:/my_node:cb_blocking_auto",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/my_node:cb_blocking_auto",
+      "to": "resource:callback_group:cg::/my_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/my_node:cb_blocking_auto",
+      "to": "resource:executor_slot:exec::/my_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/my_node:cb_blocking_auto",
+      "to": "resource:service_availability:/parameter_service",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "wait_for_service_availability"
+    },
+    {
+      "from": "/sim_clock_publisher_node:cb_blocking_auto",
+      "to": "future:service_response:/parameter_service:/sim_clock_publisher_node:cb_blocking_auto",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "waits_for_service_future"
+    },
+    {
+      "from": "/sim_clock_publisher_node:cb_blocking_auto",
+      "to": "resource:callback_group:cg::/sim_clock_publisher_node::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/sim_clock_publisher_node:cb_blocking_auto",
+      "to": "resource:executor_slot:exec::/sim_clock_publisher_node",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    },
+    {
+      "from": "/sim_clock_publisher_node:cb_blocking_auto",
+      "to": "resource:service_availability:/parameter_service",
+      "relation": "waits_for",
+      "type": "potential",
+      "deadlock_class": "service_action",
+      "reason": "wait_for_service_availability"
+    },
+    {
+      "from": "/test_component_bar:cb_sub_1",
+      "to": "resource:callback_group:cg::/test_component_bar::default",
+      "relation": "requests",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "requests_callback_group"
+    },
+    {
+      "from": "/test_component_bar:cb_sub_1",
+      "to": "resource:executor_slot:exec_single",
+      "relation": "scheduled_by",
+      "type": "potential",
+      "deadlock_class": "callback_blocking",
+      "reason": "scheduled_by_executor"
+    }
+  ],
+  "edge_type_counts": {
+    "blocking": 4,
+    "executor_block": 11,
+    "potential": 11
+  },
+  "edge_class_counts": {
+    "callback_blocking": 11,
+    "communication": 11,
+    "service_action": 4
+  },
+  "class_assessment": {
+    "communication": {
+      "wait_edge_count": 11,
+      "trigger_edge_count": 31,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 0
+    },
+    "service_action": {
+      "wait_edge_count": 4,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 17
+    },
+    "callback_blocking": {
+      "wait_edge_count": 11,
+      "trigger_edge_count": 0,
+      "definite_cycle_count": 0,
+      "potential_cycle_count": 14
+    }
+  },
+  "cycle_candidates": [
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/timer_node:cb_blocking_auto",
+        "resource:callback_group:cg::/timer_node::default",
+        "resource:executor_slot:exec::/timer_node"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 9,
+      "sample_nodes": [
+        "/test_component_bar:cb_svc_1",
+        "/test_component_bar:service_server",
+        "/test_component_foo:cb_svc_1",
+        "/test_component_foo:service_server"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/sim_clock_publisher_node:cb_blocking_auto",
+        "resource:callback_group:cg::/sim_clock_publisher_node::default",
+        "resource:executor_slot:exec::/sim_clock_publisher_node"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/my_node:cb_blocking_auto",
+        "resource:callback_group:cg::/my_node::default",
+        "resource:executor_slot:exec::/my_node"
+      ]
+    },
+    {
+      "kind": "scc",
+      "size": 3,
+      "sample_nodes": [
+        "/clock_thread_testing_node:cb_blocking_auto",
+        "resource:callback_group:cg::/clock_thread_testing_node::default",
+        "resource:executor_slot:exec::/clock_thread_testing_node"
+      ]
+    }
+  ],
+  "node_level_assessment": {
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 2
+    }
+  },
+  "deadlock_assessment": {
+    "definite_deadlocks": [],
+    "potential_deadlocks": [
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "/test_component_bar:service_server",
+          "/test_component_foo:service_server",
+          "resource:callback_group:cg::/test_component_bar::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 0,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "blocking_callback_holds_resources_while_waiting",
+        "path_certainty": "medium",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "/test_component_foo:service_server",
+          "resource:callback_group:cg::/test_component_foo::default",
+          "/test_component_foo:cb_svc_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "proven",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 6,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "/test_component_foo:service_server",
+          "resource:callback_group:cg::/test_component_foo::default",
+          "/test_component_foo:cb_svc_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 0,
+          "resources": 2,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 5,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "/test_component_bar:service_server",
+          "resource:executor_slot:exec_single",
+          "/test_component_foo:cb_svc_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 1,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "holds",
+          "scheduled_by",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 4,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "future:service_response:/service:/test_component_bar:cb_svc_1",
+          "/test_component_foo:cb_svc_1",
+          "future:service_response:/service:/test_component_foo:cb_svc_1"
+        ],
+        "node_kinds": {
+          "callbacks": 2,
+          "futures": 2,
+          "resources": 0,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 3,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "/test_component_bar:service_server",
+          "resource:callback_group:cg::/test_component_bar::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 0,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 3,
+        "sample_nodes": [
+          "/test_component_foo:cb_svc_1",
+          "/test_component_foo:service_server",
+          "resource:callback_group:cg::/test_component_foo::default"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 0,
+          "resources": 1,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "callback_blocking",
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "holds",
+          "requests",
+          "waits_for"
+        ]
+      },
+      {
+        "node_count": 2,
+        "sample_nodes": [
+          "/test_component_bar:cb_svc_1",
+          "future:service_response:/service:/test_component_bar:cb_svc_1"
+        ],
+        "node_kinds": {
+          "callbacks": 1,
+          "futures": 1,
+          "resources": 0,
+          "plain_nodes": 0
+        },
+        "deadlock_classes": [
+          "service_action"
+        ],
+        "certainty": "potential",
+        "rule": "contains_inferred_or_nonblocking_edges_or_unknown_resources",
+        "path_certainty": "low",
+        "resource_feasibility": "partial",
+        "runtime_confirmability": "medium",
+        "relations": [
+          "completion_depends_on",
+          "waits_for"
+        ]
+      }
+    ],
+    "overall": "potential_deadlock",
+    "summary": {
+      "definite_count": 0,
+      "potential_count": 17,
+      "reported_definite_count": 0,
+      "reported_potential_count": 8
+    },
+    "primary_graph": "callback_resource_graph",
+    "rules": [
+      "definite only if every cycle hop has grounded blocking evidence",
+      "inferred/low-confidence edges are excluded from definite",
+      "wait_for_service and spin_until_future_complete are conservative (potential by default)",
+      "otherwise cycle is potential"
+    ]
+  },
+  "config": {
+    "use_llm_relations": false,
+    "mode": "evidence_plus_rules",
+    "semantic_edges_ingested": 0
+  },
+  "assumptions": [
+    "Potential/executor edges are conservative (may include false positives).",
+    "Blocking inference is keyword-based static heuristic, not path-sensitive proof.",
+    "This graph models wait dependencies, not data-flow edges.",
+    "All semantics are static: source code scan + optional LLM static spec; runtime trace is not used for wait-for."
+  ]
+}
