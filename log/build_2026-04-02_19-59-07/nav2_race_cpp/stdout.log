@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target bt_navigator_mini[0m
-[35m[1mConsolidate compiler generated dependencies of target lifecycle_manager_navigation_mini[0m
-[35m[1mConsolidate compiler generated dependencies of target planner_server_mini[0m
-[35m[1mConsolidate compiler generated dependencies of target controller_server_mini[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/planner_server_mini.dir/src/planner_server_mini.cpp.o[0m
-[ 62%] Built target lifecycle_manager_navigation_mini
-[ 62%] Built target controller_server_mini
-[ 75%] [32mBuilding CXX object CMakeFiles/bt_navigator_mini.dir/src/bt_navigator_mini.cpp.o[0m

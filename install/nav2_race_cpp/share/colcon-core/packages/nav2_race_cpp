@@ -1,1 +1,0 @@
-geometry_msgs:launch_ros:lifecycle_msgs:nav2_msgs:nav_msgs:rclcpp:rclcpp_action:rclcpp_lifecycle:std_msgs:std_srvs

@@ -1,5 +1,0 @@
-c++: fatal error: Killed signal terminated program cc1plus
-compilation terminated.
-gmake[2]: *** [CMakeFiles/controller_server.dir/build.make:76: CMakeFiles/controller_server.dir/src/controller_server.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/controller_server.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
